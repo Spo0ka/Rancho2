@@ -1,0 +1,6 @@
+C:\Users\Spo0k\source\repos\PresentacionPrototipo\EntidadesPrototipo\bin\Debug\EntidadesPrototipo.dll
+C:\Users\Spo0k\source\repos\PresentacionPrototipo\EntidadesPrototipo\bin\Debug\EntidadesPrototipo.pdb
+C:\Users\Spo0k\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.AssemblyReference.cache
+C:\Users\Spo0k\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.CoreCompileInputs.cache
+C:\Users\Spo0k\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.dll
+C:\Users\Spo0k\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.pdb

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C70A6AFA-064B-442C-9105-8869D676C69C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PresentacionPrototipo</RootNamespace>
+    <AssemblyName>PresentacionPrototipo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAddVaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddVaca.Designer.cs">
+      <DependentUpon>FrmAddVaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddVacunacionBe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddVacunacionBe.Designer.cs">
+      <DependentUpon>FrmAddVacunacionBe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddVacunacionVa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddVacunacionVa.Designer.cs">
+      <DependentUpon>FrmAddVacunacionVa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="FrmAddBecerro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddBecerro.Designer.cs">
+      <DependentUpon>FrmAddBecerro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddForraje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddForraje.Designer.cs">
+      <DependentUpon>FrmAddForraje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddMedicamento.Designer.cs">
+      <DependentUpon>FrmAddMedicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBecerros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBecerros.Designer.cs">
+      <DependentUpon>FrmBecerros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmForraje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmForraje.Designer.cs">
+      <DependentUpon>FrmForraje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMedicamento.Designer.cs">
+      <DependentUpon>FrmMedicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVacas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVacas.Designer.cs">
+      <DependentUpon>FrmVacas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVacunacionBe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVacunacionBe.Designer.cs">
+      <DependentUpon>FrmVacunacionBe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVacunacionVa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVacunacionVa.Designer.cs">
+      <DependentUpon>FrmVacunacionVa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAddBecerro.resx">
+      <DependentUpon>FrmAddBecerro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddForraje.resx">
+      <DependentUpon>FrmAddForraje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddMedicamento.resx">
+      <DependentUpon>FrmAddMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddVaca.resx">
+      <DependentUpon>FrmAddVaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddVacunacionBe.resx">
+      <DependentUpon>FrmAddVacunacionBe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddVacunacionVa.resx">
+      <DependentUpon>FrmAddVacunacionVa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBecerros.resx">
+      <DependentUpon>FrmBecerros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmForraje.resx">
+      <DependentUpon>FrmForraje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMedicamento.resx">
+      <DependentUpon>FrmMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVacas.resx">
+      <DependentUpon>FrmVacas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVacunacionBe.resx">
+      <DependentUpon>FrmVacunacionBe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVacunacionVa.resx">
+      <DependentUpon>FrmVacunacionVa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anadir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntidadesPrototipo\EntidadesPrototipo.csproj">
+      <Project>{f3ded31b-dada-401b-a3b9-267fe3307537}</Project>
+      <Name>EntidadesPrototipo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Manejador\Manejador.csproj">
+      <Project>{5ada29fc-c1e7-4563-9102-b5103031a5e6}</Project>
+      <Name>Manejador</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Becerro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vaca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forraje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicamentos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Becerro salud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vaca salud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
