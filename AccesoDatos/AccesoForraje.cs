@@ -10,21 +10,21 @@ namespace AccesoDatos
 {
     public class AccesoForraje
     {
-        Base b = new Base("localhost", "root", "", "rn");
+        Base b = new Base("localhost", "root", "", "GM");
 
         public void Borrar(dynamic Entidad)
         {
-            b.comando(string.Format("Call DeleteMedicamento({0})", Entidad.Id));
+            b.comando(string.Format("DELETE * FROM almacenforraje WHERE almacenforraje.id = {0}", Entidad.Id));
         }
 
         public void Guardar(dynamic Entidad)
         {
-            b.comando(string.Format("Call InsertAlmacenForraje({0},'{1}',{2})", Entidad.Id, Entidad.Nombre, Entidad.Cantidad));
+            b.comando(string.Format("Call agregarForraje('{0}',{1})", Entidad.Nombre, Entidad.Cantidad));
         }
 
         public DataSet Mostrar(string Filtro)
         {
-            return b.Obtener(string.Format("Call ShowForraje('%{0}%')", Filtro), "almacenforraje");
+            return b.Obtener(string.Format("SELECT * FROM ver_forraje WHERE nombre LIKE '%{0}%'", Filtro), "almacenForraje");
 
         }
     }
