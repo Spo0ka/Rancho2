@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntidadesPrototipo
 {
-    public class AlmacenMedicamento
+    public class AlmacenMedicamento//Hola xd
     {
         public AlmacenMedicamento(int id, string nombre, int cantidad)
         {
