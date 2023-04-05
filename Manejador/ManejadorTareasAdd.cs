@@ -1,44 +1,37 @@
-﻿using AccesoDatos;
-using crud;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using AccesoDatos;
 namespace Manejador
 {
-    public class ManejadorForraje
+    public class ManejadorTareasAdd : IManejador
     {
-        AccesoForraje Ab = new AccesoForraje();
-        Grafico g = new Grafico();
+        //DESCOMENTAR, CUANDO EL CÓDIGO ACCESO DATOS ESTÉ HECHO
+        //AccesoTareas at = new AccesoTareas();
         public void Borrar(dynamic Entidad)
         {
             DialogResult rs = MessageBox.Show("Atención!", "¿Desea eliminar este registro?", MessageBoxButtons.YesNo);
             if (rs == DialogResult.Yes)
             {
-                Ab.Borrar(Entidad);
+                //at.Borrar(Entidad);
             }
         }
 
         public void guardar(dynamic Entidad)
         {
-            Ab.Guardar(Entidad);
-        }
-        public void editar(dynamic Entidad)
-        {
-            //Ab.Editar(Entidad);
-            //Se descomentará cuando el acceso datos haya sido realizado.
+            //at.Guardar(Entidad);
         }
 
         public void Mostrar(DataGridView tabla, string filtro)
         {
-            tabla.Columns.Clear(); //error
+            tabla.Columns.Clear();
             tabla.RowTemplate.Height = 30;
             tabla.ColumnHeadersHeight = 40;
-            tabla.DataSource = Ab.Mostrar(filtro).Tables["almacenforraje"];
+            //tabla.DataSource = at.Mostrar(filtro).Tables["agregartareas"];
             tabla.Columns.Insert(3, g.Boton("Editar", Color.FromArgb(137, 249, 59)));
             tabla.Columns.Insert(4, g.Boton("Borrar", Color.FromArgb(251, 42, 9)));
             tabla.Columns[0].Visible = false;
