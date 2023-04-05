@@ -113,3 +113,5 @@ C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyec
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.pdb
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmLogIn.resources
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmMenuTrabajador.resources
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmMenuPro.resources
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmPantallaDeMostrado.resources

@@ -76,11 +76,23 @@
     <Compile Include="FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMenuPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuPro.Designer.cs">
+      <DependentUpon>FrmMenuPro.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMenuTrabajador.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMenuTrabajador.Designer.cs">
       <DependentUpon>FrmMenuTrabajador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPantallaDeMostrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPantallaDeMostrado.Designer.cs">
+      <DependentUpon>FrmPantallaDeMostrado.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
@@ -184,8 +196,14 @@
     <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuPro.resx">
+      <DependentUpon>FrmMenuPro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuTrabajador.resx">
       <DependentUpon>FrmMenuTrabajador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPantallaDeMostrado.resx">
+      <DependentUpon>FrmPantallaDeMostrado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
@@ -294,6 +312,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\flecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

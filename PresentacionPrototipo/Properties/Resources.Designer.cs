@@ -63,6 +63,16 @@ namespace PresentacionPrototipo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap agregar {
+            get {
+                object obj = ResourceManager.GetObject("agregar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap anadir {
             get {
                 object obj = ResourceManager.GetObject("anadir", resourceCulture);
@@ -276,6 +286,16 @@ namespace PresentacionPrototipo.Properties {
         internal static System.Drawing.Bitmap medicamentos {
             get {
                 object obj = ResourceManager.GetObject("medicamentos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap medicina {
+            get {
+                object obj = ResourceManager.GetObject("medicina", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
