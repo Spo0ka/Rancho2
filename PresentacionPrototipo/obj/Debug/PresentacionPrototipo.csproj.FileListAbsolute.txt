@@ -111,3 +111,4 @@ C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyec
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.csproj.CopyComplete
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.exe
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.pdb
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmLogIn.resources

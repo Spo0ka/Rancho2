@@ -64,6 +64,12 @@
     <Compile Include="FrmAddVacunacionVa.Designer.cs">
       <DependentUpon>FrmAddVacunacionVa.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogIn.Designer.cs">
+      <DependentUpon>FrmLogIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmForraje.resx">
       <DependentUpon>FrmForraje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogIn.resx">
+      <DependentUpon>FrmLogIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMedicamento.resx">
       <DependentUpon>FrmMedicamento.cs</DependentUpon>
@@ -267,6 +276,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image_2023-04-04_13-38-34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candado-abierto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
