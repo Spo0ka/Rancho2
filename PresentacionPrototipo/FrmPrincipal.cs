@@ -27,5 +27,11 @@ namespace PresentacionPrototipo
         {
             pictureBox2.BorderStyle = BorderStyle.FixedSingle;
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            FrmMenu m = new FrmMenu();
+            m.ShowDialog();
+        }
     }
 }
