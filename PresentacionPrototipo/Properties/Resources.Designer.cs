@@ -363,6 +363,46 @@ namespace PresentacionPrototipo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image_2023_04_06_19_53_02 {
+            get {
+                object obj = ResourceManager.GetObject("image_2023_04_06_19_53_02", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_2023_04_06_19_55_55 {
+            get {
+                object obj = ResourceManager.GetObject("image_2023_04_06_19_55_55", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_2023_04_06_19_57_23 {
+            get {
+                object obj = ResourceManager.GetObject("image_2023_04_06_19_57_23", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_2023_04_06_19_57_30 {
+            get {
+                object obj = ResourceManager.GetObject("image_2023_04_06_19_57_30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap medicamentos {
             get {
                 object obj = ResourceManager.GetObject("medicamentos", resourceCulture);
