@@ -423,6 +423,46 @@ namespace PresentacionPrototipo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image_2023_04_07_14_01_26 {
+            get {
+                object obj = ResourceManager.GetObject("image_2023_04_07_14_01_26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_2023_04_07_14_01_32 {
+            get {
+                object obj = ResourceManager.GetObject("image_2023_04_07_14_01_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_2023_04_07_14_01_44 {
+            get {
+                object obj = ResourceManager.GetObject("image_2023_04_07_14_01_44", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_2023_04_07_14_11_32 {
+            get {
+                object obj = ResourceManager.GetObject("image_2023_04_07_14_11_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap medicamentos {
             get {
                 object obj = ResourceManager.GetObject("medicamentos", resourceCulture);
@@ -456,6 +496,16 @@ namespace PresentacionPrototipo.Properties {
         internal static System.Drawing.Bitmap salida__1_ {
             get {
                 object obj = ResourceManager.GetObject("salida__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sexo {
+            get {
+                object obj = ResourceManager.GetObject("sexo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

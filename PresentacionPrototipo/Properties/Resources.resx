@@ -250,4 +250,19 @@
   <data name="image_2023_04_07_13_46_39" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image_2023-04-07_13-46-39.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="image_2023_04_07_14_01_26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_2023-04-07_14-01-26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image_2023_04_07_14_01_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_2023-04-07_14-01-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image_2023_04_07_14_01_44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_2023-04-07_14-01-44.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sexo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sexo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image_2023_04_07_14_11_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_2023-04-07_14-11-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

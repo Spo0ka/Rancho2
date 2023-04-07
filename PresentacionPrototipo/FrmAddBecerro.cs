@@ -14,36 +14,17 @@ namespace PresentacionPrototipo
 {
     public partial class FrmAddBecerro : Form
     {
-        ManejadorBecerros Mb;
         public FrmAddBecerro()
         {
             InitializeComponent();
-            Mb = new ManejadorBecerros();
-            if (FrmBecerros.b.Arete != "-1")
-            {
-                TxtArete.Text = FrmBecerros.b.Arete;
-                TxtFdn.Text = FrmBecerros.b.Fdn;
-                TxtPeso.Text = FrmBecerros.b.Peso;
-                TxtRaza.Text = FrmBecerros.b.Raza;
-                CmbSexo.Text = FrmBecerros.b.Sexo;
-            }
         }
 
-        private void BtnSalir_Click(object sender, EventArgs e)
+        private void FrmAddBecerro_Load(object sender, EventArgs e)
         {
-            Close();
-        }
-
-        private void BtnGuardar_Click(object sender, EventArgs e)
-        {
-            Becerro b = new Becerro("", "", "", "", "");
-            b.Arete = TxtArete.Text;
-            b.Raza = TxtRaza.Text;
-            b.Fdn = TxtFdn.Text;
-            b.Peso = TxtPeso.Text;
-            b.Sexo = CmbSexo.Text;
-            Mb.guardar(b);
-            Close();
+            btnAceptar.BackColor = ColorTranslator.FromHtml("#FFF689");
+            btnSubir.BackColor = ColorTranslator.FromHtml("#FFF689");
+            btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
+            panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
         }
     }
 }

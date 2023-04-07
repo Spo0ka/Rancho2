@@ -364,5 +364,20 @@
   <ItemGroup>
     <None Include="Resources\image_2023-04-07_13-46-39.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-07_14-01-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-07_14-01-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-07_14-01-44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sexo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-07_14-11-32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

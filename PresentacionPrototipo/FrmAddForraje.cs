@@ -21,7 +21,9 @@ namespace PresentacionPrototipo
 
         private void FrmAddForraje_Load(object sender, EventArgs e)
         {
+            btnSubir.BackColor = ColorTranslator.FromHtml("#FFF689");
             btnGuardar.BackColor = ColorTranslator.FromHtml("#FFF689");
+            btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
             panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
         }
     }

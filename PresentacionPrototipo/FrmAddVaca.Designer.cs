@@ -64,7 +64,7 @@
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Location = new System.Drawing.Point(42, 109);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(102, 26);
             this.textBox1.TabIndex = 30;
@@ -123,7 +123,7 @@
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Location = new System.Drawing.Point(42, 193);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(99, 26);
             this.textBox2.TabIndex = 33;
@@ -132,7 +132,7 @@
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Location = new System.Drawing.Point(44, 272);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(99, 26);
             this.textBox3.TabIndex = 34;
@@ -141,7 +141,7 @@
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4.Location = new System.Drawing.Point(226, 193);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(99, 26);
             this.textBox4.TabIndex = 38;
@@ -160,7 +160,7 @@
             // 
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox5.Location = new System.Drawing.Point(226, 109);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(102, 26);
             this.textBox5.TabIndex = 36;
@@ -183,7 +183,7 @@
             this.btnAceptar.ForeColor = System.Drawing.Color.Black;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAceptar.Location = new System.Drawing.Point(424, 349);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(107, 34);
             this.btnAceptar.TabIndex = 47;
@@ -199,7 +199,7 @@
             this.btnSubir.Image = global::PresentacionPrototipo.Properties.Resources.image_2023_04_06_19_31_40;
             this.btnSubir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSubir.Location = new System.Drawing.Point(480, 272);
-            this.btnSubir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSubir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSubir.Name = "btnSubir";
             this.btnSubir.Size = new System.Drawing.Size(92, 42);
             this.btnSubir.TabIndex = 48;
@@ -216,7 +216,7 @@
             this.btnSalir.Image = global::PresentacionPrototipo.Properties.Resources.flecha;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.Location = new System.Drawing.Point(535, 349);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(108, 34);
             this.btnSalir.TabIndex = 46;
@@ -229,7 +229,7 @@
             this.pictureBox7.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.image_2023_04_06_19_31_30;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7.Location = new System.Drawing.Point(403, 59);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(240, 209);
             this.pictureBox7.TabIndex = 45;
@@ -240,7 +240,7 @@
             this.pictureBox6.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.image_2023_04_06_19_32_30;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6.Location = new System.Drawing.Point(11, 306);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(77, 77);
             this.pictureBox6.TabIndex = 44;
@@ -250,8 +250,8 @@
             // 
             this.pictureBox5.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.image_2023_04_06_19_31_00;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(304, 82);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Location = new System.Drawing.Point(302, 79);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(26, 28);
             this.pictureBox5.TabIndex = 43;
@@ -262,7 +262,7 @@
             this.pictureBox4.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.image_2023_04_06_19_31_19;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.Location = new System.Drawing.Point(356, 171);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(21, 22);
             this.pictureBox4.TabIndex = 42;
@@ -273,7 +273,7 @@
             this.pictureBox3.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.image_2023_04_06_19_31_25;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Location = new System.Drawing.Point(137, 246);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(21, 22);
             this.pictureBox3.TabIndex = 41;
@@ -284,7 +284,7 @@
             this.pictureBox2.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.image_2023_04_06_19_31_13;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(123, 167);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(21, 22);
             this.pictureBox2.TabIndex = 40;
@@ -295,7 +295,7 @@
             this.pictureBox1.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.image_2023_04_06_19_31_07;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(123, 83);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(21, 22);
             this.pictureBox1.TabIndex = 39;
