@@ -144,12 +144,12 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.image_2023_04_06_19_57_23;
+            this.pictureBox3.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.image_2023_04_06_19_31_19;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Location = new System.Drawing.Point(512, 69);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(67, 58);
+            this.pictureBox3.Size = new System.Drawing.Size(54, 58);
             this.pictureBox3.TabIndex = 64;
             this.pictureBox3.TabStop = false;
             // 
