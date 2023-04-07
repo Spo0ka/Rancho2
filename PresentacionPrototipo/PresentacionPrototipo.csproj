@@ -319,5 +319,29 @@
   <ItemGroup>
     <None Include="Resources\agregar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-31-00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-31-07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-31-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-31-19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-31-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-31-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-31-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-32-30.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
