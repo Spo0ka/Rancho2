@@ -37,7 +37,7 @@ namespace PresentacionPrototipo
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
-            FrmAddVacunacionVa frmAddVacunacionVa = new FrmAddVacunacionVa();
+            FrmMedicacionVaca frmAddVacunacionVa = new FrmMedicacionVaca();
             Mv.Id = -1;
             frmAddVacunacionVa.ShowDialog();
         }
@@ -50,7 +50,7 @@ namespace PresentacionPrototipo
             Mv.Fecha = DtgMostrar.Rows[Fila].Cells[3].Value.ToString();
             switch (Columna)
             {
-                case 4: { FrmAddVacunacionVa frmAddVacunacionVa = new FrmAddVacunacionVa();
+                case 4: { FrmMedicacionVaca frmAddVacunacionVa = new FrmMedicacionVaca();
                         frmAddVacunacionVa.ShowDialog();
                     } break;
                 case 5: { Mvv.Borrar(Mv.Id);} break; 

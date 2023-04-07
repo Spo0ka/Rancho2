@@ -58,11 +58,11 @@
     <Compile Include="FrmAddVacunacionBe.Designer.cs">
       <DependentUpon>FrmAddVacunacionBe.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAddVacunacionVa.cs">
+    <Compile Include="FrmMedicacionVaca.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAddVacunacionVa.Designer.cs">
-      <DependentUpon>FrmAddVacunacionVa.cs</DependentUpon>
+    <Compile Include="FrmMedicacionVaca.Designer.cs">
+      <DependentUpon>FrmMedicacionVaca.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLogIn.cs">
       <SubType>Form</SubType>
@@ -178,8 +178,8 @@
     <EmbeddedResource Include="FrmAddVacunacionBe.resx">
       <DependentUpon>FrmAddVacunacionBe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAddVacunacionVa.resx">
-      <DependentUpon>FrmAddVacunacionVa.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMedicacionVaca.resx">
+      <DependentUpon>FrmMedicacionVaca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBecerros.resx">
       <DependentUpon>FrmBecerros.cs</DependentUpon>
@@ -354,6 +354,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image_2023-04-06_19-57-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disco-flexible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-07_13-46-39.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

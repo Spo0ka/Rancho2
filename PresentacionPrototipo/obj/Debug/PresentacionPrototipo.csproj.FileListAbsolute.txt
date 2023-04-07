@@ -96,7 +96,6 @@ C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyec
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmAddMedicamento.resources
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmAddVaca.resources
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmAddVacunacionBe.resources
-C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmAddVacunacionVa.resources
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmBecerros.resources
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmForraje.resources
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmMedicamento.resources
@@ -115,3 +114,4 @@ C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyec
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmMenuTrabajador.resources
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmMenuPro.resources
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmPantallaDeMostrado.resources
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmMedicacionVaca.resources
