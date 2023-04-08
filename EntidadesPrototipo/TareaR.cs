@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace EntidadesPrototipo
 {
-    class TareaR
+    public class TareaR
     {
+        public TareaR(int id, int idTarea, string cumplio)
+        {
+            Id = id;
+            IdTarea = idTarea;
+            Cumplio = cumplio;
+        }
+
+        public int Id { get; set; }
+        public int IdTarea { get; set; }
+        public string Cumplio { get; set; }
     }
 }
