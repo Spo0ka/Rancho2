@@ -473,6 +473,16 @@ namespace PresentacionPrototipo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap me_gusta {
+            get {
+                object obj = ResourceManager.GetObject("me_gusta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap medicamentos {
             get {
                 object obj = ResourceManager.GetObject("medicamentos", resourceCulture);
@@ -486,6 +496,16 @@ namespace PresentacionPrototipo.Properties {
         internal static System.Drawing.Bitmap medicina {
             get {
                 object obj = ResourceManager.GetObject("medicina", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap planificacion {
+            get {
+                object obj = ResourceManager.GetObject("planificacion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

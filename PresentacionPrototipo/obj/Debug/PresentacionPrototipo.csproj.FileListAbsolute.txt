@@ -98,7 +98,6 @@ C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyec
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmBecerros.resources
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmForraje.resources
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmMedicamento.resources
-C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmMenu.resources
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmPrincipal.resources
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmVacas.resources
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmVacunacionBe.resources
@@ -112,6 +111,8 @@ C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyec
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmLogIn.resources
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmMenuTrabajador.resources
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmMenuPro.resources
-C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmPantallaDeMostrado.resources
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmMedicacionVaca.resources
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmAddMedicacionBe.resources
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrnAddTareas.resources
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmTareas.resources
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmVerTareas.resources

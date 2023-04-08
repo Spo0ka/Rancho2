@@ -88,6 +88,24 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTareas.Designer.cs">
+      <DependentUpon>FrmTareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVerTareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVerTareas.Designer.cs">
+      <DependentUpon>FrmVerTareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrnAddTareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrnAddTareas.Designer.cs">
+      <DependentUpon>FrnAddTareas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="FrmAddBecerro.cs">
       <SubType>Form</SubType>
@@ -190,6 +208,9 @@
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmTareas.resx">
+      <DependentUpon>FrmTareas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmVacas.resx">
       <DependentUpon>FrmVacas.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,6 +219,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVacunacionVa.resx">
       <DependentUpon>FrmVacunacionVa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVerTareas.resx">
+      <DependentUpon>FrmVerTareas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrnAddTareas.resx">
+      <DependentUpon>FrnAddTareas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -363,6 +390,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planificacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\me-gusta.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
