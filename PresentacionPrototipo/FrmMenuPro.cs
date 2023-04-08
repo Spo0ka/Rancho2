@@ -30,5 +30,10 @@ namespace PresentacionPrototipo
             btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
             panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
         }
+
+        private void btnAlmForraje_Click(object sender, EventArgs e)
+        {
+            frm
+        }
     }
 }

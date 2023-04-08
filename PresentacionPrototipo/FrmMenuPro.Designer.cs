@@ -274,6 +274,7 @@
             this.btnAlmForraje.Size = new System.Drawing.Size(90, 41);
             this.btnAlmForraje.TabIndex = 24;
             this.btnAlmForraje.UseVisualStyleBackColor = false;
+            this.btnAlmForraje.Click += new System.EventHandler(this.btnAlmForraje_Click);
             // 
             // FrmMenuPro
             // 
