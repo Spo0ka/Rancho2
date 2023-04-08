@@ -33,7 +33,8 @@ namespace PresentacionPrototipo
 
         private void btnAlmForraje_Click(object sender, EventArgs e)
         {
-            frm
+            FrmForraje Forraje = new FrmForraje();
+            Forraje.ShowDialog();
         }
     }
 }
