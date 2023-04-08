@@ -23,44 +23,15 @@ namespace PresentacionPrototipo
             Mv = new ManejadorVaca();
         }
 
-        private void BtnAgregar_Click(object sender, EventArgs e)
-        {
-            FrmAddVaca frmAddVaca = new FrmAddVaca();
-            V.Arete = "-1";
-            frmAddVaca.ShowDialog();
-        }
-
-        private void TxtBuscar_TextChanged(object sender, EventArgs e)
-        {
-            Mv.Mostrar(DtgMostrar, TxtBuscar.Text);
-        }
-
-        private void DtgMostrar_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-            V.Arete = DtgMostrar.Rows[fila].Cells[0].Value.ToString();
-            V.Raza = DtgMostrar.Rows[fila].Cells[1].Value.ToString();
-            V.Peso = DtgMostrar.Rows[fila].Cells[2].Value.ToString();
-            V.LitrosLeche = DtgMostrar.Rows[fila].Cells[3].Value.ToString();
-            switch (columna)
-            {
-                case 4: { FrmAddBecerro frmAddBecerro = new FrmAddBecerro();
-                        frmAddBecerro.ShowDialog();
-                    } break;
-                case 5: { Mv.Borrar(V.Arete); } break;
-                default: break;
-            }
-        }
-
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void DtgMostrar_CellEnter(object sender, DataGridViewCellEventArgs e)
+        private void FrmVacas_Load(object sender, EventArgs e)
         {
-            fila = e.RowIndex;
-            columna = e.ColumnIndex;
+
+            btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
         }
     }
 }
