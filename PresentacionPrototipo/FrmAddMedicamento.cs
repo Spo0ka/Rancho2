@@ -14,31 +14,17 @@ namespace PresentacionPrototipo
 {
     public partial class FrmAddMedicamento : Form
     {
-        ManejadorMedicamento Mm;
         public FrmAddMedicamento()
         {
             InitializeComponent();
-            Mm = new ManejadorMedicamento();
-            if (FrmMedicamento.M.Id>0)
-            {
-                TxtCantidad.Text = FrmMedicamento.M.Cantidad.ToString();
-                TxtNombre.Text = FrmMedicamento.M.Nombre;
-            }
         }
 
-        private void BtnSalir_Click(object sender, EventArgs e)
+        private void FrmAddMedicamento_Load(object sender, EventArgs e)
         {
-            Close();
-        }
-
-        private void BtnGuardar_Click(object sender, EventArgs e)
-        {
-            AlmacenMedicamento M = new AlmacenMedicamento(0,"",0);
-            M.Id = FrmMedicamento.M.Id;
-            M.Nombre = TxtNombre.Text;
-            M.Cantidad = int.Parse(TxtCantidad.Text);
-            Mm.guardar(M);
-            Close();
+            btnSubir.BackColor = ColorTranslator.FromHtml("#FFF689");
+            btnAceptar.BackColor = ColorTranslator.FromHtml("#FFF689");
+            btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
+            panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
         }
     }
 }

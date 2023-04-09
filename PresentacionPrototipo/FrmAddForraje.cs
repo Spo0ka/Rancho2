@@ -14,31 +14,17 @@ namespace PresentacionPrototipo
 {
     public partial class FrmAddForraje : Form
     {
-        ManejadorForraje Mf;
         public FrmAddForraje()
         {
             InitializeComponent();
-            Mf = new ManejadorForraje();
-            if (FrmForraje.F.Id>0)
-            {
-                TxtCantidad.Text = FrmForraje.F.Cantidad.ToString();
-                TxtNombre.Text = FrmForraje.F.Nombre;
-            }
         }
 
-        private void BtnSalir_Click(object sender, EventArgs e)
+        private void FrmAddForraje_Load(object sender, EventArgs e)
         {
-            Close();
-        }
-
-        private void BtnGuardar_Click(object sender, EventArgs e)
-        {
-            AlmacenForraje F = new AlmacenForraje(0, "", 0);
-            F.Id = FrmForraje.F.Id;
-            F.Cantidad = int.Parse(TxtCantidad.Text);
-            F.Nombre = TxtNombre.Text;
-            Mf.guardar(F);
-            Close();
+            btnSubir.BackColor = ColorTranslator.FromHtml("#FFF689");
+            btnGuardar.BackColor = ColorTranslator.FromHtml("#FFF689");
+            btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
+            panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
         }
     }
 }

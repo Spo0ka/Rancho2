@@ -28,39 +28,14 @@ namespace PresentacionPrototipo
             Close();
         }
 
-        private void BtnAgregar_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            FrmAddForraje frmAddForraje = new FrmAddForraje();
-            F.Id = -1;
-            frmAddForraje.ShowDialog();
+
         }
 
-        private void TxtBuscar_TextChanged(object sender, EventArgs e)
+        private void FrmForraje_Load(object sender, EventArgs e)
         {
-            Mf.Mostrar(DtgMostrar,TxtBuscar.Text);
-        }
-
-        private void DtgMostrar_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-            F.Id = int.Parse(DtgMostrar.Rows[fila].Cells[0].Value.ToString());
-            F.Nombre = DtgMostrar.Rows[fila].Cells[1].Value.ToString();
-            F.Cantidad = int.Parse(DtgMostrar.Rows[fila].Cells[2].Value.ToString());
-            switch (columna)
-            {
-                case 3: { FrmAddForraje frmAddForraje = new FrmAddForraje();
-                        frmAddForraje.ShowDialog();
-                    } break;
-                case 4: { Mf.Borrar(F.Id); } break;
-                default:
-                    break;
-            }
-        }
-
-        private void DtgMostrar_CellEndEdit(object sender, DataGridViewCellEventArgs e)
-        {
-            fila = e.RowIndex;
-            columna = e.ColumnIndex;
+            btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
         }
     }
 }

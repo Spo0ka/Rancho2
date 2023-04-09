@@ -14,34 +14,17 @@ namespace PresentacionPrototipo
 {
     public partial class FrmAddVaca : Form
     {
-        ManejadorVaca Mv;
         public FrmAddVaca()
         {
             InitializeComponent();
-            Mv = new ManejadorVaca();
-            if (FrmVacas.V.Arete != "-1")
-            {
-                TxtArete.Text = FrmVacas.V.Arete;
-                TxtLleche.Text = FrmVacas.V.LitrosLeche;
-                TxtPeso.Text = FrmVacas.V.Peso;
-                TxtRaza.Text = FrmVacas.V.Raza;
-            }
         }
 
-        private void BtnSalir_Click(object sender, EventArgs e)
+        private void FrmAddVaca_Load(object sender, EventArgs e)
         {
-            Close();
-        }
-
-        private void BtnGuardar_Click(object sender, EventArgs e)
-        {
-            Vacas V = new Vacas("", "", "", "");
-            V.Arete = TxtArete.Text;
-            V.Raza =TxtRaza.Text;
-            V.Peso =TxtPeso.Text;
-            V.LitrosLeche =TxtLleche.Text ;
-            Mv.guardar(V);
-            Close();
+            btnAceptar.BackColor = ColorTranslator.FromHtml("#FFF689");
+            btnSubir.BackColor = ColorTranslator.FromHtml("#FFF689");
+            btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
+            panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
         }
     }
 }

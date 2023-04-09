@@ -10,3 +10,9 @@ C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyec
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.CoreCompileInputs.cache
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.dll
 C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.pdb
+C:\Users\ddr4z\Documents\A\Rancho2-main\EntidadesPrototipo\bin\Debug\EntidadesPrototipo.dll
+C:\Users\ddr4z\Documents\A\Rancho2-main\EntidadesPrototipo\bin\Debug\EntidadesPrototipo.pdb
+C:\Users\ddr4z\Documents\A\Rancho2-main\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.AssemblyReference.cache
+C:\Users\ddr4z\Documents\A\Rancho2-main\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.CoreCompileInputs.cache
+C:\Users\ddr4z\Documents\A\Rancho2-main\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.dll
+C:\Users\ddr4z\Documents\A\Rancho2-main\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.pdb

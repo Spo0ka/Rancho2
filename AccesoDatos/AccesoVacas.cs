@@ -10,22 +10,22 @@ namespace AccesoDatos
 {
     public class AccesoVacas : Iconexion
     {
-        Base b = new Base("localhost", "root", "", "rn");
+        Base b = new Base("localhost", "root", "", "GM");
 
         public void Borrar(dynamic Entidad)
         {
-            b.comando(string.Format("Call DeleteVacas('{0}')", Entidad.Arete));
+            b.comando(string.Format("DELETE FROM vacas WHERE vacas.Arete ='{0}'", Entidad.Arete));
         }
 
         public void Guardar(dynamic Entidad)
         {
-            b.comando(string.Format("Call InsertVaca('{0}','{1}','{2}','{3}')", Entidad.Arete, Entidad.Raza, Entidad.Peso,
+            b.comando(string.Format("Call insertVacas('{0}','{1}','{2}','{3}',{4})", Entidad.Arete, Entidad.Raza,Entidad.Fdn, Entidad.Peso,
                 Entidad.LitrosLeche));
         }
 
         public DataSet Mostrar(string Filtro)
         {
-            return b.Obtener(string.Format("Call ShowVacas('%{0}%')", Filtro), "vacas");
+            return b.Obtener(string.Format(" SELECT * FROM ver_vacas WHERE Arete LIKE '%{0}%'", Filtro), "vacas");
             
         }
     }

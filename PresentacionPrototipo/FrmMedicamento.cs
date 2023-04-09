@@ -28,42 +28,9 @@ namespace PresentacionPrototipo
            Close();
         }
 
-        private void BtnAgregar_Click(object sender, EventArgs e)
+        private void FrmMedicamento_Load(object sender, EventArgs e)
         {
-            FrmAddMedicamento frmAddMedicamento = new FrmAddMedicamento();
-            M.Id = -1;
-            frmAddMedicamento.ShowDialog();
-
-        }
-
-        private void TxtBuscar_TextChanged(object sender, EventArgs e)
-        {
-            Mm.Mostrar(DtgMostrar,TxtBuscar.Text);
-        }
-
-        
-
-        private void DtgMostrar_CellEnter(object sender, DataGridViewCellEventArgs e)
-        {
-            fila = e.RowIndex;
-            columna = e.ColumnIndex;
-        }
-        private void DtgMostrar_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-            M.Id = int.Parse(DtgMostrar.Rows[fila].Cells[0].Value.ToString());
-            M.Nombre = DtgMostrar.Rows[fila].Cells[1].Value.ToString();
-            M.Cantidad = int.Parse(DtgMostrar.Rows[fila].Cells[2].Value.ToString());
-            switch (columna)
-            {
-                case 3: { FrmAddMedicamento frmAddMedicamento = new FrmAddMedicamento();
-                        frmAddMedicamento.ShowDialog();
-                    }
-            break;
-                case 4: { Mm.Borrar(M.Id); } break;
-                default:
-                    break;
+            btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
         }
     }
-}
 }

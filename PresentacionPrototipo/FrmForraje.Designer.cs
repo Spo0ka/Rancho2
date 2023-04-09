@@ -28,95 +28,117 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnSalir = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.BtnAgregar = new System.Windows.Forms.Button();
-            this.TxtBuscar = new System.Windows.Forms.TextBox();
-            this.DtgMostrar = new System.Windows.Forms.DataGridView();
+            this.dgtForraje = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgtForraje)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtgMostrar)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // textBox1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
-            this.panel1.Controls.Add(this.BtnSalir);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(997, 100);
-            this.panel1.TabIndex = 5;
-            // 
-            // BtnSalir
-            // 
-            this.BtnSalir.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.cerrar;
-            this.BtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnSalir.Location = new System.Drawing.Point(913, 34);
-            this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(51, 36);
-            this.BtnSalir.TabIndex = 4;
-            this.BtnSalir.UseVisualStyleBackColor = true;
-            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(449, 84);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(244, 26);
+            this.textBox1.TabIndex = 42;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(401, 39);
+            this.label1.Location = new System.Drawing.Point(445, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Forraje";
+            this.label1.Size = new System.Drawing.Size(65, 20);
+            this.label1.TabIndex = 41;
+            this.label1.Text = "Nombre";
             // 
-            // BtnAgregar
+            // dgtForraje
             // 
-            this.BtnAgregar.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.anadir;
-            this.BtnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnAgregar.Location = new System.Drawing.Point(904, 118);
-            this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.Size = new System.Drawing.Size(51, 36);
-            this.BtnAgregar.TabIndex = 7;
-            this.BtnAgregar.UseVisualStyleBackColor = true;
-            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
+            this.dgtForraje.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgtForraje.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgtForraje.Location = new System.Drawing.Point(12, 58);
+            this.dgtForraje.Name = "dgtForraje";
+            this.dgtForraje.Size = new System.Drawing.Size(408, 312);
+            this.dgtForraje.TabIndex = 40;
             // 
-            // TxtBuscar
+            // panel1
             // 
-            this.TxtBuscar.Location = new System.Drawing.Point(30, 121);
-            this.TxtBuscar.Name = "TxtBuscar";
-            this.TxtBuscar.Size = new System.Drawing.Size(868, 31);
-            this.TxtBuscar.TabIndex = 6;
-            this.TxtBuscar.TextChanged += new System.EventHandler(this.TxtBuscar_TextChanged);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(719, 36);
+            this.panel1.TabIndex = 39;
             // 
-            // DtgMostrar
+            // label2
             // 
-            this.DtgMostrar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgMostrar.Location = new System.Drawing.Point(30, 161);
-            this.DtgMostrar.Margin = new System.Windows.Forms.Padding(6);
-            this.DtgMostrar.Name = "DtgMostrar";
-            this.DtgMostrar.Size = new System.Drawing.Size(934, 429);
-            this.DtgMostrar.TabIndex = 4;
-            this.DtgMostrar.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtgMostrar_CellClick);
-            this.DtgMostrar.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtgMostrar_CellEndEdit);
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(340, 8);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 20);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "Forraje";
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.White;
+            this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.ForeColor = System.Drawing.Color.White;
+            this.btnSalir.Image = global::PresentacionPrototipo.Properties.Resources.flecha;
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalir.Location = new System.Drawing.Point(594, 317);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(105, 42);
+            this.btnSalir.TabIndex = 44;
+            this.btnSalir.Text = "Back";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSalir.UseVisualStyleBackColor = false;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.White;
+            this.btnAdd.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.agregar;
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.ForeColor = System.Drawing.Color.Black;
+            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAdd.Location = new System.Drawing.Point(449, 135);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(42, 42);
+            this.btnAdd.TabIndex = 43;
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // FrmForraje
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(996, 605);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(713, 384);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dgtForraje);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.BtnAgregar);
-            this.Controls.Add(this.TxtBuscar);
-            this.Controls.Add(this.DtgMostrar);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmForraje";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmForraje";
+            this.Load += new System.EventHandler(this.FrmForraje_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgtForraje)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtgMostrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,11 +146,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button BtnAgregar;
-        private System.Windows.Forms.TextBox TxtBuscar;
-        private System.Windows.Forms.DataGridView DtgMostrar;
+        private System.Windows.Forms.DataGridView dgtForraje;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
     }
 }

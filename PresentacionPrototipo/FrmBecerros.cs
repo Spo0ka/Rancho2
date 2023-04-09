@@ -25,46 +25,10 @@ namespace PresentacionPrototipo
             Mb = new ManejadorBecerros();
         }
 
-        private void DtgMostrar_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void FrmBecerros_Load(object sender, EventArgs e)
         {
-           
-            b.Arete = DtgMostrar.Rows[fila].Cells[0].Value.ToString();
-            b.Raza = DtgMostrar.Rows[fila].Cells[1].Value.ToString();
-            b.Fdn = DtgMostrar.Rows[fila].Cells[2].Value.ToString();
-            b.Peso = DtgMostrar.Rows[fila].Cells[3].Value.ToString();
-            b.Sexo = DtgMostrar.Rows[fila].Cells[4].Value.ToString();
-            switch (columna)
-            {
-                case 5: { FrmAddBecerro frmAddBecerro = new FrmAddBecerro();
-                        frmAddBecerro.ShowDialog();
-                    } break;
-                case 6: { Mb.Borrar(b.Arete); } break;
-                default:
-                    break;
-            }
-        }
 
-        private void BtnSalir_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void BtnAgregar_Click(object sender, EventArgs e)
-        {
-            FrmAddBecerro frmAddBecerro = new FrmAddBecerro();
-            b.Arete = "-1";
-            frmAddBecerro.ShowDialog();
-        }
-
-        private void TxtBuscar_TextChanged(object sender, EventArgs e)
-        {
-            Mb.Mostrar(DtgMostrar,TxtBuscar.Text);
-        }
-
-        private void DtgMostrar_CellEnter(object sender, DataGridViewCellEventArgs e)
-        {
-            columna = e.ColumnIndex;
-            fila = e.RowIndex;
+            btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
         }
     }
 }

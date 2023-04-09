@@ -26,6 +26,13 @@ namespace PresentacionPrototipo
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             pictureBox2.BorderStyle = BorderStyle.FixedSingle;
+            Application.Exit();
+        }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            FrmLogIn login = new FrmLogIn();
+            login.ShowDialog();
         }
     }
 }

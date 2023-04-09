@@ -46,35 +46,83 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAddRForraje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddRForraje.Designer.cs">
+      <DependentUpon>FrmAddRForraje.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAddVaca.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAddVaca.Designer.cs">
       <DependentUpon>FrmAddVaca.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAddVacunacionBe.cs">
+    <Compile Include="FrmAddMedicacionBe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAddVacunacionBe.Designer.cs">
-      <DependentUpon>FrmAddVacunacionBe.cs</DependentUpon>
+    <Compile Include="FrmAddMedicacionBe.Designer.cs">
+      <DependentUpon>FrmAddMedicacionBe.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAddVacunacionVa.cs">
+    <Compile Include="FrmATarea.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAddVacunacionVa.Designer.cs">
-      <DependentUpon>FrmAddVacunacionVa.cs</DependentUpon>
+    <Compile Include="FrmATarea.Designer.cs">
+      <DependentUpon>FrmATarea.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMenu.cs">
+    <Compile Include="FrmMedicacionVaca.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMenu.Designer.cs">
-      <DependentUpon>FrmMenu.cs</DependentUpon>
+    <Compile Include="FrmMedicacionVaca.Designer.cs">
+      <DependentUpon>FrmMedicacionVaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogIn.Designer.cs">
+      <DependentUpon>FrmLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuPro.Designer.cs">
+      <DependentUpon>FrmMenuPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuTrabajador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuTrabajador.Designer.cs">
+      <DependentUpon>FrmMenuTrabajador.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRForraje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRForraje.Designer.cs">
+      <DependentUpon>FrmRForraje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTareas.Designer.cs">
+      <DependentUpon>FrmTareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVerTareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVerTareas.Designer.cs">
+      <DependentUpon>FrmVerTareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrnAddTareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrnAddTareas.Designer.cs">
+      <DependentUpon>FrnAddTareas.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="FrmAddBecerro.cs">
@@ -148,14 +196,20 @@
     <EmbeddedResource Include="FrmAddMedicamento.resx">
       <DependentUpon>FrmAddMedicamento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddRForraje.resx">
+      <DependentUpon>FrmAddRForraje.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAddVaca.resx">
       <DependentUpon>FrmAddVaca.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAddVacunacionBe.resx">
-      <DependentUpon>FrmAddVacunacionBe.cs</DependentUpon>
+    <EmbeddedResource Include="FrmAddMedicacionBe.resx">
+      <DependentUpon>FrmAddMedicacionBe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAddVacunacionVa.resx">
-      <DependentUpon>FrmAddVacunacionVa.cs</DependentUpon>
+    <EmbeddedResource Include="FrmATarea.resx">
+      <DependentUpon>FrmATarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMedicacionVaca.resx">
+      <DependentUpon>FrmMedicacionVaca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBecerros.resx">
       <DependentUpon>FrmBecerros.cs</DependentUpon>
@@ -163,14 +217,26 @@
     <EmbeddedResource Include="FrmForraje.resx">
       <DependentUpon>FrmForraje.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogIn.resx">
+      <DependentUpon>FrmLogIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMedicamento.resx">
       <DependentUpon>FrmMedicamento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMenu.resx">
-      <DependentUpon>FrmMenu.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMenuPro.resx">
+      <DependentUpon>FrmMenuPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuTrabajador.resx">
+      <DependentUpon>FrmMenuTrabajador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRForraje.resx">
+      <DependentUpon>FrmRForraje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTareas.resx">
+      <DependentUpon>FrmTareas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVacas.resx">
       <DependentUpon>FrmVacas.cs</DependentUpon>
@@ -180,6 +246,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVacunacionVa.resx">
       <DependentUpon>FrmVacunacionVa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVerTareas.resx">
+      <DependentUpon>FrmVerTareas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrnAddTareas.resx">
+      <DependentUpon>FrnAddTareas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -267,6 +339,90 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image_2023-04-04_13-38-34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candado-abierto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-31-00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-31-07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-31-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-31-19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-31-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-31-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-31-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-32-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-53-02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-55-55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-57-23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-06_19-57-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disco-flexible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-07_13-46-39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-07_14-01-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-07_14-01-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-07_14-01-44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sexo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2023-04-07_14-11-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planificacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\me-gusta.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
