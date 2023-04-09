@@ -38,6 +38,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnAgregarTarea = new System.Windows.Forms.Button();
             this.btnVacBecerros = new System.Windows.Forms.Button();
             this.btnVacVacas = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -47,8 +49,6 @@
             this.btnVacas = new System.Windows.Forms.Button();
             this.btnAlmMedicamento = new System.Windows.Forms.Button();
             this.btnAlmForraje = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnAgregarTarea = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -149,6 +149,31 @@
             this.label10.Text = "Vacunación vacas";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(428, 293);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(111, 20);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "Agregar Tarea";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnAgregarTarea
+            // 
+            this.btnAgregarTarea.BackColor = System.Drawing.Color.White;
+            this.btnAgregarTarea.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.image_2023_04_04_13_11_56;
+            this.btnAgregarTarea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAgregarTarea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarTarea.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarTarea.Location = new System.Drawing.Point(432, 236);
+            this.btnAgregarTarea.Name = "btnAgregarTarea";
+            this.btnAgregarTarea.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnAgregarTarea.Size = new System.Drawing.Size(90, 41);
+            this.btnAgregarTarea.TabIndex = 43;
+            this.btnAgregarTarea.UseVisualStyleBackColor = false;
+            this.btnAgregarTarea.Click += new System.EventHandler(this.btnAgregarTarea_Click);
+            // 
             // btnVacBecerros
             // 
             this.btnVacBecerros.BackColor = System.Drawing.Color.White;
@@ -194,6 +219,7 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnTareas
             // 
@@ -284,31 +310,6 @@
             this.btnAlmForraje.TabIndex = 24;
             this.btnAlmForraje.UseVisualStyleBackColor = false;
             this.btnAlmForraje.Click += new System.EventHandler(this.btnAlmForraje_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(428, 293);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 20);
-            this.label3.TabIndex = 42;
-            this.label3.Text = "Agregar Tarea";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnAgregarTarea
-            // 
-            this.btnAgregarTarea.BackColor = System.Drawing.Color.White;
-            this.btnAgregarTarea.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.image_2023_04_04_13_11_56;
-            this.btnAgregarTarea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAgregarTarea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarTarea.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarTarea.Location = new System.Drawing.Point(432, 236);
-            this.btnAgregarTarea.Name = "btnAgregarTarea";
-            this.btnAgregarTarea.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnAgregarTarea.Size = new System.Drawing.Size(90, 41);
-            this.btnAgregarTarea.TabIndex = 43;
-            this.btnAgregarTarea.UseVisualStyleBackColor = false;
-            this.btnAgregarTarea.Click += new System.EventHandler(this.btnAgregarTarea_Click);
             // 
             // FrmMenuPro
             // 

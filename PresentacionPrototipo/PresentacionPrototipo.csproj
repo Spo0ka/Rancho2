@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAddRForraje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddRForraje.Designer.cs">
+      <DependentUpon>FrmAddRForraje.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAddVaca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAddMedicamento.resx">
       <DependentUpon>FrmAddMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddRForraje.resx">
+      <DependentUpon>FrmAddRForraje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAddVaca.resx">
       <DependentUpon>FrmAddVaca.cs</DependentUpon>

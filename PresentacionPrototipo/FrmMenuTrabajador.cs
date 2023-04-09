@@ -28,5 +28,48 @@ namespace PresentacionPrototipo
             btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
             panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
         }
+
+        private void btnAlmForraje_Click(object sender, EventArgs e)
+        {
+            FrmForraje Forraje = new FrmForraje();
+            Forraje.ShowDialog();
+        }
+
+        private void btnAlmMedicamento_Click(object sender, EventArgs e)
+        {
+            FrmMedicamento Medicamento = new FrmMedicamento();
+            Medicamento.ShowDialog();
+        }
+
+        private void btnVacas_Click(object sender, EventArgs e)
+        {
+            FrmVacunacionVa VVaca = new FrmVacunacionVa();
+            VVaca.ShowDialog();
+        }
+
+        private void btnBecerro_Click(object sender, EventArgs e)
+        {
+            FrmVacunacionBe VBecerro = new FrmVacunacionBe();
+            VBecerro.ShowDialog();
+        }
+
+        private void btnForraje_Click(object sender, EventArgs e)
+        {
+            FrmRForraje RForraje = new FrmRForraje();
+            RForraje.ShowDialog();
+        }
+
+        private void btnTareas_Click(object sender, EventArgs e)
+        {
+            FrmVerTareas TareasR = new FrmVerTareas();
+            TareasR.ShowDialog();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            FrmLogIn Login = new FrmLogIn();
+            Login.ShowDialog();
+            Close();
+        }
     }
 }

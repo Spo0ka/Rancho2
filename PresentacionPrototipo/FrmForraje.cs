@@ -28,6 +28,11 @@ namespace PresentacionPrototipo
             Close();
         }
 
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void FrmForraje_Load(object sender, EventArgs e)
         {
             btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");

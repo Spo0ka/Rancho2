@@ -177,3 +177,6 @@ C:\Users\ddr4z\Documents\A\Rancho2-main\PresentacionPrototipo\obj\Debug\Presenta
 C:\Users\ddr4z\Documents\A\Rancho2-main\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.csproj.CopyComplete
 C:\Users\ddr4z\Documents\A\Rancho2-main\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.exe
 C:\Users\ddr4z\Documents\A\Rancho2-main\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.pdb
+C:\Users\ddr4z\Documents\A\Rancho2-main\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmAddRForraje.resources
+C:\Users\ddr4z\Documents\A\Rancho2-main\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmATarea.resources
+C:\Users\ddr4z\Documents\A\Rancho2-main\PresentacionPrototipo\obj\Debug\PresentacionPrototipo.FrmRForraje.resources

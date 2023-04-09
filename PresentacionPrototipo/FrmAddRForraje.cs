@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,12 +10,11 @@ using System.Windows.Forms;
 
 namespace PresentacionPrototipo
 {
-    public class Program
+    public partial class FrmAddRForraje : Form
     {
-        [STAThread]
-        static void Main() 
+        public FrmAddRForraje()
         {
-            Application.Run(new FrmMenuPro());
+            InitializeComponent();
         }
     }
 }

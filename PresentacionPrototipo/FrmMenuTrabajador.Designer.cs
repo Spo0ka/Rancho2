@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAlmForraje = new System.Windows.Forms.Button();
             this.btnAlmMedicamento = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +56,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(600, 48);
             this.panel1.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(214, 14);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(169, 20);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "MENÚ TRABAJADOR";
             // 
             // label3
             // 
@@ -80,6 +90,7 @@
             this.btnAlmForraje.Size = new System.Drawing.Size(90, 41);
             this.btnAlmForraje.TabIndex = 10;
             this.btnAlmForraje.UseVisualStyleBackColor = false;
+            this.btnAlmForraje.Click += new System.EventHandler(this.btnAlmForraje_Click);
             // 
             // btnAlmMedicamento
             // 
@@ -94,6 +105,7 @@
             this.btnAlmMedicamento.Size = new System.Drawing.Size(90, 41);
             this.btnAlmMedicamento.TabIndex = 11;
             this.btnAlmMedicamento.UseVisualStyleBackColor = false;
+            this.btnAlmMedicamento.Click += new System.EventHandler(this.btnAlmMedicamento_Click);
             // 
             // btnVacas
             // 
@@ -108,6 +120,7 @@
             this.btnVacas.Size = new System.Drawing.Size(90, 41);
             this.btnVacas.TabIndex = 12;
             this.btnVacas.UseVisualStyleBackColor = false;
+            this.btnVacas.Click += new System.EventHandler(this.btnVacas_Click);
             // 
             // btnTareas
             // 
@@ -122,6 +135,7 @@
             this.btnTareas.Size = new System.Drawing.Size(90, 41);
             this.btnTareas.TabIndex = 15;
             this.btnTareas.UseVisualStyleBackColor = false;
+            this.btnTareas.Click += new System.EventHandler(this.btnTareas_Click);
             // 
             // btnForraje
             // 
@@ -136,6 +150,7 @@
             this.btnForraje.Size = new System.Drawing.Size(90, 41);
             this.btnForraje.TabIndex = 14;
             this.btnForraje.UseVisualStyleBackColor = false;
+            this.btnForraje.Click += new System.EventHandler(this.btnForraje_Click);
             // 
             // btnBecerro
             // 
@@ -150,6 +165,7 @@
             this.btnBecerro.Size = new System.Drawing.Size(90, 41);
             this.btnBecerro.TabIndex = 13;
             this.btnBecerro.UseVisualStyleBackColor = false;
+            this.btnBecerro.Click += new System.EventHandler(this.btnBecerro_Click);
             // 
             // label1
             // 
@@ -209,16 +225,6 @@
             this.label7.Text = "Tareas a realizar";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(214, 14);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(169, 20);
-            this.label8.TabIndex = 22;
-            this.label8.Text = "MENÚ TRABAJADOR";
-            // 
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.White;
@@ -234,6 +240,7 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // FrmMenuTrabajador
             // 

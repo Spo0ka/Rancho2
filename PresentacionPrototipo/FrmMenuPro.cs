@@ -27,6 +27,7 @@ namespace PresentacionPrototipo
             btnVacas.BackColor = ColorTranslator.FromHtml("#FFF689");
             btnVacBecerros.BackColor = ColorTranslator.FromHtml("#FFF689");
             btnVacVacas.BackColor = ColorTranslator.FromHtml("#FFF689");
+            btnAgregarTarea.BackColor = ColorTranslator.FromHtml("#FFF689");
             btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
             panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
         }
@@ -83,6 +84,13 @@ namespace PresentacionPrototipo
         {
             FrmVerTareas TareasR = new FrmVerTareas();
             TareasR.ShowDialog();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            FrmLogIn Login = new FrmLogIn();
+            Login.ShowDialog();
+            Close();
         }
     }
 }
