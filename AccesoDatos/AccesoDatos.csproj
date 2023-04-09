@@ -47,6 +47,8 @@
     <Compile Include="AccesoBecerros.cs" />
     <Compile Include="AccesoForraje.cs" />
     <Compile Include="AccesoMedicamento.cs" />
+    <Compile Include="AccesoRegistroForraje.cs" />
+    <Compile Include="AccesoTareas.cs" />
     <Compile Include="AccesoVacas.cs" />
     <Compile Include="AccesoVacunacionBecerro.cs" />
     <Compile Include="AccesoVacunacionVaca.cs" />
