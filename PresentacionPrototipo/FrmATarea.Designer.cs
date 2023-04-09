@@ -1,6 +1,7 @@
-﻿namespace PresentacionPrototipo
+﻿
+namespace PresentacionPrototipo
 {
-    partial class FrmForraje
+    partial class FrmATarea
     {
         /// <summary>
         /// Required designer variable.
@@ -28,42 +29,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgtForraje = new System.Windows.Forms.DataGridView();
+            this.dgtTareasA = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgtForraje)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgtTareasA)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtBuscar
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(449, 84);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 26);
-            this.textBox1.TabIndex = 42;
+            this.txtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBuscar.Location = new System.Drawing.Point(440, 82);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(244, 26);
+            this.txtBuscar.TabIndex = 54;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(445, 60);
+            this.label1.Location = new System.Drawing.Point(436, 58);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 20);
-            this.label1.TabIndex = 41;
+            this.label1.TabIndex = 53;
             this.label1.Text = "Nombre";
             // 
-            // dgtForraje
+            // dgtTareasA
             // 
-            this.dgtForraje.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dgtForraje.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgtForraje.Location = new System.Drawing.Point(12, 58);
-            this.dgtForraje.Name = "dgtForraje";
-            this.dgtForraje.Size = new System.Drawing.Size(408, 312);
-            this.dgtForraje.TabIndex = 40;
+            this.dgtTareasA.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgtTareasA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgtTareasA.Location = new System.Drawing.Point(12, 58);
+            this.dgtTareasA.Name = "dgtTareasA";
+            this.dgtTareasA.Size = new System.Drawing.Size(408, 312);
+            this.dgtTareasA.TabIndex = 52;
             // 
             // panel1
             // 
@@ -72,7 +73,7 @@
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(719, 36);
-            this.panel1.TabIndex = 39;
+            this.panel1.TabIndex = 51;
             // 
             // label2
             // 
@@ -80,9 +81,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(340, 8);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 20);
+            this.label2.Size = new System.Drawing.Size(58, 20);
             this.label2.TabIndex = 39;
-            this.label2.Text = "Forraje";
+            this.label2.Text = "Tareas";
             // 
             // btnSalir
             // 
@@ -92,10 +93,10 @@
             this.btnSalir.ForeColor = System.Drawing.Color.White;
             this.btnSalir.Image = global::PresentacionPrototipo.Properties.Resources.flecha;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(594, 317);
+            this.btnSalir.Location = new System.Drawing.Point(585, 315);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(105, 42);
-            this.btnSalir.TabIndex = 44;
+            this.btnSalir.TabIndex = 56;
             this.btnSalir.Text = "Back";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -109,33 +110,32 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAdd.Location = new System.Drawing.Point(449, 135);
+            this.btnAdd.Location = new System.Drawing.Point(440, 133);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(42, 42);
-            this.btnAdd.TabIndex = 43;
+            this.btnAdd.TabIndex = 55;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdd.UseVisualStyleBackColor = false;
             // 
-            // FrmForraje
+            // FrmATarea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(713, 384);
+            this.Controls.Add(this.txtBuscar);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dgtTareasA);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dgtForraje);
-            this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "FrmForraje";
+            this.Name = "FrmATarea";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmForraje";
-            this.Load += new System.EventHandler(this.FrmForraje_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgtForraje)).EndInit();
+            this.Text = "FrmATarea";
+            ((System.ComponentModel.ISupportInitialize)(this.dgtTareasA)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -145,12 +145,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgtForraje;
+        private System.Windows.Forms.DataGridView dgtTareasA;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnAdd;
     }
 }

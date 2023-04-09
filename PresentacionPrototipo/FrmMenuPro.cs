@@ -36,5 +36,53 @@ namespace PresentacionPrototipo
             FrmForraje Forraje = new FrmForraje();
             Forraje.ShowDialog();
         }
+
+        private void btnAlmMedicamento_Click(object sender, EventArgs e)
+        {
+            FrmMedicamento Medicamento = new FrmMedicamento();
+            Medicamento.ShowDialog();
+        }
+
+        private void btnVacas_Click(object sender, EventArgs e)
+        {
+            FrmVacas Vaca = new FrmVacas();
+            Vaca.ShowDialog();
+        }
+
+        private void btnBecerro_Click(object sender, EventArgs e)
+        {
+            FrmBecerros Becerro = new FrmBecerros();
+            Becerro.ShowDialog();
+        }
+
+        private void btnVacVacas_Click(object sender, EventArgs e)
+        {
+            FrmVacunacionVa VVacas = new FrmVacunacionVa();
+            VVacas.ShowDialog();
+        }
+
+        private void btnVacBecerros_Click(object sender, EventArgs e)
+        {
+            FrmVacunacionBe VBecerros = new FrmVacunacionBe();
+            VBecerros.ShowDialog();
+        }
+
+        private void btnForraje_Click(object sender, EventArgs e)
+        {
+            FrmRForraje RForraje = new FrmRForraje();
+            RForraje.ShowDialog();
+        }
+
+        private void btnAgregarTarea_Click(object sender, EventArgs e)
+        {
+            FrmATarea AgregarT = new FrmATarea();
+            AgregarT.ShowDialog();
+        }
+
+        private void btnTareas_Click(object sender, EventArgs e)
+        {
+            FrmVerTareas TareasR = new FrmVerTareas();
+            TareasR.ShowDialog();
+        }
     }
 }
