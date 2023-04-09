@@ -6,12 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AccesoDatos;
+using crud;
 namespace Manejador
 {
     public class ManejadorTareasAdd : IManejador
     {
         //DESCOMENTAR, CUANDO EL CÓDIGO ACCESO DATOS ESTÉ HECHO
         //AccesoTareas at = new AccesoTareas();
+        Grafico g = new Grafico();
         public void Borrar(dynamic Entidad)
         {
             DialogResult rs = MessageBox.Show("Atención!", "¿Desea eliminar este registro?", MessageBoxButtons.YesNo);

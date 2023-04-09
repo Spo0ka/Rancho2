@@ -27,15 +27,9 @@ namespace Manejador
         {
             Ab.Guardar(Entidad);
         }
-        public void editar(dynamic Entidad)
-        {
-            //Ab.Editar(Entidad);
-            //Se descomentará cuando el acceso datos haya sido realizado.
-        }
-
         public void Mostrar(DataGridView tabla, string filtro)
         {
-            tabla.Columns.Clear(); //error
+            tabla.Columns.Clear(); 
             tabla.RowTemplate.Height = 30;
             tabla.ColumnHeadersHeight = 40;
             tabla.DataSource = Ab.Mostrar(filtro).Tables["almacenforraje"];

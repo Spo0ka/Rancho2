@@ -41,7 +41,6 @@ namespace Manejador
             tabla.DataSource = Ab.Mostrar(filtro).Tables["becerro"];
             tabla.Columns.Insert(5, g.Boton("Editar", Color.FromArgb(137, 249, 59)));
             tabla.Columns.Insert(6, g.Boton("Borrar", Color.FromArgb(251, 42, 9)));
-            tabla.Columns[0].Visible = false;
         }
     }
 }
