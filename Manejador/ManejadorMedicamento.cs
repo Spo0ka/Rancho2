@@ -16,7 +16,7 @@ namespace Manejador
         Grafico g = new Grafico();
         public void Borrar(dynamic Entidad)
         {
-            DialogResult rs = MessageBox.Show("Cuidado!", "¿Estás seguro de borrar?", MessageBoxButtons.YesNo);
+            DialogResult rs = MessageBox.Show("Atención!", "¿Desea eliminar este registro?", MessageBoxButtons.YesNo);
             if (rs == DialogResult.Yes)
             {
                 Ab.Borrar(Entidad);
@@ -30,8 +30,9 @@ namespace Manejador
 
         public void Mostrar(DataGridView tabla, string filtro)
         {
-            tabla.Columns.Clear(); //error
+            tabla.Columns.Clear(); 
             tabla.RowTemplate.Height = 30;
+            tabla.ColumnHeadersHeight = 40;
             tabla.DataSource = Ab.Mostrar(filtro).Tables["almacenmedicamento"];
             tabla.Columns.Insert(3, g.Boton("Editar", Color.FromArgb(137, 249, 59)));
             tabla.Columns.Insert(4, g.Boton("Borrar", Color.FromArgb(251, 42, 9)));
