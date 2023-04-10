@@ -43,7 +43,7 @@ namespace Manejador
         public void ExtraerMedicamento(ComboBox caja) 
         {
             caja.DataSource = Am.Mostrar("%").Tables["almacenmedicamento"];
-            caja.DisplayMember = "NombreDelProducto";
+            caja.DisplayMember = "Nombre";
             caja.ValueMember = "id";
         }
         public void ExtraerBecerro(ComboBox caja)

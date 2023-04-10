@@ -29,7 +29,7 @@ namespace Manejador
         }
         public void editar(dynamic Entidad)
         {
-            //Ab.editar(dynamic entidad);
+           //Ab.editar(dynamic entidad);
             //Esto se descomentará, cuando el trabajo en acceso datos esté hecho.
         }
 
@@ -37,7 +37,7 @@ namespace Manejador
         {
             tabla.Columns.Clear();
             tabla.RowTemplate.Height = 30;
-            tabla.ColumnHeadersHeight = 40;
+            //tabla.ColumnHeadersHeight = 40;
             tabla.DataSource = Ab.Mostrar(filtro).Tables["becerro"];
             tabla.Columns.Insert(5, g.Boton("Editar", Color.FromArgb(137, 249, 59)));
             tabla.Columns.Insert(6, g.Boton("Borrar", Color.FromArgb(251, 42, 9)));

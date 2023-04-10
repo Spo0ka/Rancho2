@@ -14,9 +14,11 @@ namespace PresentacionPrototipo
 {
     public partial class FrmAddBecerro : Form
     {
+        ManejadorBecerros mb;
         public FrmAddBecerro()
         {
             InitializeComponent();
+            mb = new ManejadorBecerros();
         }
 
         private void FrmAddBecerro_Load(object sender, EventArgs e)
@@ -25,6 +27,43 @@ namespace PresentacionPrototipo
             btnSubir.BackColor = ColorTranslator.FromHtml("#FFF689");
             btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
             panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtArete.Text == "")
+                {
+                    MessageBox.Show("No puedes dejar en blanco el arete");
+                }
+                else
+                {
+                    mb.guardar(new Becerro(txtArete.Text, txtRaza.Text,
+                        mtxtfdN.Text, txtpeso.Text, txtSexo.Text));
+                    Close();
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Al parecer todo bien");
+            }
+        }
+
+        private void btnSubir_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fo = new OpenFileDialog();
+            DialogResult rs = fo.ShowDialog();
+            if (rs == DialogResult.OK)
+            {
+                pbbcerro.Image = Image.FromFile(fo.FileName);
+            }
         }
     }
 }

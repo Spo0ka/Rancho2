@@ -48,6 +48,7 @@
     <Compile Include="MedicamentoBecerro.cs" />
     <Compile Include="MedicamentoVaca.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RForraje.cs" />
     <Compile Include="TareaR.cs" />
     <Compile Include="Vacas.cs" />
   </ItemGroup>

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgtForraje = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -39,13 +39,13 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtBuscar
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(449, 84);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 26);
-            this.textBox1.TabIndex = 42;
+            this.txtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBuscar.Location = new System.Drawing.Point(449, 84);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(244, 26);
+            this.txtBuscar.TabIndex = 42;
             // 
             // label1
             // 
@@ -64,6 +64,8 @@
             this.dgtForraje.Name = "dgtForraje";
             this.dgtForraje.Size = new System.Drawing.Size(408, 312);
             this.dgtForraje.TabIndex = 40;
+            this.dgtForraje.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgtForraje_CellClick);
+            this.dgtForraje.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgtForraje_CellEnter);
             // 
             // panel1
             // 
@@ -125,7 +127,7 @@
             this.ClientSize = new System.Drawing.Size(713, 384);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgtForraje);
             this.Controls.Add(this.panel1);
@@ -148,7 +150,7 @@
 
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgtForraje;
         private System.Windows.Forms.Panel panel1;

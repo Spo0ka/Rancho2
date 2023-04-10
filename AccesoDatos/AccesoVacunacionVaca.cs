@@ -14,7 +14,7 @@ namespace AccesoDatos
 
         public void Borrar(dynamic Entidad)
         {
-            b.comando(string.Format("DELETE * FROM medicamentovacas WHERE medicamentovacas.id = {0}", Entidad.Id));
+            b.comando(string.Format("DELETE FROM medicamentovacas WHERE medicamentovacas.id = {0}", Entidad.Id));
         }
 
         public void Guardar(dynamic Entidad)

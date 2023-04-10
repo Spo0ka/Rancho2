@@ -14,12 +14,12 @@ namespace AccesoDatos
 
         public void Borrar(dynamic Entidad)
         {
-            b.comando(string.Format("DELETE * FROM almacenforraje WHERE almacenforraje.id = {0}", Entidad.Id));
+            b.comando(string.Format("DELETE FROM almacenforraje WHERE almacenforraje.id = {0}", Entidad.Id));
         }
 
         public void Guardar(dynamic Entidad)
         {
-            b.comando(string.Format("Call agregarForraje('{0}',{1})", Entidad.Nombre, Entidad.Cantidad));
+            b.comando(string.Format("Call agregarForraje({0},'{1}','{2}')", Entidad.Id ,Entidad.Nombre, Entidad.Cantidad));
         }
 
         public DataSet Mostrar(string Filtro)
