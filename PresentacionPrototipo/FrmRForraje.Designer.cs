@@ -47,6 +47,7 @@ namespace PresentacionPrototipo
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(244, 26);
             this.txtBuscar.TabIndex = 60;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // label1
             // 
@@ -65,6 +66,8 @@ namespace PresentacionPrototipo
             this.dgtRForraje.Name = "dgtRForraje";
             this.dgtRForraje.Size = new System.Drawing.Size(408, 312);
             this.dgtRForraje.TabIndex = 58;
+            this.dgtRForraje.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgtRForraje_CellClick);
+            this.dgtRForraje.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgtRForraje_CellEnter);
             // 
             // panel1
             // 
@@ -100,6 +103,7 @@ namespace PresentacionPrototipo
             this.btnSalir.Text = "Back";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnAdd
             // 
@@ -116,6 +120,7 @@ namespace PresentacionPrototipo
             this.btnAdd.TabIndex = 61;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // FrmRForraje
             // 
@@ -135,6 +140,7 @@ namespace PresentacionPrototipo
             this.Name = "FrmRForraje";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmRForraje";
+            this.Load += new System.EventHandler(this.FrmRForraje_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgtRForraje)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -72,6 +72,17 @@ namespace PresentacionPrototipo
             btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
             Actualizar();
         }
+
+        private void btnSalir_Click_1(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            Actualizar();
+        }
+
         void Actualizar()
         {
             Mf.Mostrar(dgtForraje, txtBuscar.Text);

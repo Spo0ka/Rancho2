@@ -32,18 +32,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbForraje = new System.Windows.Forms.PictureBox();
             this.btnSubir = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtcantidad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbForraje)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -86,15 +86,15 @@
             this.pictureBox2.TabIndex = 76;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
+            // pbForraje
             // 
-            this.pictureBox1.Image = global::PresentacionPrototipo.Properties.Resources.image_2023_04_07_14_01_44;
-            this.pictureBox1.Location = new System.Drawing.Point(216, 68);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(359, 231);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 75;
-            this.pictureBox1.TabStop = false;
+            this.pbForraje.Image = global::PresentacionPrototipo.Properties.Resources.image_2023_04_07_14_01_44;
+            this.pbForraje.Location = new System.Drawing.Point(216, 68);
+            this.pbForraje.Name = "pbForraje";
+            this.pbForraje.Size = new System.Drawing.Size(359, 231);
+            this.pbForraje.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbForraje.TabIndex = 75;
+            this.pbForraje.TabStop = false;
             // 
             // btnSubir
             // 
@@ -109,6 +109,7 @@
             this.btnSubir.TabIndex = 74;
             this.btnSubir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSubir.UseVisualStyleBackColor = false;
+            this.btnSubir.Click += new System.EventHandler(this.btnSubir_Click);
             // 
             // btnGuardar
             // 
@@ -126,14 +127,15 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // textBox2
+            // txtcantidad
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(20, 177);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(136, 26);
-            this.textBox2.TabIndex = 71;
+            this.txtcantidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtcantidad.Location = new System.Drawing.Point(20, 177);
+            this.txtcantidad.Name = "txtcantidad";
+            this.txtcantidad.Size = new System.Drawing.Size(136, 26);
+            this.txtcantidad.TabIndex = 71;
             // 
             // label3
             // 
@@ -144,13 +146,13 @@
             this.label3.TabIndex = 70;
             this.label3.Text = "Cantidad";
             // 
-            // textBox1
+            // txtnombre
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(20, 96);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 26);
-            this.textBox1.TabIndex = 69;
+            this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtnombre.Location = new System.Drawing.Point(20, 96);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(136, 26);
+            this.txtnombre.TabIndex = 69;
             // 
             // label1
             // 
@@ -176,6 +178,7 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // FrmAddForraje
             // 
@@ -186,12 +189,12 @@
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbForraje);
             this.Controls.Add(this.btnSubir);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtcantidad);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -205,7 +208,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbForraje)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,12 +219,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbForraje;
         private System.Windows.Forms.Button btnSubir;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtcantidad;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSalir;
     }

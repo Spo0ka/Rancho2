@@ -13,7 +13,7 @@ namespace PresentacionPrototipo
         [STAThread]
         static void Main() 
         {
-            Application.Run(new FrmForraje());
+            Application.Run(new FrmPrincipal());
         }
     }
 }

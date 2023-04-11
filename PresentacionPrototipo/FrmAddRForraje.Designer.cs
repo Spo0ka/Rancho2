@@ -82,6 +82,7 @@ namespace PresentacionPrototipo
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // pictureBox3
             // 
@@ -143,6 +144,7 @@ namespace PresentacionPrototipo
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txtCantidad
             // 
@@ -172,6 +174,7 @@ namespace PresentacionPrototipo
             // 
             // cmbForraje
             // 
+            this.cmbForraje.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbForraje.FormattingEnabled = true;
             this.cmbForraje.Location = new System.Drawing.Point(19, 99);
             this.cmbForraje.Name = "cmbForraje";
@@ -201,6 +204,7 @@ namespace PresentacionPrototipo
             this.Name = "FrmAddRForraje";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAddRForraje";
+            this.Load += new System.EventHandler(this.FrmAddRForraje_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

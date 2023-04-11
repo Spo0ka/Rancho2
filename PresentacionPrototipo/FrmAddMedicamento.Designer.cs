@@ -30,18 +30,18 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbMedicamento = new System.Windows.Forms.PictureBox();
             this.btnSubir = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMedicamento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -65,13 +65,13 @@
             this.panel1.Size = new System.Drawing.Size(678, 36);
             this.panel1.TabIndex = 29;
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(46, 97);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 26);
-            this.textBox1.TabIndex = 32;
+            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNombre.Location = new System.Drawing.Point(46, 97);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(136, 26);
+            this.txtNombre.TabIndex = 32;
             // 
             // label1
             // 
@@ -82,13 +82,13 @@
             this.label1.TabIndex = 31;
             this.label1.Text = "Nombre";
             // 
-            // textBox2
+            // txtCantidad
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(46, 178);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(136, 26);
-            this.textBox2.TabIndex = 34;
+            this.txtCantidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCantidad.Location = new System.Drawing.Point(46, 178);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(136, 26);
+            this.txtCantidad.TabIndex = 34;
             // 
             // label3
             // 
@@ -99,15 +99,15 @@
             this.label3.TabIndex = 33;
             this.label3.Text = "Cantidad";
             // 
-            // pictureBox1
+            // pbMedicamento
             // 
-            this.pictureBox1.Image = global::PresentacionPrototipo.Properties.Resources.image_2023_04_06_19_55_55;
-            this.pictureBox1.Location = new System.Drawing.Point(242, 69);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(359, 231);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 52;
-            this.pictureBox1.TabStop = false;
+            this.pbMedicamento.Image = global::PresentacionPrototipo.Properties.Resources.image_2023_04_06_19_55_55;
+            this.pbMedicamento.Location = new System.Drawing.Point(242, 69);
+            this.pbMedicamento.Name = "pbMedicamento";
+            this.pbMedicamento.Size = new System.Drawing.Size(359, 231);
+            this.pbMedicamento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMedicamento.TabIndex = 52;
+            this.pbMedicamento.TabStop = false;
             // 
             // btnSubir
             // 
@@ -122,6 +122,7 @@
             this.btnSubir.TabIndex = 51;
             this.btnSubir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSubir.UseVisualStyleBackColor = false;
+            this.btnSubir.Click += new System.EventHandler(this.btnSubir_Click);
             // 
             // btnAceptar
             // 
@@ -137,6 +138,7 @@
             this.btnAceptar.Size = new System.Drawing.Size(55, 42);
             this.btnAceptar.TabIndex = 50;
             this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnSalir
             // 
@@ -151,6 +153,7 @@
             this.btnSalir.TabIndex = 49;
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // pictureBox2
             // 
@@ -180,13 +183,13 @@
             this.ClientSize = new System.Drawing.Size(678, 421);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbMedicamento);
             this.Controls.Add(this.btnSubir);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -198,7 +201,7 @@
             this.Load += new System.EventHandler(this.FrmAddMedicamento_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMedicamento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
@@ -210,14 +213,14 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSubir;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbMedicamento;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
     }

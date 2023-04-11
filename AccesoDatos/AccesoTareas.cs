@@ -14,17 +14,17 @@ namespace AccesoDatos
 
         public void Borrar(dynamic Entidad)
         {
-            b.comando(string.Format("DELETE FROM agregartareas WHERE agregartareas.id = {0}", Entidad.Id));
+            b.comando(string.Format("DELETE FROM agregartareas WHERE id = {0}", Entidad.Id));
         }
 
         public void Guardar(dynamic Entidad)
         {
-            b.comando(string.Format("Call InsertTareas({0},'{1}')", Entidad.Id, Entidad.Tarea));
+            b.comando(string.Format("Call InsertTareas({0},'{1}')", Entidad.Id, Entidad.Nombre));
         }
 
         public DataSet Mostrar(string Filtro)
         {
-            return b.Obtener(string.Format("SELECT * FROM ver_ATareas WHERE Tarea LIKE '%{0}%')", Filtro), "agregartareas");
+            return b.Obtener(string.Format("SELECT * FROM ver_ATareas WHERE Tarea LIKE ('%{0}%')", Filtro), "agregartareas");
 
         }
     }

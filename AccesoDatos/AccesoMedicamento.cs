@@ -15,7 +15,7 @@ namespace AccesoDatos
 
         public void Borrar(dynamic Entidad)
         {
-            b.comando(string.Format("DELETE FROM almacenmedicamento WHERE almacenmedicamento.id = {0}", Entidad.Id));
+            b.comando(string.Format("DELETE FROM almacenmedicamento WHERE id = {0}", Entidad.Id));
         }
 
         public void Guardar(dynamic Entidad)
@@ -25,7 +25,7 @@ namespace AccesoDatos
 
         public DataSet Mostrar(string Filtro)
         {
-            return b.Obtener(string.Format("SELECT * FROM ver_medicamento WHERE almacenmedicamento.Nombre like '%{0}%'", Filtro), "almacenmedicamento");
+            return b.Obtener(string.Format("SELECT * FROM almacenmedicamento where Nombre like '%{0}%'", Filtro), "almacenmedicamento");
 
         }
     }

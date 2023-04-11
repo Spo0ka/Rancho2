@@ -24,7 +24,7 @@ namespace AccesoDatos
 
         public DataSet Mostrar(string Filtro)
         {
-            return b.Obtener(string.Format("CSELECT * FROM ver_medicamentobecerro WHERE Fk_becerro like '%{0}%'", Filtro), "medicamentobecerro");
+            return b.Obtener(string.Format("SELECT * FROM medicamentobecerro WHERE Fk_becerro like ('%{0}%')", Filtro), "medicamentobecerro");
 
         }
     }

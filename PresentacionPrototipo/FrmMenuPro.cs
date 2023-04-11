@@ -88,8 +88,6 @@ namespace PresentacionPrototipo
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            FrmLogIn Login = new FrmLogIn();
-            Login.ShowDialog();
             Close();
         }
     }

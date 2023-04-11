@@ -31,8 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cmbtarea = new System.Windows.Forms.ComboBox();
+            this.txtcumplio = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -72,23 +72,23 @@
             this.label1.TabIndex = 86;
             this.label1.Text = "Tarea";
             // 
-            // comboBox1
+            // cmbtarea
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(17, 98);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(151, 28);
-            this.comboBox1.TabIndex = 90;
+            this.cmbtarea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbtarea.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmbtarea.FormattingEnabled = true;
+            this.cmbtarea.Location = new System.Drawing.Point(17, 98);
+            this.cmbtarea.Name = "cmbtarea";
+            this.cmbtarea.Size = new System.Drawing.Size(151, 28);
+            this.cmbtarea.TabIndex = 90;
             // 
-            // textBox1
+            // txtcumplio
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(211, 100);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 26);
-            this.textBox1.TabIndex = 91;
+            this.txtcumplio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtcumplio.Location = new System.Drawing.Point(211, 100);
+            this.txtcumplio.Name = "txtcumplio";
+            this.txtcumplio.Size = new System.Drawing.Size(160, 26);
+            this.txtcumplio.TabIndex = 91;
             // 
             // label3
             // 
@@ -124,6 +124,7 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // pictureBox2
             // 
@@ -151,6 +152,7 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // FrmTareas
             // 
@@ -160,8 +162,8 @@
             this.ClientSize = new System.Drawing.Size(628, 192);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtcumplio);
+            this.Controls.Add(this.cmbtarea);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.pictureBox2);
@@ -191,8 +193,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cmbtarea;
+        private System.Windows.Forms.TextBox txtcumplio;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
     }
