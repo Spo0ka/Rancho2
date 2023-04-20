@@ -65,5 +65,15 @@ namespace PresentacionPrototipo
                 pbbcerro.Image = Image.FromFile(fo.FileName);
             }
         }
+
+        private void txtpeso_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <=47)||(e.KeyChar >=58 && e.KeyChar <=255))
+            {
+                MessageBox.Show("Solo numeros", "Mire bien mijo donde escribe", MessageBoxButtons.OK);
+                e.Handled = true;
+                return;
+            }
+        }
     }
 }

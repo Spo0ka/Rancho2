@@ -65,6 +65,16 @@ namespace PresentacionPrototipo
                 MessageBox.Show("Al parecer todo bien");
             }
         }
+
+        private void txtPeso_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Mire bien mijo donde escribe", MessageBoxButtons.OK);
+                e.Handled = true;
+                return;
+            }
+        }
     }
   
 }

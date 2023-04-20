@@ -127,6 +127,7 @@
             this.txtPeso.Name = "txtPeso";
             this.txtPeso.Size = new System.Drawing.Size(99, 26);
             this.txtPeso.TabIndex = 33;
+            this.txtPeso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPeso_KeyPress);
             // 
             // txtLecheL
             // 

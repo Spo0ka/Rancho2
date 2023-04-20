@@ -120,6 +120,7 @@
             this.txtpeso.Name = "txtpeso";
             this.txtpeso.Size = new System.Drawing.Size(99, 26);
             this.txtpeso.TabIndex = 54;
+            this.txtpeso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpeso_KeyPress);
             // 
             // label4
             // 
