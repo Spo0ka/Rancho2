@@ -279,9 +279,9 @@ ELSE if _id >0 then
 END;;
 
 /*CALL InsertTareasR(-1,1,'En proceso');*/
-SELECT * FROM tarear
+SELECT * FROM tarear;
 SELECT * FROM agregartareas;
-vistas Tareas
+/*vistas Tareas*/
 DELETE FROM agregartareas WHERE id = 2;
 DROP VIEW if EXISTS ver_ATareas;
 CREATE VIEW ver_ATareas AS
