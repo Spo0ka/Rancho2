@@ -92,6 +92,7 @@
             this.txtRaza.Name = "txtRaza";
             this.txtRaza.Size = new System.Drawing.Size(102, 26);
             this.txtRaza.TabIndex = 57;
+            this.txtRaza.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRaza_KeyPress_1);
             // 
             // label6
             // 

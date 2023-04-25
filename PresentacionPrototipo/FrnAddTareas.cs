@@ -34,9 +34,22 @@ namespace PresentacionPrototipo
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            mt.guardar(new AgregarTareas(FrmATarea.entidad.Id,
-                txtTarea.Text));
-            Close();
+            try
+            {
+                if (txtTarea.Text == "")
+                {
+                    MessageBox.Show("");
+                }
+                else
+                {
+                    mt.guardar(new AgregarTareas(FrmATarea.entidad.Id,txtTarea.Text));
+                    Close();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Si aparece esto o salio bien o hay un error");
+            }
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

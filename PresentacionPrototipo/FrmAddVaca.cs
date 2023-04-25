@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -46,11 +47,33 @@ namespace PresentacionPrototipo
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            string pattern = @"^[a-zA-Z]{3}\d{5}$";
             try
             {
                 if (txtArete.Text == "")
                 {
-                    MessageBox.Show("No puedes dejar en blanco el arete");
+                    MessageBox.Show("No puedes dejar en blanco las casillas");
+
+                }
+                else if (txtLecheL.Text == "")
+                {
+                    MessageBox.Show("No puedes dejar en blanco las casillas");
+                }
+                else if (txtRaza.Text == "")
+                {
+                    MessageBox.Show("No puedes dejar en blanco las casillas");
+                }
+                else if (txtPeso.Text == "")
+                {
+                    MessageBox.Show("No puedes dejar en blanco las casillas");
+                }
+                else if (mtxtFdn.Text == "")
+                {
+                    MessageBox.Show("No puedes dejar en blanco las casillas");
+                }
+                else if (!Regex.IsMatch(txtArete.Text, pattern))
+                {
+                    MessageBox.Show("El formato de entrada no es valido, gonorrea");
                 }
                 else
                 {
@@ -67,6 +90,26 @@ namespace PresentacionPrototipo
         }
 
         private void txtPeso_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Mire bien mijo donde escribe", MessageBoxButtons.OK);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtRaza_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("En esta casilla solo se permiten Letras", "Advertencia!!", MessageBoxButtons.OK);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtLecheL_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {

@@ -42,6 +42,7 @@ namespace PresentacionPrototipo
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            
             mv.guardar(new MedicamentoBecerro(FrmVacunacionBe.entidad.Id,
                 cmbNombre.SelectedValue.ToString(),
                 int.Parse(cmbMedicamento.SelectedValue.ToString()),
