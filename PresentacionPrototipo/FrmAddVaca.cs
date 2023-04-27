@@ -93,7 +93,7 @@ namespace PresentacionPrototipo
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
-                MessageBox.Show("Solo numeros", "Mire bien mijo donde escribe", MessageBoxButtons.OK);
+                MessageBox.Show("En esta casilla solo se permiten Numeros", "Advertencia!!", MessageBoxButtons.OK);
                 e.Handled = true;
                 return;
             }
@@ -113,7 +113,7 @@ namespace PresentacionPrototipo
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
-                MessageBox.Show("Solo numeros", "Mire bien mijo donde escribe", MessageBoxButtons.OK);
+                MessageBox.Show("En esta casilla solo se permiten Numeros", "Advertencia!!", MessageBoxButtons.OK);
                 e.Handled = true;
                 return;
             }
