@@ -38,6 +38,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnAgregarTarea = new System.Windows.Forms.Button();
             this.btnVacBecerros = new System.Windows.Forms.Button();
             this.btnVacVacas = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -47,13 +49,15 @@
             this.btnVacas = new System.Windows.Forms.Button();
             this.btnAlmMedicamento = new System.Windows.Forms.Button();
             this.btnAlmForraje = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.BtnUsuarios = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(415, 293);
+            this.label7.Location = new System.Drawing.Point(574, 293);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(126, 20);
             this.label7.TabIndex = 35;
@@ -73,21 +77,21 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(44, 293);
+            this.label5.Location = new System.Drawing.Point(600, 179);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(163, 20);
+            this.label5.Size = new System.Drawing.Size(65, 20);
             this.label5.TabIndex = 33;
-            this.label5.Text = "Medicamento becerro";
+            this.label5.Text = "Becerro";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(409, 177);
+            this.label4.Location = new System.Drawing.Point(449, 177);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 20);
+            this.label4.Size = new System.Drawing.Size(50, 20);
             this.label4.TabIndex = 32;
-            this.label4.Text = "Medicamento vaca";
+            this.label4.Text = " Vaca";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -114,7 +118,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(742, 48);
+            this.panel1.Size = new System.Drawing.Size(888, 48);
             this.panel1.TabIndex = 23;
             // 
             // label8
@@ -130,7 +134,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(571, 293);
+            this.label9.Location = new System.Drawing.Point(44, 293);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(159, 20);
             this.label9.TabIndex = 40;
@@ -140,12 +144,37 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(586, 177);
+            this.label10.Location = new System.Drawing.Point(726, 177);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(138, 20);
             this.label10.TabIndex = 39;
             this.label10.Text = "Vacunación vacas";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(428, 293);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(111, 20);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "Agregar Tarea";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnAgregarTarea
+            // 
+            this.btnAgregarTarea.BackColor = System.Drawing.Color.White;
+            this.btnAgregarTarea.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.image_2023_04_04_13_11_56;
+            this.btnAgregarTarea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAgregarTarea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarTarea.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarTarea.Location = new System.Drawing.Point(432, 236);
+            this.btnAgregarTarea.Name = "btnAgregarTarea";
+            this.btnAgregarTarea.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnAgregarTarea.Size = new System.Drawing.Size(90, 41);
+            this.btnAgregarTarea.TabIndex = 43;
+            this.btnAgregarTarea.UseVisualStyleBackColor = false;
+            this.btnAgregarTarea.Click += new System.EventHandler(this.btnAgregarTarea_Click);
             // 
             // btnVacBecerros
             // 
@@ -154,12 +183,13 @@
             this.btnVacBecerros.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnVacBecerros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVacBecerros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVacBecerros.Location = new System.Drawing.Point(609, 236);
+            this.btnVacBecerros.Location = new System.Drawing.Point(82, 236);
             this.btnVacBecerros.Name = "btnVacBecerros";
             this.btnVacBecerros.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnVacBecerros.Size = new System.Drawing.Size(90, 41);
             this.btnVacBecerros.TabIndex = 7;
             this.btnVacBecerros.UseVisualStyleBackColor = false;
+            this.btnVacBecerros.Click += new System.EventHandler(this.btnVacBecerros_Click);
             // 
             // btnVacVacas
             // 
@@ -168,12 +198,13 @@
             this.btnVacVacas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnVacVacas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVacVacas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVacVacas.Location = new System.Drawing.Point(609, 122);
+            this.btnVacVacas.Location = new System.Drawing.Point(749, 122);
             this.btnVacVacas.Name = "btnVacVacas";
             this.btnVacVacas.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnVacVacas.Size = new System.Drawing.Size(90, 41);
             this.btnVacVacas.TabIndex = 3;
             this.btnVacVacas.UseVisualStyleBackColor = false;
+            this.btnVacVacas.Click += new System.EventHandler(this.btnVacVacas_Click);
             // 
             // btnSalir
             // 
@@ -183,13 +214,14 @@
             this.btnSalir.ForeColor = System.Drawing.Color.Black;
             this.btnSalir.Image = global::PresentacionPrototipo.Properties.Resources.salida__1_;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSalir.Location = new System.Drawing.Point(628, 349);
+            this.btnSalir.Location = new System.Drawing.Point(749, 349);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(100, 39);
             this.btnSalir.TabIndex = 8;
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnTareas
             // 
@@ -198,12 +230,13 @@
             this.btnTareas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnTareas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTareas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTareas.Location = new System.Drawing.Point(432, 236);
+            this.btnTareas.Location = new System.Drawing.Point(590, 236);
             this.btnTareas.Name = "btnTareas";
             this.btnTareas.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnTareas.Size = new System.Drawing.Size(90, 41);
             this.btnTareas.TabIndex = 6;
             this.btnTareas.UseVisualStyleBackColor = false;
+            this.btnTareas.Click += new System.EventHandler(this.btnTareas_Click);
             // 
             // btnForraje
             // 
@@ -218,6 +251,7 @@
             this.btnForraje.Size = new System.Drawing.Size(90, 41);
             this.btnForraje.TabIndex = 5;
             this.btnForraje.UseVisualStyleBackColor = false;
+            this.btnForraje.Click += new System.EventHandler(this.btnForraje_Click);
             // 
             // btnBecerro
             // 
@@ -226,12 +260,13 @@
             this.btnBecerro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnBecerro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBecerro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBecerro.Location = new System.Drawing.Point(82, 236);
+            this.btnBecerro.Location = new System.Drawing.Point(590, 122);
             this.btnBecerro.Name = "btnBecerro";
             this.btnBecerro.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnBecerro.Size = new System.Drawing.Size(90, 41);
             this.btnBecerro.TabIndex = 4;
             this.btnBecerro.UseVisualStyleBackColor = false;
+            this.btnBecerro.Click += new System.EventHandler(this.btnBecerro_Click);
             // 
             // btnVacas
             // 
@@ -246,6 +281,7 @@
             this.btnVacas.Size = new System.Drawing.Size(90, 41);
             this.btnVacas.TabIndex = 2;
             this.btnVacas.UseVisualStyleBackColor = false;
+            this.btnVacas.Click += new System.EventHandler(this.btnVacas_Click);
             // 
             // btnAlmMedicamento
             // 
@@ -260,6 +296,7 @@
             this.btnAlmMedicamento.Size = new System.Drawing.Size(90, 41);
             this.btnAlmMedicamento.TabIndex = 1;
             this.btnAlmMedicamento.UseVisualStyleBackColor = false;
+            this.btnAlmMedicamento.Click += new System.EventHandler(this.btnAlmMedicamento_Click);
             // 
             // btnAlmForraje
             // 
@@ -274,13 +311,43 @@
             this.btnAlmForraje.Size = new System.Drawing.Size(90, 41);
             this.btnAlmForraje.TabIndex = 0;
             this.btnAlmForraje.UseVisualStyleBackColor = false;
+            this.btnAlmForraje.Click += new System.EventHandler(this.btnAlmForraje_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(733, 293);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(72, 20);
+            this.label11.TabIndex = 45;
+            this.label11.Text = "Usuarios";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BtnUsuarios
+            // 
+            this.BtnUsuarios.BackColor = System.Drawing.Color.White;
+            this.BtnUsuarios.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.image_2023_04_04_13_11_56;
+            this.BtnUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnUsuarios.Location = new System.Drawing.Point(749, 236);
+            this.BtnUsuarios.Name = "BtnUsuarios";
+            this.BtnUsuarios.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BtnUsuarios.Size = new System.Drawing.Size(90, 41);
+            this.BtnUsuarios.TabIndex = 44;
+            this.BtnUsuarios.UseVisualStyleBackColor = false;
+            this.BtnUsuarios.Click += new System.EventHandler(this.BtnUsuarios_Click);
             // 
             // FrmMenuPro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(742, 400);
+            this.ClientSize = new System.Drawing.Size(887, 400);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.BtnUsuarios);
+            this.Controls.Add(this.btnAgregarTarea);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btnVacBecerros);
@@ -334,5 +401,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnVacBecerros;
         private System.Windows.Forms.Button btnVacVacas;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnAgregarTarea;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button BtnUsuarios;
     }
 }

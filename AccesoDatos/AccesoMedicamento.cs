@@ -11,21 +11,21 @@ namespace AccesoDatos
 {
     public class AccesoMedicamento
     {
-        Base b = new Base("localhost", "root", "", "rn");
+        Base b = new Base("localhost", "root", "", "GM");
 
         public void Borrar(dynamic Entidad)
         {
-            b.comando(string.Format("Call DeleteMedicamento({0})", Entidad.Id));
+            b.comando(string.Format("DELETE FROM almacenmedicamento WHERE id = {0}", Entidad.Id));
         }
 
         public void Guardar(dynamic Entidad)
         {
-            b.comando(string.Format("Call InsertAlmacenMedi({0},'{1}',{2})", Entidad.Id, Entidad.Nombre, Entidad.Cantidad));
+            b.comando(string.Format("Call insertAlmacenMedicamento({0},'{1}',{2})", Entidad.Id, Entidad.Nombre, Entidad.Cantidad));
         }
 
         public DataSet Mostrar(string Filtro)
         {
-            return b.Obtener(string.Format("Call ShowMedicamento('%{0}%')", Filtro), "almacenmedicamento");
+            return b.Obtener(string.Format("SELECT * FROM almacenmedicamento where Nombre like '%{0}%'", Filtro), "almacenmedicamento");
 
         }
     }

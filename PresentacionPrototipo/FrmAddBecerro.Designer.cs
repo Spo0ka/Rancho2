@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             this.btnAceptar = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtRaza = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtSexo = new System.Windows.Forms.TextBox();
+            this.txtpeso = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtArete = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSubir = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pbbcerro = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.mtxtfdN = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbbcerro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -72,6 +72,7 @@
             this.btnAceptar.TabIndex = 6;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
             // 
             // textBox4
             // 
@@ -81,6 +82,9 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(99, 26);
             this.textBox4.TabIndex = 3;
+=======
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+>>>>>>> main
             // 
             // label5
             // 
@@ -92,14 +96,23 @@
             this.label5.TabIndex = 58;
             this.label5.Text = "Fecha nacimiento";
             // 
-            // textBox5
+            // txtRaza
             // 
+<<<<<<< HEAD
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox5.Location = new System.Drawing.Point(225, 109);
             this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(102, 26);
             this.textBox5.TabIndex = 1;
+=======
+            this.txtRaza.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRaza.Location = new System.Drawing.Point(225, 109);
+            this.txtRaza.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRaza.Name = "txtRaza";
+            this.txtRaza.Size = new System.Drawing.Size(102, 26);
+            this.txtRaza.TabIndex = 57;
+>>>>>>> main
             // 
             // label6
             // 
@@ -111,23 +124,41 @@
             this.label6.TabIndex = 56;
             this.label6.Text = "Raza";
             // 
-            // textBox3
+            // txtSexo
             // 
+<<<<<<< HEAD
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Location = new System.Drawing.Point(43, 272);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(99, 26);
             this.textBox3.TabIndex = 4;
+=======
+            this.txtSexo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSexo.Location = new System.Drawing.Point(43, 272);
+            this.txtSexo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSexo.Name = "txtSexo";
+            this.txtSexo.Size = new System.Drawing.Size(99, 26);
+            this.txtSexo.TabIndex = 55;
+>>>>>>> main
             // 
-            // textBox2
+            // txtpeso
             // 
+<<<<<<< HEAD
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Location = new System.Drawing.Point(41, 193);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(99, 26);
             this.textBox2.TabIndex = 2;
+=======
+            this.txtpeso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtpeso.Location = new System.Drawing.Point(41, 193);
+            this.txtpeso.Margin = new System.Windows.Forms.Padding(2);
+            this.txtpeso.Name = "txtpeso";
+            this.txtpeso.Size = new System.Drawing.Size(99, 26);
+            this.txtpeso.TabIndex = 54;
+>>>>>>> main
             // 
             // label4
             // 
@@ -149,14 +180,23 @@
             this.label3.TabIndex = 52;
             this.label3.Text = "Peso";
             // 
-            // textBox1
+            // txtArete
             // 
+<<<<<<< HEAD
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Location = new System.Drawing.Point(41, 109);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(102, 26);
             this.textBox1.TabIndex = 0;
+=======
+            this.txtArete.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtArete.Location = new System.Drawing.Point(41, 109);
+            this.txtArete.Margin = new System.Windows.Forms.Padding(2);
+            this.txtArete.Name = "txtArete";
+            this.txtArete.Size = new System.Drawing.Size(102, 26);
+            this.txtArete.TabIndex = 51;
+>>>>>>> main
             // 
             // label1
             // 
@@ -204,6 +244,7 @@
             this.btnSubir.Text = "Subir";
             this.btnSubir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSubir.UseVisualStyleBackColor = false;
+            this.btnSubir.Click += new System.EventHandler(this.btnSubir_Click);
             // 
             // btnSalir
             // 
@@ -221,17 +262,18 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // pictureBox7
+            // pbbcerro
             // 
-            this.pictureBox7.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.image_2023_04_07_14_11_32;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(402, 59);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(240, 209);
-            this.pictureBox7.TabIndex = 66;
-            this.pictureBox7.TabStop = false;
+            this.pbbcerro.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.image_2023_04_07_14_11_32;
+            this.pbbcerro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbbcerro.Location = new System.Drawing.Point(402, 59);
+            this.pbbcerro.Margin = new System.Windows.Forms.Padding(2);
+            this.pbbcerro.Name = "pbbcerro";
+            this.pbbcerro.Size = new System.Drawing.Size(240, 209);
+            this.pbbcerro.TabIndex = 66;
+            this.pbbcerro.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -288,30 +330,39 @@
             this.pictureBox1.TabIndex = 60;
             this.pictureBox1.TabStop = false;
             // 
+            // mtxtfdN
+            // 
+            this.mtxtfdN.Location = new System.Drawing.Point(225, 194);
+            this.mtxtfdN.Mask = "0000-00-00";
+            this.mtxtfdN.Name = "mtxtfdN";
+            this.mtxtfdN.Size = new System.Drawing.Size(100, 26);
+            this.mtxtfdN.TabIndex = 70;
+            this.mtxtfdN.ValidatingType = typeof(System.DateTime);
+            // 
             // FrmAddBecerro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(653, 396);
+            this.Controls.Add(this.mtxtfdN);
             this.Controls.Add(this.btnSubir);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.pbbcerro);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtRaza);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtSexo);
+            this.Controls.Add(this.txtpeso);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtArete);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -323,7 +374,7 @@
             this.Load += new System.EventHandler(this.FrmAddBecerro_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbbcerro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -339,23 +390,23 @@
         private System.Windows.Forms.Button btnSubir;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pbbcerro;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtRaza;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtSexo;
+        private System.Windows.Forms.TextBox txtpeso;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtArete;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.MaskedTextBox mtxtfdN;
     }
 }

@@ -11,22 +11,22 @@ namespace AccesoDatos
 {
     public class AccesoBecerros : Iconexion
     {
-        Base b = new Base("localhost","root","","rn");
+        Base b = new Base("localhost","root","","GM");
 
         public void Borrar(dynamic Entidad)
         {
-            b.comando(string.Format("Call DeleteBecerros('{0}')",Entidad.Arete));
+            b.comando(string.Format("DELETE  FROM becerro WHERE Arete ='{0}'", Entidad.Arete));
         }
 
         public void Guardar(dynamic Entidad)
         {
-            b.comando(string.Format("Call InsertBecerro('{0}','{1}','{2}','{3}','{4}')", Entidad.Arete,Entidad.Raza, Entidad.Fdn, 
+            b.comando(string.Format("Call insertBecerro('{0}','{1}','{2}','{3}','{4}')", Entidad.Arete,Entidad.Raza, Entidad.Fdn, 
                 Entidad.Peso, Entidad.Sexo));
         }
 
         public DataSet Mostrar(string Filtro)
         {
-            return b.Obtener(string.Format("Call ShowBecerros('%{0}%')",Filtro),"becerros");
+            return b.Obtener(string.Format("SELECT * FROM ver_becerros WHERE Arete like '%{0}%'", Filtro), "becerro");
         }
     }
 }

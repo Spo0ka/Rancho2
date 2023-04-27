@@ -10,21 +10,21 @@ namespace AccesoDatos
 {
     public class AccesoVacunacionBecerro
     {
-        Base b = new Base("localhost", "root", "", "rn");
+        Base b = new Base("localhost", "root", "", "GM");
 
         public void Borrar(dynamic Entidad)
         {
-            b.comando(string.Format("Call DeleteVbe({0})", Entidad.Id));
+            b.comando(string.Format("Delete from medicamentobecerro where Id = {0}", Entidad.Id));
         }
 
         public void Guardar(dynamic Entidad)
         {
-            b.comando(string.Format("Call InsertMediBe({0},'{1}',{2},'{3}')", Entidad.Id, Entidad.Becerro, Entidad.Medicamento,Entidad.Fecha));
+            b.comando(string.Format("Call insertMedBecerro({0},'{1}',{2},'{3}')", Entidad.Id, Entidad.Becerro, Entidad.Medicamento,Entidad.Fecha));
         }
 
         public DataSet Mostrar(string Filtro)
         {
-            return b.Obtener(string.Format("Call ShowVbecerro('%{0}%')", Filtro), "vacunacionbecerro");
+            return b.Obtener(string.Format("SELECT * FROM medicamentobecerro WHERE Fk_becerro like ('%{0}%')", Filtro), "medicamentobecerro");
 
         }
     }

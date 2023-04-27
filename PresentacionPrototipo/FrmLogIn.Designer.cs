@@ -32,8 +32,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+=======
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtPW = new System.Windows.Forms.TextBox();
+>>>>>>> main
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -80,21 +85,37 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Contraseña:";
             // 
-            // textBox1
+            // txtUsuario
             // 
+<<<<<<< HEAD
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Location = new System.Drawing.Point(36, 99);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(272, 26);
             this.textBox1.TabIndex = 0;
+=======
+            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUsuario.Location = new System.Drawing.Point(36, 99);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(272, 26);
+            this.txtUsuario.TabIndex = 3;
+>>>>>>> main
             // 
-            // textBox2
+            // txtPW
             // 
+<<<<<<< HEAD
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Location = new System.Drawing.Point(36, 174);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(272, 26);
             this.textBox2.TabIndex = 1;
+=======
+            this.txtPW.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPW.Location = new System.Drawing.Point(36, 174);
+            this.txtPW.Name = "txtPW";
+            this.txtPW.Size = new System.Drawing.Size(272, 26);
+            this.txtPW.TabIndex = 4;
+>>>>>>> main
             // 
             // pictureBox2
             // 
@@ -132,6 +153,7 @@
             this.btnSalir.TabIndex = 3;
             this.btnSalir.Text = "Exit";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnLogIn
             // 
@@ -147,6 +169,7 @@
             this.btnLogIn.TabIndex = 2;
             this.btnLogIn.Text = "Log in";
             this.btnLogIn.UseVisualStyleBackColor = false;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // FrmLogIn
             // 
@@ -158,8 +181,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnLogIn);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPW);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -184,8 +207,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtPW;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnLogIn;
         private System.Windows.Forms.Button btnSalir;

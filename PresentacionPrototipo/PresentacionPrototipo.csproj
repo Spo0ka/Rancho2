@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAddRForraje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddRForraje.Designer.cs">
+      <DependentUpon>FrmAddRForraje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddUsuario.Designer.cs">
+      <DependentUpon>FrmAddUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAddVaca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +69,12 @@
     </Compile>
     <Compile Include="FrmAddMedicacionBe.Designer.cs">
       <DependentUpon>FrmAddMedicacionBe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmATarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmATarea.Designer.cs">
+      <DependentUpon>FrmATarea.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMedicacionVaca.cs">
       <SubType>Form</SubType>
@@ -88,11 +106,23 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRForraje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRForraje.Designer.cs">
+      <DependentUpon>FrmRForraje.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTareas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmTareas.Designer.cs">
       <DependentUpon>FrmTareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmVerTareas.cs">
       <SubType>Form</SubType>
@@ -178,11 +208,20 @@
     <EmbeddedResource Include="FrmAddMedicamento.resx">
       <DependentUpon>FrmAddMedicamento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddRForraje.resx">
+      <DependentUpon>FrmAddRForraje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddUsuario.resx">
+      <DependentUpon>FrmAddUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAddVaca.resx">
       <DependentUpon>FrmAddVaca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAddMedicacionBe.resx">
       <DependentUpon>FrmAddMedicacionBe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmATarea.resx">
+      <DependentUpon>FrmATarea.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMedicacionVaca.resx">
       <DependentUpon>FrmMedicacionVaca.cs</DependentUpon>
@@ -208,8 +247,14 @@
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmRForraje.resx">
+      <DependentUpon>FrmRForraje.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTareas.resx">
       <DependentUpon>FrmTareas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVacas.resx">
       <DependentUpon>FrmVacas.cs</DependentUpon>

@@ -50,6 +50,10 @@
     <Compile Include="ManejadorBecerros.cs" />
     <Compile Include="ManejadorForraje.cs" />
     <Compile Include="ManejadorMedicamento.cs" />
+    <Compile Include="ManejadorRForraje.cs" />
+    <Compile Include="ManejadorTareasAdd.cs" />
+    <Compile Include="ManejadorTareasTrabajador.cs" />
+    <Compile Include="ManejadorUsuario.cs" />
     <Compile Include="ManejadorVaca.cs" />
     <Compile Include="ManejadorVacunacionBecerro.cs" />
     <Compile Include="ManejadorVacunacionVaca.cs" />

@@ -14,9 +14,16 @@ namespace PresentacionPrototipo
 {
     public partial class FrmAddMedicamento : Form
     {
+        ManejadorMedicamento mm;
         public FrmAddMedicamento()
         {
             InitializeComponent();
+            mm = new ManejadorMedicamento();
+            if (FrmMedicamento.entidad.Id >0)
+            {
+                txtNombre.Text = FrmMedicamento.entidad.Nombre;
+                txtCantidad.Text = FrmMedicamento.entidad.Cantidad.ToString();
+            }
         }
 
         private void FrmAddMedicamento_Load(object sender, EventArgs e)
@@ -25,6 +32,42 @@ namespace PresentacionPrototipo
             btnAceptar.BackColor = ColorTranslator.FromHtml("#FFF689");
             btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
             panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtNombre.Text == "")
+                {
+                    MessageBox.Show("No olvides poner una cantidad");
+                }
+                else
+                {
+                    mm.guardar(new AlmacenMedicamento(FrmMedicamento.entidad.Id, txtNombre.Text, int.Parse(txtCantidad.Text)));
+                    Close();
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Al parecer todo bien");
+            }
+        }
+
+        private void btnSubir_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fo = new OpenFileDialog();
+            DialogResult rs = fo.ShowDialog();
+            if (rs == DialogResult.OK)
+            {
+                pbMedicamento.Image = Image.FromFile(fo.FileName);
+            }
         }
     }
 }

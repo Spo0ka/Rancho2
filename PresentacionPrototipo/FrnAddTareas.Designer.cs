@@ -30,7 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTarea = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -59,14 +59,23 @@
             this.label2.TabIndex = 39;
             this.label2.Text = "Agregar tarea";
             // 
-            // textBox1
+            // txtTarea
             // 
+<<<<<<< HEAD
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Location = new System.Drawing.Point(17, 96);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(283, 69);
             this.textBox1.TabIndex = 0;
+=======
+            this.txtTarea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTarea.Location = new System.Drawing.Point(17, 96);
+            this.txtTarea.Multiline = true;
+            this.txtTarea.Name = "txtTarea";
+            this.txtTarea.Size = new System.Drawing.Size(283, 69);
+            this.txtTarea.TabIndex = 81;
+>>>>>>> main
             // 
             // label1
             // 
@@ -92,6 +101,7 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // pictureBox2
             // 
@@ -119,6 +129,7 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // FrnAddTareas
             // 
@@ -130,7 +141,7 @@
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTarea);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -154,7 +165,7 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTarea;
         private System.Windows.Forms.Label label1;
     }
 }
