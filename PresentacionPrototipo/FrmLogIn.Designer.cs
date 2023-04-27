@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -51,6 +51,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(653, 36);
             this.panel1.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(299, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(48, 20);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Login";
             // 
             // label1
             // 
@@ -76,7 +86,7 @@
             this.textBox1.Location = new System.Drawing.Point(36, 99);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(272, 26);
-            this.textBox1.TabIndex = 3;
+            this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
@@ -84,17 +94,7 @@
             this.textBox2.Location = new System.Drawing.Point(36, 174);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(272, 26);
-            this.textBox2.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(299, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 20);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Login";
+            this.textBox2.TabIndex = 1;
             // 
             // pictureBox2
             // 
@@ -129,7 +129,7 @@
             this.btnSalir.Location = new System.Drawing.Point(480, 164);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(141, 45);
-            this.btnSalir.TabIndex = 6;
+            this.btnSalir.TabIndex = 3;
             this.btnSalir.Text = "Exit";
             this.btnSalir.UseVisualStyleBackColor = false;
             // 
@@ -144,7 +144,7 @@
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnLogIn.Size = new System.Drawing.Size(147, 45);
-            this.btnLogIn.TabIndex = 5;
+            this.btnLogIn.TabIndex = 2;
             this.btnLogIn.Text = "Log in";
             this.btnLogIn.UseVisualStyleBackColor = false;
             // 
