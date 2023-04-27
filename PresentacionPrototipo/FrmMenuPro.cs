@@ -90,5 +90,11 @@ namespace PresentacionPrototipo
         {
             Close();
         }
+
+        private void BtnUsuarios_Click(object sender, EventArgs e)
+        {
+            FrmUsuarios frmUsuarios = new FrmUsuarios();
+            frmUsuarios.ShowDialog();
+        }
     }
 }

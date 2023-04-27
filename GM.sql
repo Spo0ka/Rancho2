@@ -55,6 +55,26 @@ FOREIGN KEY(FK_Tarea) REFERENCES AgregarTareas(id));
 
 
 
+delimiter ;;
+DROP PROCEDURE if EXISTS insertUsuario;
+CREATE PROCEDURE insertUsuario( in _Id INT,
+in _Nombre VARCHAR(100),IN  _Apellido VARCHAR(100), in _Usuario VARCHAR(100), in _contraseña VARCHAR(100), in _permisos VARCHAR(20))
+BEGIN 
+DECLARE X int;
+SELECT COUNT(*) FROM usuarios WHERE  Id = _Id INTO X;
+if X=0 then
+INSERT INTO usuarios VALUES(NULL,_Nombre,_Apellido,_Usuario,_contraseña,_permisos);
+ELSEIF X>0 then
+UPDATE usuarios SET Nombre= _Nombre, Apellido= _Apellido, Usuario= _Usuario, permisos=_permisos WHERE Id=_Id;
+END if;
+END;;
+
+delimiter ;;
+DROP PROCEDURE if EXISTS deleteUsuario;
+CREATE PROCEDURE deleteUsuario(IN _Id INT)
+BEGIN
+DELETE * FROM usuarios WHERE Id = _Id;
+END;;
 
 
 

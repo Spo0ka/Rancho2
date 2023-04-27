@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -36,11 +37,16 @@ namespace PresentacionPrototipo
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            string pattern = @"^[a-zA-Z]{3}\d{5}$";
             try
             {
                 if (txtArete.Text == "")
                 {
                     MessageBox.Show("No puedes dejar en blanco el arete");
+                }
+                else if (!Regex.IsMatch(txtArete.Text, pattern))
+                {
+                    MessageBox.Show("El formato de entrada no es valido, gonorrea");
                 }
                 else
                 {
