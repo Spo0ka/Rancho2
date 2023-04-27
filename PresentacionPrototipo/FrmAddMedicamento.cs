@@ -45,7 +45,11 @@ namespace PresentacionPrototipo
             {
                 if (txtNombre.Text == "")
                 {
-                    MessageBox.Show("No olvides poner una cantidad");
+                    MessageBox.Show("No puedes dejar casillas en Blanco","Advertencia!!",MessageBoxButtons.OK);
+                }
+                else if (txtNombre.Text =="")
+                {
+                    MessageBox.Show("No puedes dejar casillas en Blanco", "Advertencia", MessageBoxButtons.OK);
                 }
                 else
                 {
@@ -56,7 +60,7 @@ namespace PresentacionPrototipo
             catch (Exception)
             {
 
-                MessageBox.Show("Al parecer todo bien");
+                MessageBox.Show("Al parecer todo bien o mal");
             }
         }
 
@@ -74,7 +78,17 @@ namespace PresentacionPrototipo
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
-                MessageBox.Show("Solo numeros", "Mire bien mijo donde escribe", MessageBoxButtons.OK);
+                MessageBox.Show("En esta casilla solo se permiten Numeros", "Advertencia!!", MessageBoxButtons.OK);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("En esta casilla solo se permiten Letras", "Advertencia!!", MessageBoxButtons.OK);
                 e.Handled = true;
                 return;
             }

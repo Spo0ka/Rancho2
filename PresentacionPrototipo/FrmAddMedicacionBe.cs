@@ -42,12 +42,25 @@ namespace PresentacionPrototipo
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            
-            mv.guardar(new MedicamentoBecerro(FrmVacunacionBe.entidad.Id,
-                cmbNombre.SelectedValue.ToString(),
-                int.Parse(cmbMedicamento.SelectedValue.ToString()),
-                mtxtFecha.Text));
-            Close();
+            try
+            {
+                if (mtxtFecha.Text =="")
+                {
+                    MessageBox.Show("No puedes dejar casillas en Blanco", "Advertencia!!", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    mv.guardar(new MedicamentoBecerro(FrmVacunacionBe.entidad.Id,
+                    cmbNombre.SelectedValue.ToString(),
+                    int.Parse(cmbMedicamento.SelectedValue.ToString()),
+                    mtxtFecha.Text));
+                    Close();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Oh todo esta bien o salio mal","Advertencia",MessageBoxButtons.OK);
+            }
         }
     }
 }

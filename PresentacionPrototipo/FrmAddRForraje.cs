@@ -29,10 +29,24 @@ namespace PresentacionPrototipo
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            mr.guardar(new RForraje(FrmRForraje.entidad.Id,
-                int.Parse(cmbForraje.SelectedValue.ToString()),
-                txtCantidad.Text));
-            Close();
+            try
+            {
+                if (txtCantidad.Text == "")
+                {
+                    MessageBox.Show("No puedes dejar casillas es Blanco", "Advertencia", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    mr.guardar(new RForraje(FrmRForraje.entidad.Id,
+                        int.Parse(cmbForraje.SelectedValue.ToString()),txtCantidad.Text));
+                    Close();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Si aparece este mensaje o esta bien o esta mal");
+            }
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -49,7 +63,7 @@ namespace PresentacionPrototipo
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
-                MessageBox.Show("Solo numeros", "Mire bien mijo donde escribe", MessageBoxButtons.OK);
+                MessageBox.Show("En esta casilla solo se permiten Numeros", "Advertencia!!", MessageBoxButtons.OK);
                 e.Handled = true;
                 return;
             }

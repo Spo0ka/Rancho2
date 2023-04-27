@@ -43,11 +43,27 @@ namespace PresentacionPrototipo
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            va.guardar(new MedicamentoVaca(FrmVacunacionVa.entidad.Id,
-                cmbNombre.SelectedValue.ToString(),
-                int.Parse(cmbMedicamento.SelectedValue.ToString()),
-                mtxtFecha.Text));
-            Close();
+            try
+            {
+                if (mtxtFecha.Text =="")
+                {
+                    MessageBox.Show("No puedes dejar casillas en Blanco", "Advertencia!!", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    va.guardar(new MedicamentoVaca(FrmVacunacionVa.entidad.Id,
+                        cmbNombre.SelectedValue.ToString(),
+                           int.Parse(cmbMedicamento.SelectedValue.ToString()),
+                           mtxtFecha.Text));
+                    Close();
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("nose xd");
+            }
+
         }
     }
 }

@@ -89,6 +89,7 @@
             this.txtcumplio.Name = "txtcumplio";
             this.txtcumplio.Size = new System.Drawing.Size(160, 26);
             this.txtcumplio.TabIndex = 91;
+            this.txtcumplio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcumplio_KeyPress);
             // 
             // label3
             // 

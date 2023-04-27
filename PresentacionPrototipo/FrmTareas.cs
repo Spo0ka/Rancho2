@@ -36,15 +36,42 @@ namespace PresentacionPrototipo
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            mtt.guardar(new TareaR(FrmVerTareas.entidad.Id,
-                int.Parse(cmbtarea.SelectedValue.ToString()),
-                txtcumplio.Text));
-            Close();
+            try
+            {
+                if(txtcumplio.Text =="")
+                {
+                    MessageBox.Show("No puedes dejar casillas en Blanco", "Advertencia", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    mtt.guardar(new TareaR(FrmVerTareas.entidad.Id,
+                    int.Parse(cmbtarea.SelectedValue.ToString()),
+                    txtcumplio.Text));
+                    Close();
+                }
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Oh todo salio bien o todo esta mal", "Advertencia", MessageBoxButtons.OK);
+            }
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void txtcumplio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("En esta casilla solo se permiten Letras", "Advertencia!!", MessageBoxButtons.OK);
+                e.Handled = true;
+                return;
+            }
         }
     }
 }
