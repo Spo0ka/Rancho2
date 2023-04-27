@@ -80,7 +80,7 @@
             this.comboBox1.Location = new System.Drawing.Point(17, 98);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(151, 28);
-            this.comboBox1.TabIndex = 90;
+            this.comboBox1.TabIndex = 0;
             // 
             // textBox1
             // 
@@ -88,7 +88,7 @@
             this.textBox1.Location = new System.Drawing.Point(211, 100);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(160, 26);
-            this.textBox1.TabIndex = 91;
+            this.textBox1.TabIndex = 1;
             // 
             // label3
             // 
@@ -120,7 +120,7 @@
             this.btnSalir.Location = new System.Drawing.Point(506, 135);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(100, 34);
-            this.btnSalir.TabIndex = 89;
+            this.btnSalir.TabIndex = 3;
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -147,7 +147,7 @@
             this.btnGuardar.Location = new System.Drawing.Point(389, 135);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(111, 34);
-            this.btnGuardar.TabIndex = 87;
+            this.btnGuardar.TabIndex = 2;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = false;
