@@ -66,7 +66,7 @@
             this.comboBox2.Location = new System.Drawing.Point(27, 207);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(151, 28);
-            this.comboBox2.TabIndex = 74;
+            this.comboBox2.TabIndex = 1;
             // 
             // label3
             // 
@@ -86,7 +86,7 @@
             this.comboBox1.Location = new System.Drawing.Point(27, 105);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(151, 28);
-            this.comboBox1.TabIndex = 71;
+            this.comboBox1.TabIndex = 0;
             // 
             // panel1
             // 
@@ -178,7 +178,7 @@
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(112, 34);
-            this.btnGuardar.TabIndex = 69;
+            this.btnGuardar.TabIndex = 3;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -189,7 +189,7 @@
             this.textBox1.Location = new System.Drawing.Point(347, 107);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(160, 26);
-            this.textBox1.TabIndex = 79;
+            this.textBox1.TabIndex = 2;
             // 
             // FrmAddMedicacionBe
             // 
