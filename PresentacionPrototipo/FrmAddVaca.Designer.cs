@@ -67,7 +67,7 @@
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(102, 26);
-            this.textBox1.TabIndex = 30;
+            this.textBox1.TabIndex = 0;
             // 
             // label1
             // 
@@ -126,7 +126,7 @@
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(99, 26);
-            this.textBox2.TabIndex = 33;
+            this.textBox2.TabIndex = 2;
             // 
             // textBox3
             // 
@@ -135,7 +135,7 @@
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(99, 26);
-            this.textBox3.TabIndex = 34;
+            this.textBox3.TabIndex = 4;
             // 
             // textBox4
             // 
@@ -144,7 +144,7 @@
             this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(99, 26);
-            this.textBox4.TabIndex = 38;
+            this.textBox4.TabIndex = 3;
             // 
             // label5
             // 
@@ -163,7 +163,7 @@
             this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(102, 26);
-            this.textBox5.TabIndex = 36;
+            this.textBox5.TabIndex = 1;
             // 
             // label6
             // 
@@ -186,7 +186,7 @@
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(107, 34);
-            this.btnAceptar.TabIndex = 47;
+            this.btnAceptar.TabIndex = 6;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
             // 
@@ -202,7 +202,7 @@
             this.btnSubir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSubir.Name = "btnSubir";
             this.btnSubir.Size = new System.Drawing.Size(92, 42);
-            this.btnSubir.TabIndex = 48;
+            this.btnSubir.TabIndex = 5;
             this.btnSubir.Text = "Subir";
             this.btnSubir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSubir.UseVisualStyleBackColor = false;
@@ -219,7 +219,7 @@
             this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(108, 34);
-            this.btnSalir.TabIndex = 46;
+            this.btnSalir.TabIndex = 7;
             this.btnSalir.Text = "Back";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSalir.UseVisualStyleBackColor = false;
