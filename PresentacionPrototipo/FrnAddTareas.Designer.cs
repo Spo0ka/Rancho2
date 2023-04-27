@@ -66,7 +66,7 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(283, 69);
-            this.textBox1.TabIndex = 81;
+            this.textBox1.TabIndex = 0;
             // 
             // label1
             // 
@@ -88,7 +88,7 @@
             this.btnSalir.Location = new System.Drawing.Point(515, 131);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(100, 34);
-            this.btnSalir.TabIndex = 84;
+            this.btnSalir.TabIndex = 2;
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -115,7 +115,7 @@
             this.btnGuardar.Location = new System.Drawing.Point(398, 131);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(111, 34);
-            this.btnGuardar.TabIndex = 82;
+            this.btnGuardar.TabIndex = 1;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = false;
