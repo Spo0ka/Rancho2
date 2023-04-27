@@ -45,7 +45,7 @@
             this.textBox1.Location = new System.Drawing.Point(440, 82);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(244, 26);
-            this.textBox1.TabIndex = 48;
+            this.textBox1.TabIndex = 0;
             // 
             // label1
             // 
@@ -95,7 +95,7 @@
             this.btnSalir.Location = new System.Drawing.Point(585, 315);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(105, 42);
-            this.btnSalir.TabIndex = 50;
+            this.btnSalir.TabIndex = 2;
             this.btnSalir.Text = "Back";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -112,7 +112,7 @@
             this.btnAdd.Location = new System.Drawing.Point(440, 133);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(42, 42);
-            this.btnAdd.TabIndex = 49;
+            this.btnAdd.TabIndex = 1;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdd.UseVisualStyleBackColor = false;
             // 
