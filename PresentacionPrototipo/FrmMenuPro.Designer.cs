@@ -158,7 +158,7 @@
             this.btnVacBecerros.Name = "btnVacBecerros";
             this.btnVacBecerros.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnVacBecerros.Size = new System.Drawing.Size(90, 41);
-            this.btnVacBecerros.TabIndex = 38;
+            this.btnVacBecerros.TabIndex = 7;
             this.btnVacBecerros.UseVisualStyleBackColor = false;
             // 
             // btnVacVacas
@@ -172,7 +172,7 @@
             this.btnVacVacas.Name = "btnVacVacas";
             this.btnVacVacas.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnVacVacas.Size = new System.Drawing.Size(90, 41);
-            this.btnVacVacas.TabIndex = 37;
+            this.btnVacVacas.TabIndex = 3;
             this.btnVacVacas.UseVisualStyleBackColor = false;
             // 
             // btnSalir
@@ -186,7 +186,7 @@
             this.btnSalir.Location = new System.Drawing.Point(628, 349);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(100, 39);
-            this.btnSalir.TabIndex = 36;
+            this.btnSalir.TabIndex = 8;
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -202,7 +202,7 @@
             this.btnTareas.Name = "btnTareas";
             this.btnTareas.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnTareas.Size = new System.Drawing.Size(90, 41);
-            this.btnTareas.TabIndex = 29;
+            this.btnTareas.TabIndex = 6;
             this.btnTareas.UseVisualStyleBackColor = false;
             // 
             // btnForraje
@@ -216,7 +216,7 @@
             this.btnForraje.Name = "btnForraje";
             this.btnForraje.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnForraje.Size = new System.Drawing.Size(90, 41);
-            this.btnForraje.TabIndex = 28;
+            this.btnForraje.TabIndex = 5;
             this.btnForraje.UseVisualStyleBackColor = false;
             // 
             // btnBecerro
@@ -230,7 +230,7 @@
             this.btnBecerro.Name = "btnBecerro";
             this.btnBecerro.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnBecerro.Size = new System.Drawing.Size(90, 41);
-            this.btnBecerro.TabIndex = 27;
+            this.btnBecerro.TabIndex = 4;
             this.btnBecerro.UseVisualStyleBackColor = false;
             // 
             // btnVacas
@@ -244,7 +244,7 @@
             this.btnVacas.Name = "btnVacas";
             this.btnVacas.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnVacas.Size = new System.Drawing.Size(90, 41);
-            this.btnVacas.TabIndex = 26;
+            this.btnVacas.TabIndex = 2;
             this.btnVacas.UseVisualStyleBackColor = false;
             // 
             // btnAlmMedicamento
@@ -258,7 +258,7 @@
             this.btnAlmMedicamento.Name = "btnAlmMedicamento";
             this.btnAlmMedicamento.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnAlmMedicamento.Size = new System.Drawing.Size(90, 41);
-            this.btnAlmMedicamento.TabIndex = 25;
+            this.btnAlmMedicamento.TabIndex = 1;
             this.btnAlmMedicamento.UseVisualStyleBackColor = false;
             // 
             // btnAlmForraje
@@ -272,7 +272,7 @@
             this.btnAlmForraje.Name = "btnAlmForraje";
             this.btnAlmForraje.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnAlmForraje.Size = new System.Drawing.Size(90, 41);
-            this.btnAlmForraje.TabIndex = 24;
+            this.btnAlmForraje.TabIndex = 0;
             this.btnAlmForraje.UseVisualStyleBackColor = false;
             // 
             // FrmMenuPro
