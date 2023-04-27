@@ -106,7 +106,7 @@
             this.btnSubir.Location = new System.Drawing.Point(369, 305);
             this.btnSubir.Name = "btnSubir";
             this.btnSubir.Size = new System.Drawing.Size(59, 38);
-            this.btnSubir.TabIndex = 74;
+            this.btnSubir.TabIndex = 2;
             this.btnSubir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSubir.UseVisualStyleBackColor = false;
             // 
@@ -122,7 +122,7 @@
             this.btnGuardar.Location = new System.Drawing.Point(416, 370);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(111, 34);
-            this.btnGuardar.TabIndex = 73;
+            this.btnGuardar.TabIndex = 3;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -133,7 +133,7 @@
             this.textBox2.Location = new System.Drawing.Point(20, 177);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(136, 26);
-            this.textBox2.TabIndex = 71;
+            this.textBox2.TabIndex = 1;
             // 
             // label3
             // 
@@ -150,7 +150,7 @@
             this.textBox1.Location = new System.Drawing.Point(20, 96);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(136, 26);
-            this.textBox1.TabIndex = 69;
+            this.textBox1.TabIndex = 0;
             // 
             // label1
             // 
@@ -172,7 +172,7 @@
             this.btnSalir.Location = new System.Drawing.Point(534, 370);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(100, 34);
-            this.btnSalir.TabIndex = 78;
+            this.btnSalir.TabIndex = 4;
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.UseVisualStyleBackColor = false;
