@@ -52,6 +52,12 @@
     <Compile Include="FrmAddRForraje.Designer.cs">
       <DependentUpon>FrmAddRForraje.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAddUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddUsuario.Designer.cs">
+      <DependentUpon>FrmAddUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAddVaca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,12 @@
     </Compile>
     <Compile Include="FrmTareas.Designer.cs">
       <DependentUpon>FrmTareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmVerTareas.cs">
       <SubType>Form</SubType>
@@ -199,6 +211,9 @@
     <EmbeddedResource Include="FrmAddRForraje.resx">
       <DependentUpon>FrmAddRForraje.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddUsuario.resx">
+      <DependentUpon>FrmAddUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAddVaca.resx">
       <DependentUpon>FrmAddVaca.cs</DependentUpon>
     </EmbeddedResource>
@@ -237,6 +252,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTareas.resx">
       <DependentUpon>FrmTareas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVacas.resx">
       <DependentUpon>FrmVacas.cs</DependentUpon>

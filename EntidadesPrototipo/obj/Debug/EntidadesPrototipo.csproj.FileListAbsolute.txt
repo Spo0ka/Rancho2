@@ -16,3 +16,9 @@ C:\Users\ddr4z\Documents\A\Rancho2-main\EntidadesPrototipo\obj\Debug\EntidadesPr
 C:\Users\ddr4z\Documents\A\Rancho2-main\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.CoreCompileInputs.cache
 C:\Users\ddr4z\Documents\A\Rancho2-main\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.dll
 C:\Users\ddr4z\Documents\A\Rancho2-main\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.pdb
+C:\Users\ADMIN\source\repos\PresentacionPrototipo\EntidadesPrototipo\bin\Debug\EntidadesPrototipo.dll
+C:\Users\ADMIN\source\repos\PresentacionPrototipo\EntidadesPrototipo\bin\Debug\EntidadesPrototipo.pdb
+C:\Users\ADMIN\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.AssemblyReference.cache
+C:\Users\ADMIN\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.dll
+C:\Users\ADMIN\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.pdb

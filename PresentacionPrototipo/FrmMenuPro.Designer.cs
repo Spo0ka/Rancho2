@@ -49,6 +49,8 @@
             this.btnVacas = new System.Windows.Forms.Button();
             this.btnAlmMedicamento = new System.Windows.Forms.Button();
             this.btnAlmForraje = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.BtnUsuarios = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -311,12 +313,39 @@
             this.btnAlmForraje.UseVisualStyleBackColor = false;
             this.btnAlmForraje.Click += new System.EventHandler(this.btnAlmForraje_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(733, 293);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(72, 20);
+            this.label11.TabIndex = 45;
+            this.label11.Text = "Usuarios";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BtnUsuarios
+            // 
+            this.BtnUsuarios.BackColor = System.Drawing.Color.White;
+            this.BtnUsuarios.BackgroundImage = global::PresentacionPrototipo.Properties.Resources.image_2023_04_04_13_11_56;
+            this.BtnUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnUsuarios.Location = new System.Drawing.Point(749, 236);
+            this.BtnUsuarios.Name = "BtnUsuarios";
+            this.BtnUsuarios.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BtnUsuarios.Size = new System.Drawing.Size(90, 41);
+            this.BtnUsuarios.TabIndex = 44;
+            this.BtnUsuarios.UseVisualStyleBackColor = false;
+            this.BtnUsuarios.Click += new System.EventHandler(this.BtnUsuarios_Click);
+            // 
             // FrmMenuPro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(887, 400);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.BtnUsuarios);
             this.Controls.Add(this.btnAgregarTarea);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label9);
@@ -374,5 +403,7 @@
         private System.Windows.Forms.Button btnVacVacas;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnAgregarTarea;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button BtnUsuarios;
     }
 }
