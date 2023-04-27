@@ -71,7 +71,7 @@
             this.textBox1.Location = new System.Drawing.Point(46, 97);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(136, 26);
-            this.textBox1.TabIndex = 32;
+            this.textBox1.TabIndex = 0;
             // 
             // label1
             // 
@@ -88,7 +88,7 @@
             this.textBox2.Location = new System.Drawing.Point(46, 178);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(136, 26);
-            this.textBox2.TabIndex = 34;
+            this.textBox2.TabIndex = 1;
             // 
             // label3
             // 
@@ -119,7 +119,7 @@
             this.btnSubir.Location = new System.Drawing.Point(395, 306);
             this.btnSubir.Name = "btnSubir";
             this.btnSubir.Size = new System.Drawing.Size(59, 38);
-            this.btnSubir.TabIndex = 51;
+            this.btnSubir.TabIndex = 2;
             this.btnSubir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSubir.UseVisualStyleBackColor = false;
             // 
@@ -135,7 +135,7 @@
             this.btnAceptar.Location = new System.Drawing.Point(535, 367);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(55, 42);
-            this.btnAceptar.TabIndex = 50;
+            this.btnAceptar.TabIndex = 3;
             this.btnAceptar.UseVisualStyleBackColor = false;
             // 
             // btnSalir
@@ -148,7 +148,7 @@
             this.btnSalir.Location = new System.Drawing.Point(607, 367);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(55, 42);
-            this.btnSalir.TabIndex = 49;
+            this.btnSalir.TabIndex = 4;
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSalir.UseVisualStyleBackColor = false;
             // 
