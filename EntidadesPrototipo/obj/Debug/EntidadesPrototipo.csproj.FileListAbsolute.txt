@@ -1,0 +1,24 @@
+C:\Users\Spo0k\source\repos\PresentacionPrototipo\EntidadesPrototipo\bin\Debug\EntidadesPrototipo.dll
+C:\Users\Spo0k\source\repos\PresentacionPrototipo\EntidadesPrototipo\bin\Debug\EntidadesPrototipo.pdb
+C:\Users\Spo0k\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.AssemblyReference.cache
+C:\Users\Spo0k\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.CoreCompileInputs.cache
+C:\Users\Spo0k\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.dll
+C:\Users\Spo0k\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.pdb
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\EntidadesPrototipo\bin\Debug\EntidadesPrototipo.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\EntidadesPrototipo\bin\Debug\EntidadesPrototipo.pdb
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.AssemblyReference.cache
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.CoreCompileInputs.cache
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.pdb
+C:\Users\ddr4z\Documents\A\Rancho2-main\EntidadesPrototipo\bin\Debug\EntidadesPrototipo.dll
+C:\Users\ddr4z\Documents\A\Rancho2-main\EntidadesPrototipo\bin\Debug\EntidadesPrototipo.pdb
+C:\Users\ddr4z\Documents\A\Rancho2-main\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.AssemblyReference.cache
+C:\Users\ddr4z\Documents\A\Rancho2-main\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.CoreCompileInputs.cache
+C:\Users\ddr4z\Documents\A\Rancho2-main\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.dll
+C:\Users\ddr4z\Documents\A\Rancho2-main\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.pdb
+C:\Users\ADMIN\source\repos\PresentacionPrototipo\EntidadesPrototipo\bin\Debug\EntidadesPrototipo.dll
+C:\Users\ADMIN\source\repos\PresentacionPrototipo\EntidadesPrototipo\bin\Debug\EntidadesPrototipo.pdb
+C:\Users\ADMIN\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.AssemblyReference.cache
+C:\Users\ADMIN\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.dll
+C:\Users\ADMIN\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.pdb
