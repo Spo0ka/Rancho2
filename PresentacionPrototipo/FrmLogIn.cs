@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AccesoDatos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace PresentacionPrototipo
 {
     public partial class FrmLogIn : Form
     {
+        AccesoUsuarios au;
         public FrmLogIn()
         {
             InitializeComponent();
+            au = new AccesoUsuarios();
         }
 
         private void FrmLogIn_Load(object sender, EventArgs e)
@@ -32,20 +35,40 @@ namespace PresentacionPrototipo
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            if (txtPW.Text == "1234" && txtUsuario.Text == "Admin")
+            var ds = au.MostrarUsuario(txtUsuario.Text);
+            var dt = new DataTable();
+            dt = ds.Tables[0];
+            if (!txtUsuario.Text.Equals(""))
             {
-                FrmMenuPro Admin = new FrmMenuPro();
-                Admin.ShowDialog();
+                if (!txtPW.Text.Equals(""))
+                {
+                    try
+                    {
+                        if (dt.Rows[0]["Usuario"].ToString().Equals(txtUsuario.Text) && dt.Rows[0]["pass"].ToString().Equals(txtPW.Text))
+                        {
+                            if (dt.Rows[0]["permisos"].ToString().Equals("Administrador"))
+                            {
+                                FrmMenuPro Admin = new FrmMenuPro();
+                                Admin.ShowDialog();
+                            }
+                            else if (dt.Rows[0]["permisos"].ToString().Equals("Empleado"))
+                            {
+                                FrmMenuTrabajador Trabajador = new FrmMenuTrabajador();
+                                Trabajador.ShowDialog();
+                            }
+                        }
+                        else if (dt.Rows[0]["Usuario"].ToString().Equals(txtUsuario.Text) && !dt.Rows[0]["pass"].ToString().Equals(txtPW.Text))
+                            MessageBox.Show("Contraseña incorrecta");
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("El usuario ingresado no existe");
+                    }
+                }
+                else MessageBox.Show("No se ha ingresado una contraseña");
             }
-
-           if(txtPW.Text == "4321" && txtUsuario.Text == "Trabajador")
-            {
-                FrmMenuTrabajador Trabajador = new FrmMenuTrabajador();
-                Trabajador.ShowDialog();
-            }
-           else
-                MessageBox.Show("Error de Usuario");
-
+            else
+                MessageBox.Show("No se ha ingresado un usuario");
         }
     }
 }

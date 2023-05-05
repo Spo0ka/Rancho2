@@ -185,3 +185,34 @@ C:\Users\ddr4z\Downloads\Rancho2-main (2)\Rancho2-main\AccesoDatos\obj\Debug\Acc
 C:\Users\ddr4z\Downloads\Rancho2-main (2)\Rancho2-main\AccesoDatos\obj\Debug\AccesoDatos.csproj.CopyComplete
 C:\Users\ddr4z\Downloads\Rancho2-main (2)\Rancho2-main\AccesoDatos\obj\Debug\AccesoDatos.dll
 C:\Users\ddr4z\Downloads\Rancho2-main (2)\Rancho2-main\AccesoDatos\obj\Debug\AccesoDatos.pdb
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\AccesoDatos.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\AccesoDatos.pdb
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\EntidadesPrototipo.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\MySql.Data.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\Google.Protobuf.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\ZstdNet.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\BouncyCastle.Crypto.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\Ubiety.Dns.Core.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\System.Memory.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\System.Buffers.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\K4os.Compression.LZ4.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\K4os.Hash.xxHash.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\System.Numerics.Vectors.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\EntidadesPrototipo.pdb
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\ConectarBd.pdb
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\ConectarBd.dll.config
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\MySql.Data.xml
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\Google.Protobuf.pdb
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\Google.Protobuf.xml
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\System.Memory.xml
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\System.Buffers.xml
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\K4os.Compression.LZ4.xml
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\K4os.Hash.xxHash.xml
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\bin\Debug\System.Numerics.Vectors.xml
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\obj\Debug\AccesoDatos.csproj.AssemblyReference.cache
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\obj\Debug\AccesoDatos.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Proyecto 2\Rancho2\AccesoDatos\obj\Debug\AccesoDatos.pdb

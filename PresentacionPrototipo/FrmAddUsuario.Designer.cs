@@ -195,10 +195,11 @@
             // 
             // cmbPermisos
             // 
+            this.cmbPermisos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPermisos.FormattingEnabled = true;
             this.cmbPermisos.Items.AddRange(new object[] {
             "Empleados",
-            "Trabajador"});
+            "Administrador"});
             this.cmbPermisos.Location = new System.Drawing.Point(182, 157);
             this.cmbPermisos.Name = "cmbPermisos";
             this.cmbPermisos.Size = new System.Drawing.Size(129, 28);

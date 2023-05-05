@@ -283,6 +283,10 @@
     <None Include="Resources\anadir.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AccesoDatos\AccesoDatos.csproj">
+      <Project>{94AE5748-4241-4114-8491-F1F8EFDDBEBC}</Project>
+      <Name>AccesoDatos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EntidadesPrototipo\EntidadesPrototipo.csproj">
       <Project>{f3ded31b-dada-401b-a3b9-267fe3307537}</Project>
       <Name>EntidadesPrototipo</Name>

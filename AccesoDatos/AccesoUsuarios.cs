@@ -27,5 +27,10 @@ namespace AccesoDatos
             return b.Obtener(string.Format("SELECT * FROM Usuarios WHERE Nombre LIKE ('%{0}%')", Filtro), "Usuarios");
 
         }
+        public DataSet MostrarUsuario(string Filtro)
+        {
+            return b.Obtener(string.Format("SELECT * FROM Usuarios WHERE Usuario = '{0}'", Filtro), "Usuarios");
+
+        }
     }
 }
