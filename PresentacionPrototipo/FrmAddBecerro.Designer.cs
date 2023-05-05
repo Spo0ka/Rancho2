@@ -293,6 +293,7 @@
             this.mtxtfdN.Size = new System.Drawing.Size(100, 26);
             this.mtxtfdN.TabIndex = 70;
             this.mtxtfdN.ValidatingType = typeof(System.DateTime);
+            this.mtxtfdN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mtxtfdN_KeyPress);
             // 
             // FrmAddBecerro
             // 

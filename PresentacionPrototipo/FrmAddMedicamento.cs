@@ -45,7 +45,11 @@ namespace PresentacionPrototipo
             {
                 if (txtNombre.Text == "")
                 {
-                    MessageBox.Show("No olvides poner una cantidad");
+                    MessageBox.Show("No puedes dejar casillas en Blanco", "Advertencia!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (txtCantidad.Text =="")
+                {
+                    MessageBox.Show("No puedes dejar casillas en Blanco", "Advertencia!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -55,8 +59,7 @@ namespace PresentacionPrototipo
             }
             catch (Exception)
             {
-
-                MessageBox.Show("Al parecer todo bien");
+                MessageBox.Show("Acaso aparece esto?");
             }
         }
 
@@ -67,6 +70,26 @@ namespace PresentacionPrototipo
             if (rs == DialogResult.OK)
             {
                 pbMedicamento.Image = Image.FromFile(fo.FileName);
+            }
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("En esta casilla solo se permiten Letras", "Advertencia!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("En esta casilla solo se permite Numeros", "Advertencia!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
             }
         }
     }

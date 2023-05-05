@@ -29,10 +29,27 @@ namespace PresentacionPrototipo
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            mr.guardar(new RForraje(FrmRForraje.entidad.Id,
-                int.Parse(cmbForraje.SelectedValue.ToString()),
-                txtCantidad.Text));
-            Close();
+            try
+            {
+                if (txtCantidad.Text == "")
+                {
+                    MessageBox.Show("No puedes dejar casillas en Blanco", "Advertencia!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (cmbForraje.SelectedIndex == -1)
+                {
+                    MessageBox.Show("No olvides seleccionar una opción", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    mr.guardar(new RForraje(FrmRForraje.entidad.Id,int.Parse(cmbForraje.SelectedValue.ToString()),
+                    txtCantidad.Text));
+                    Close();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Acaso aparece esto?");
+            }
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -43,6 +60,16 @@ namespace PresentacionPrototipo
         private void FrmAddRForraje_Load(object sender, EventArgs e)
         {
             btnGuardar.BackColor = ColorTranslator.FromHtml("#FFF689");
+        }
+
+        private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("En esta casilla solo se permite Numeros", "Advertencia!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
+            }
         }
     }
 }

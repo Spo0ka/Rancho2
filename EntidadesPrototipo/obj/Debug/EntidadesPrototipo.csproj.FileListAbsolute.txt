@@ -22,3 +22,9 @@ C:\Users\ADMIN\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\E
 C:\Users\ADMIN\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.CoreCompileInputs.cache
 C:\Users\ADMIN\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.dll
 C:\Users\ADMIN\source\repos\PresentacionPrototipo\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.pdb
+C:\Users\ddr4z\Downloads\Rancho2-main (2)\Rancho2-main\EntidadesPrototipo\bin\Debug\EntidadesPrototipo.dll
+C:\Users\ddr4z\Downloads\Rancho2-main (2)\Rancho2-main\EntidadesPrototipo\bin\Debug\EntidadesPrototipo.pdb
+C:\Users\ddr4z\Downloads\Rancho2-main (2)\Rancho2-main\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.AssemblyReference.cache
+C:\Users\ddr4z\Downloads\Rancho2-main (2)\Rancho2-main\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.csproj.CoreCompileInputs.cache
+C:\Users\ddr4z\Downloads\Rancho2-main (2)\Rancho2-main\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.dll
+C:\Users\ddr4z\Downloads\Rancho2-main (2)\Rancho2-main\EntidadesPrototipo\obj\Debug\EntidadesPrototipo.pdb

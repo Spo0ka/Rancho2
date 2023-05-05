@@ -127,6 +127,7 @@
             this.txtPeso.Name = "txtPeso";
             this.txtPeso.Size = new System.Drawing.Size(99, 26);
             this.txtPeso.TabIndex = 33;
+            this.txtPeso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPeso_KeyPress);
             // 
             // txtLecheL
             // 
@@ -136,6 +137,7 @@
             this.txtLecheL.Name = "txtLecheL";
             this.txtLecheL.Size = new System.Drawing.Size(99, 26);
             this.txtLecheL.TabIndex = 34;
+            this.txtLecheL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLecheL_KeyPress);
             // 
             // label5
             // 
@@ -155,6 +157,7 @@
             this.txtRaza.Name = "txtRaza";
             this.txtRaza.Size = new System.Drawing.Size(102, 26);
             this.txtRaza.TabIndex = 36;
+            this.txtRaza.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRaza_KeyPress);
             // 
             // label6
             // 
@@ -303,6 +306,7 @@
             this.mtxtFdn.Name = "mtxtFdn";
             this.mtxtFdn.Size = new System.Drawing.Size(100, 26);
             this.mtxtFdn.TabIndex = 49;
+            this.mtxtFdn.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mtxtFdn_KeyPress);
             // 
             // FrmAddVaca
             // 

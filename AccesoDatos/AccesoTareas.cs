@@ -19,12 +19,12 @@ namespace AccesoDatos
 
         public void Guardar(dynamic Entidad)
         {
-            b.comando(string.Format("Call InsertTareas({0},'{1}')", Entidad.Id, Entidad.Nombre));
+            b.comando(string.Format("Call InsertTareas({0},'{1}',{2})", Entidad.Id, Entidad.Nombre, Entidad.Usuario));
         }
 
         public DataSet Mostrar(string Filtro)
         {
-            return b.Obtener(string.Format("SELECT * FROM ver_ATareas WHERE Tarea LIKE ('%{0}%')", Filtro), "agregartareas");
+            return b.Obtener(string.Format("SELECT * FROM AgregarTareas WHERE Tarea LIKE ('%{0}%')", Filtro), "agregartareas");
 
         }
     }

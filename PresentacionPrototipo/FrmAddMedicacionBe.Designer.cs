@@ -192,6 +192,7 @@
             this.mtxtFecha.Name = "mtxtFecha";
             this.mtxtFecha.Size = new System.Drawing.Size(142, 26);
             this.mtxtFecha.TabIndex = 79;
+            this.mtxtFecha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mtxtFecha_KeyPress);
             // 
             // FrmAddMedicacionBe
             // 

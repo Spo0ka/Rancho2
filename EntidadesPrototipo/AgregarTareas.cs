@@ -8,13 +8,15 @@ namespace EntidadesPrototipo
 {
     public class AgregarTareas
     {
-        public AgregarTareas(int id, string nombre)
+        public AgregarTareas(int id, string nombre, int usuario)
         {
             Id = id;
             Nombre = nombre;
+            Usuario = usuario;
         }
 
         public int Id { get; set; }
         public string Nombre { get; set; }
+        public int Usuario { get; set; }
     }
 }

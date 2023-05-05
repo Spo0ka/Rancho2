@@ -35,6 +35,8 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.CmbUsuario = new System.Windows.Forms.ComboBox();
+            this.sus = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -67,6 +69,7 @@
             this.txtTarea.Name = "txtTarea";
             this.txtTarea.Size = new System.Drawing.Size(283, 69);
             this.txtTarea.TabIndex = 81;
+            this.txtTarea.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTarea_KeyPress);
             // 
             // label1
             // 
@@ -85,7 +88,7 @@
             this.btnSalir.ForeColor = System.Drawing.Color.Black;
             this.btnSalir.Image = global::PresentacionPrototipo.Properties.Resources.salida__1_;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSalir.Location = new System.Drawing.Point(515, 131);
+            this.btnSalir.Location = new System.Drawing.Point(580, 139);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(100, 34);
             this.btnSalir.TabIndex = 84;
@@ -113,7 +116,7 @@
             this.btnGuardar.ForeColor = System.Drawing.Color.Black;
             this.btnGuardar.Image = global::PresentacionPrototipo.Properties.Resources.disco_flexible;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(398, 131);
+            this.btnGuardar.Location = new System.Drawing.Point(463, 139);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(111, 34);
             this.btnGuardar.TabIndex = 82;
@@ -122,12 +125,31 @@
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // CmbUsuario
+            // 
+            this.CmbUsuario.FormattingEnabled = true;
+            this.CmbUsuario.Location = new System.Drawing.Point(323, 95);
+            this.CmbUsuario.Name = "CmbUsuario";
+            this.CmbUsuario.Size = new System.Drawing.Size(228, 28);
+            this.CmbUsuario.TabIndex = 88;
+            // 
+            // sus
+            // 
+            this.sus.AutoSize = true;
+            this.sus.Location = new System.Drawing.Point(319, 72);
+            this.sus.Name = "sus";
+            this.sus.Size = new System.Drawing.Size(64, 20);
+            this.sus.TabIndex = 87;
+            this.sus.Text = "Usuario";
+            // 
             // FrnAddTareas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(627, 185);
+            this.ClientSize = new System.Drawing.Size(692, 185);
+            this.Controls.Add(this.CmbUsuario);
+            this.Controls.Add(this.sus);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.pictureBox2);
@@ -158,5 +180,7 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.TextBox txtTarea;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox CmbUsuario;
+        private System.Windows.Forms.Label sus;
     }
 }

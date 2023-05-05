@@ -36,6 +36,25 @@ namespace PresentacionPrototipo
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (txtcumplio.Text == "")
+                {
+                    MessageBox.Show("No puedes dejar casillas en Blanco", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (cmbtarea.SelectedIndex == -1)
+                {
+                    MessageBox.Show("No olvides seleccionar una opción", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Acaso aparece esto?");
+            }
             mtt.guardar(new TareaR(FrmVerTareas.entidad.Id,
                 int.Parse(cmbtarea.SelectedValue.ToString()),
                 txtcumplio.Text));
@@ -45,6 +64,16 @@ namespace PresentacionPrototipo
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void txtcumplio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("En esta casilla solo se permiten Letras", "Advertencia!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
+            }
         }
     }
 }

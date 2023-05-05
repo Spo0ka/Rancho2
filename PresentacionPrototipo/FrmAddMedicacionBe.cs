@@ -42,11 +42,42 @@ namespace PresentacionPrototipo
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            mv.guardar(new MedicamentoBecerro(FrmVacunacionBe.entidad.Id,
-                cmbNombre.SelectedValue.ToString(),
-                int.Parse(cmbMedicamento.SelectedValue.ToString()),
-                mtxtFecha.Text));
-            Close();
+            try
+            {
+                if (mtxtFecha.Text == "")
+                {
+                    MessageBox.Show("No puedes dejar casillas en Blanco", "Advertencia!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (cmbMedicamento.SelectedIndex ==-1)
+                {
+                    MessageBox.Show("No olvides seleccionar una opción", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (cmbNombre.SelectedIndex == -1)
+                {
+                    MessageBox.Show("No olvides seleccionar una opción", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    mv.guardar(new MedicamentoBecerro(FrmVacunacionBe.entidad.Id,cmbNombre.SelectedValue.ToString(), int.Parse(cmbMedicamento.SelectedValue.ToString()),
+                    mtxtFecha.Text));
+                    Close();
+                }
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Acaso aparece esto?");
+            } 
+        }
+
+        private void mtxtFecha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("En esta casilla solo se permite Numeros", "Advertencia!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
+            }
         }
     }
 }

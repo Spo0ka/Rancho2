@@ -15,7 +15,8 @@ namespace PresentacionPrototipo
     public partial class FrmATarea : Form
     {
         ManejadorTareasAdd mt;
-        public static AgregarTareas entidad = new AgregarTareas(0, "");
+        public static AgregarTareas entidad = new AgregarTareas(0, "",0);
+        public static int Usuario;
         int fila, col;
         public FrmATarea()
         {
@@ -45,9 +46,10 @@ namespace PresentacionPrototipo
         {
             entidad.Id = int.Parse(dgtTareasA.Rows[fila].Cells[0].Value.ToString());
             entidad.Nombre = dgtTareasA.Rows[fila].Cells[1].Value.ToString();
+            Usuario = int.Parse(dgtTareasA.Rows[fila].Cells[2].Value.ToString());
             switch (col)
             {
-                case 2:
+                case 3:
                     {
                         FrnAddTareas adt = new FrnAddTareas();
                         adt.ShowDialog();
@@ -55,7 +57,7 @@ namespace PresentacionPrototipo
                         Actualizar();
                     }
                     break;
-                case 3:
+                case 4:
                     {
                         mt.Borrar(entidad);
                         txtBuscar.Text = "";

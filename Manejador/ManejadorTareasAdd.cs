@@ -13,6 +13,7 @@ namespace Manejador
     {
         //DESCOMENTAR, CUANDO EL CÓDIGO ACCESO DATOS ESTÉ HECHO
         AccesoTareas at = new AccesoTareas();
+        AccesoUsuarios As = new AccesoUsuarios();
         Grafico g = new Grafico();
         public void Borrar(dynamic Entidad)
         {
@@ -33,10 +34,16 @@ namespace Manejador
             tabla.Columns.Clear();
             tabla.RowTemplate.Height = 30;
             tabla.ColumnHeadersHeight = 40;
-            tabla.DataSource = at.Mostrar(filtro).Tables["agregartareas"];
-            tabla.Columns.Insert(2, g.Boton("Editar", Color.FromArgb(137, 249, 59)));
-            tabla.Columns.Insert(3, g.Boton("Borrar", Color.FromArgb(251, 42, 9)));
+            tabla.DataSource = at.Mostrar(filtro).Tables["AgregarTareas"];
+            tabla.Columns.Insert(3, g.Boton("Editar", Color.FromArgb(137, 249, 59)));
+            tabla.Columns.Insert(4, g.Boton("Borrar", Color.FromArgb(251, 42, 9)));
             tabla.Columns[0].Visible = false;
+        }
+        public void ExtraerUsuario(ComboBox caja)
+        {
+            caja.DataSource = As.Mostrar("%").Tables["usuarios"];
+            caja.DisplayMember = "Nombre";
+            caja.ValueMember = "Id";
         }
     }
 }

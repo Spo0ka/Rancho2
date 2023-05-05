@@ -19,9 +19,11 @@ namespace PresentacionPrototipo
         {
             InitializeComponent();
             mt = new ManejadorTareasAdd();
-            if (FrmATarea.entidad.Id>0)
+            mt.ExtraerUsuario(CmbUsuario);
+            if (FrmATarea.entidad.Id > 0)
             {
                 txtTarea.Text = FrmATarea.entidad.Nombre;
+                CmbUsuario.SelectedValue = FrmATarea.Usuario;
             }
         }
 
@@ -34,14 +36,44 @@ namespace PresentacionPrototipo
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            mt.guardar(new AgregarTareas(FrmATarea.entidad.Id,
-                txtTarea.Text));
-            Close();
+            try
+            {
+                if (txtTarea.Text == "")
+                {
+                    MessageBox.Show("No puedes dejar en blanco las casillas", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (CmbUsuario.SelectedIndex == -1)
+                {
+                    MessageBox.Show("No olvides seleccionar una opción", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    mt.guardar(new AgregarTareas(FrmATarea.entidad.Id,
+                    txtTarea.Text, int.Parse(CmbUsuario.SelectedValue.ToString())));
+                    Close();
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void txtTarea_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96))
+            {
+                MessageBox.Show("En esta casilla solo se permiten Letras", "Advertencia!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
+            }
         }
     }
 }

@@ -61,7 +61,7 @@ namespace PresentacionPrototipo
             catch (Exception)
             {
 
-                MessageBox.Show("Al parecer todo bien");
+                MessageBox.Show("Acaso aparece esto?");
             }
         }
 
@@ -72,6 +72,26 @@ namespace PresentacionPrototipo
             if (rs == DialogResult.OK)
             {
                 pbForraje.Image = Image.FromFile(fo.FileName);
+            }
+        }
+
+        private void txtnombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("En esta casilla solo se permiten Letras", "Advertencia!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtcantidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("En esta casilla solo se permite Numeros", "Advertencia!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
             }
         }
     }
