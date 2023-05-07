@@ -26,7 +26,7 @@ namespace AccesoDatos
 
         public DataSet Mostrar(string Filtro)
         {
-            return b.Obtener(string.Format("SELECT * FROM ver_becerros WHERE Arete like '%{0}%'", Filtro), "becerro");
+            return b.Obtener(string.Format("SELECT * FROM becerro WHERE Arete like '%{0}%'", Filtro), "becerro");
         }
     }
 }

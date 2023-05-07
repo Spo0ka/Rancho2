@@ -69,7 +69,6 @@
             this.txtTarea.Name = "txtTarea";
             this.txtTarea.Size = new System.Drawing.Size(283, 69);
             this.txtTarea.TabIndex = 81;
-            this.txtTarea.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTarea_KeyPress);
             // 
             // label1
             // 

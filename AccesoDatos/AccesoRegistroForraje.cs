@@ -25,9 +25,10 @@ namespace AccesoDatos
 
         public DataSet Mostrar(string Filtro)
         {
-            return b.Obtener(string.Format("SELECT * FROM RegistroForraje WHERE cantidad like ('%{0}%')", Filtro), "RegistroForraje");
+          //  return b.Obtener(string.Format("SELECT * FROM RegistroForraje WHERE cantidad like ('%{0}%')", Filtro), "RegistroForraje");
+            return b.Obtener(string.Format("call MostrarRegistroForraje('{0}%')", Filtro), "RegistroForraje");
 
-        }
+        } // call MostrarRegistroForraj('{0}%')
     }
 }
 

@@ -27,6 +27,7 @@ namespace PresentacionPrototipo
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            entidad.Arete = "";
             FrmAddBecerro nuevob = new FrmAddBecerro();
             nuevob.ShowDialog();
             Actualizar();
@@ -46,15 +47,17 @@ namespace PresentacionPrototipo
 
         private void dgtBecerro_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            entidad.Arete = dgtBecerro.Rows[fila].Cells[0].Value.ToString();
-            entidad.Raza = dgtBecerro.Rows[fila].Cells[1].Value.ToString();
-            entidad.Fdn = dgtBecerro.Rows[fila].Cells[2].Value.ToString();
-            entidad.Peso = dgtBecerro.Rows[fila].Cells[3].Value.ToString();
-            entidad.Sexo = dgtBecerro.Rows[fila].Cells[4].Value.ToString();
+            
             switch (columna)
             {
                 case 5:
                     {
+                        entidad.Arete = dgtBecerro.Rows[fila].Cells[0].Value.ToString();
+                        entidad.Raza = dgtBecerro.Rows[fila].Cells[1].Value.ToString();
+                        entidad.Fdn = dgtBecerro.Rows[fila].Cells[2].Value.ToString();
+                        entidad.Peso = dgtBecerro.Rows[fila].Cells[3].Value.ToString();
+                        entidad.Sexo = dgtBecerro.Rows[fila].Cells[4].Value.ToString();
+
                         FrmAddBecerro nuevobe = new FrmAddBecerro();
                         nuevobe.ShowDialog();
                         txtBuscar.Text = "";
@@ -68,6 +71,7 @@ namespace PresentacionPrototipo
                         Actualizar();
                     }
                     break;
+                default: break;
             }
         }
 

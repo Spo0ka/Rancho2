@@ -49,13 +49,15 @@ namespace PresentacionPrototipo
 
         private void dgtMedicamento_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            entidad.Id = int.Parse(dgtMedicamento.Rows[fila].Cells[0].Value.ToString());
-            entidad.Nombre = dgtMedicamento.Rows[fila].Cells[1].Value.ToString();
-            entidad.Cantidad = int.Parse(dgtMedicamento.Rows[fila].Cells[2].Value.ToString());
+           
             switch (columna)
             {
                 case 3:
                     {
+                        entidad.Id = int.Parse(dgtMedicamento.Rows[fila].Cells[0].Value.ToString());
+                        entidad.Nombre = dgtMedicamento.Rows[fila].Cells[1].Value.ToString();
+                        entidad.Cantidad = int.Parse(dgtMedicamento.Rows[fila].Cells[2].Value.ToString());
+
                         FrmAddMedicamento medicamentoa = new FrmAddMedicamento();
                         medicamentoa.ShowDialog();
                         txtBuscar.Text = "";

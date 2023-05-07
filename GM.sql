@@ -1,12 +1,17 @@
 DROP DATABASE if EXISTS GM;
 CREATE DATABASE GM;
 USE GM;
- 
- 
+
+CREATE TABLE Usuarios( Id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+Nombre VARCHAR(100), Apellido VARCHAR(100), Usuario VARCHAR(100), pass VARCHAR(100), permisos VARCHAR(20));
+
+INSERT INTO usuarios VALUES(1, 'Juan Carlos','Muñoz','Admin','1234','Administrador');
+
+
 CREATE TABLE Vacas( Arete VARCHAR(100) NOT NULL PRIMARY KEY,
 Raza VARCHAR(100), Fdn VARCHAR(100), Peso VARCHAR(100), Litros_Leche DOUBLE);
- 
-CREATE TABLE Becerro(Arete VARCHAR(100) NOT NULL PRIMARY KEY,
+
+ CREATE TABLE Becerro(Arete VARCHAR(100) NOT NULL PRIMARY KEY,
 Raza VARCHAR(100), Fdn VARCHAR(100), Peso VARCHAR(100), sexo VARCHAR(1));
  
  
@@ -30,8 +35,6 @@ FOREIGN KEY(Fk_Vacas) REFERENCES Vacas(Arete),
 FOREIGN KEY(FK_Medicamentos) REFERENCES AlmacenMedicamento(id));
  
  
-DESCRIBE MedicamentoVacas;
- 
 DROP TABLE  if EXISTS RegistroForraje;
 CREATE TABLE RegistroForraje(
 id INT PRIMARY KEY NOT NULL auto_increment,
@@ -45,7 +48,8 @@ FOREIGN KEY(FK_Medicamento) REFERENCES AlmacenMedicamento(id));
 
 CREATE TABLE AgregarTareas(
 id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-Tarea VARCHAR(500));
+Tarea VARCHAR(500), fk_Usuarios INT,
+FOREIGN KEY (fk_Usuarios) REFERENCES usuarios(Id));
  
 CREATE TABLE TareaR(
 id INT PRIMARY KEY AUTO_INCREMENT,
@@ -55,54 +59,26 @@ FOREIGN KEY(FK_Tarea) REFERENCES AgregarTareas(id));
 
 
 
-delimiter ;;
-DROP PROCEDURE if EXISTS insertUsuario;
-CREATE PROCEDURE insertUsuario( in _Id INT,
-in _Nombre VARCHAR(100),IN  _Apellido VARCHAR(100), in _Usuario VARCHAR(100), in _contraseña VARCHAR(100), in _permisos VARCHAR(20))
-BEGIN 
-DECLARE X int;
-SELECT COUNT(*) FROM usuarios WHERE  Id = _Id INTO X;
-if X=0 then
-INSERT INTO usuarios VALUES(NULL,_Nombre,_Apellido,_Usuario,_contraseña,_permisos);
-ELSEIF X>0 then
-UPDATE usuarios SET Nombre= _Nombre, Apellido= _Apellido, Usuario= _Usuario, permisos=_permisos WHERE Id=_Id;
-END if;
-END;;
-
-delimiter ;;
-DROP PROCEDURE if EXISTS deleteUsuario;
-CREATE PROCEDURE deleteUsuario(IN _Id INT)
-BEGIN
-DELETE * FROM usuarios WHERE Id = _Id;
-END;;
-
-
-
-delimiter ;;
-CREATE PROCEDURE insertVacas(
-IN _arete VARCHAR(20),
-IN _raza VARCHAR(100),
-IN _fdn VARCHAR(100),
-IN _peso VARCHAR(100),
-IN _litro_leche double
+DELIMITER ;;
+DROP PROCEDURE IF EXISTS insertUsuario;
+CREATE PROCEDURE insertUsuario(
+    IN _Id INT,
+    IN _Nombre VARCHAR(100),
+    IN _Apellido VARCHAR(100),
+    IN _Usuario VARCHAR(100),
+    IN _pass VARCHAR(100),
+    IN _permisos VARCHAR(20)
 )
-BEGIN
-        INSERT INTO vacas VALUES(_arete, _raza, _fdn, _peso, _litro_leche);
+BEGIN 
+    DECLARE X INT;
+    SELECT COUNT(*) FROM usuarios WHERE Id = _Id INTO X;
+    IF X = 0 THEN
+        INSERT INTO usuarios VALUES(NULL, _Nombre, _Apellido, _Usuario, _pass, _permisos);
+    ELSE
+        UPDATE usuarios SET Nombre = _Nombre, Apellido = _Apellido, Usuario = _Usuario,pass=_pass, permisos = _permisos WHERE Id = _Id;
+    END IF;
 END;;
 
-
-
-delimiter ;;
-DROP PROCEDURE if EXISTS borrarForraje;
-CREATE PROCEDURE borrarForraje(_id INT)
-BEGIN
-DELETE FROM almacenForraje WHERE id = _id;
-END;
- 
- 
-CALL borrarForraje(1);
- 
-SELECT * FROM ver_forraje;
 
 
 delimiter $$
@@ -123,7 +99,7 @@ BEGIN
         UPDATE AlmacenMedicamento SET Cantidad = Cantidad - 1;
 END; $$
 /*------------------------------------------------------------------------------------------------------------*/
-
+/*
 Vistas
 DROP VIEW if EXISTS ver_forraje;
 CREATE VIEW ver_forraje AS
@@ -166,89 +142,61 @@ CREATE VIEW ver_registroForraje AS
 SELECT rf.id, af.Nombre, rf.cantidad FROM registroforraje rf, almacenforraje af;
 */
 
-DROP VIEW if EXISTS ver_registroForraje;
-CREATE VIEW ver_registroForraje AS
-SELECT rf.id, af.Nombre AS 'Forraje', rf.cantidad FROM registroforraje rf, almacenforraje af;
- 
-SELECT * FROM ver_registroforraje;
-
-INSERT INTO registroforraje VALUES(1,6,'2');
- 
-DROP VIEW if EXISTS ver_medicamentoBecerro;
-CREATE VIEW ver_medicamentoBecerro AS
-SELECT mb.id, mb.Fk_Becerro, am.Nombre AS 'Medicamento', mb.Fecha
-FROM medicamentobecerro mb, almacenmedicamento am;
- 
-SELECT * FROM ver_medicamentoBecerro;
 delimiter ;;
-
 DROP PROCEDURE if EXISTS insertAlmacenMedicamento;
 CREATE PROCEDURE insertAlmacenMedicamento(
 IN _id INT, IN _nombre VARCHAR(100),IN _cantidad INT)
    BEGIN  
-   if _id < 0 then
+   DECLARE X INT;
+   SELECT COUNT(*) FROM almacenmedicamento WHERE id=_id INTO X;
+   if X = 0 then
       INSERT INTO AlmacenMedicamento VALUES(NULL, _nombre, _cantidad);
-   ELSE if _id > 0 then
+   ELSEif X > 0 then
       UPDATE AlmacenMedicamento SET nombre = _nombre, cantidad = _cantidad WHERE id = _id;
    END if;
-   END if;
 END;;
-CALL insertAlmacenMedicamento(-1, 'paracetamol', 123);
-SELECT * FROM almacenmedicamento;
+
  
 delimiter ;;
 DROP PROCEDURE if EXISTS insertMedicamentoVacas;
 CREATE PROCEDURE insertMedicamentoVacas(
 IN _id INT, IN _vaca VARCHAR(100), _medicamento INT, _fecha VARCHAR(100))
    BEGIN  
-   if _id < 0 then
+   DECLARE X INT;
+   SELECT COUNT(*) FROM medicamentovacas WHERE id=_id INTO x;
+   if X = 0 then
       INSERT INTO MedicamentoVacas VALUES(NULL, _vaca, _medicamento, _fecha);
-   ELSE if _id > 0 then
-      UPDATE MedicamentoVacas SET Fk_Vacas = _vaca, FK_Medicamento = _medicamento, Fecha = _fecha WHERE id = _id;
-   END if;
+   ELSEif X >0 then
+      UPDATE medicamentovacas SET Fk_Vacas = _vaca, FK_Medicamentos = _medicamento, Fecha = _fecha WHERE id = _id;
    END if;
 END;;
- CALL insertMedicamentoVacas(-1,'123er',4,'2019-02-14');
-delimiter ;;
 
+delimiter ;;
 DROP PROCEDURE if EXISTS insertRegistroForraje;
 CREATE PROCEDURE insertRegistroForraje(
 IN _id INT, IN _forraje INT,IN _cantidad INT)
    BEGIN  
-   if _id < 0 then
+   DECLARE X INT;
+   SELECT COUNT(*) FROM registroforraje WHERE id=_id INTO X;
+   if X = 0 then
       INSERT INTO RegistroForraje VALUES(NULL, _forraje, _cantidad);
-   ELSE if _id > 0 then
+   ELSEif X > 0 then
       UPDATE RegistroForraje SET Fk_Forraje = _forraje, cantidad = _cantidad WHERE id = _id;
-   END if;
    END if;
 END;;
  
-delimiter ;;
-DROP PROCEDURE if EXISTS insertBecerro;
-CREATE PROCEDURE insertBecerro(
-IN _arete VARCHAR(100), IN _raza VARCHAR(100), IN _fdn VARCHAR(100), IN _peso VARCHAR(100), IN _sexo VARCHAR(1))
-   BEGIN  
-      INSERT INTO Becerro VALUES(_arete, _raza, _fdn, _peso, _sexo);
-END;;
-
-delimiter ;;
-DROP PROCEDURE if EXISTS updateBecerro;
-CREATE PROCEDURE updateBecerro(
-IN _arete VARCHAR(100), IN _raza VARCHAR(100), IN _fdn VARCHAR(100), IN _peso VARCHAR(100), IN _sexo VARCHAR(1))
-   BEGIN  
-      UPDATE Becerro SET Arete = _arete, Raza = _raza, Fdn = _fdn, Peso = _peso, sexo = _sexo WHERE Arete = _arete;
-END;;
       
 delimiter ;;
 DROP PROCEDURE if EXISTS insertMedBecerro;
 CREATE PROCEDURE insertMedBecerro(
 IN _id INT, IN _becerro VARCHAR(100), IN _medicamento INT, IN _fecha VARCHAR(100))
    BEGIN 
-	if _id < 0 then  
+   DECLARE X INT;
+   SELECT COUNT(*) FROM medicamentobecerro WHERE id=_id INTO X;
+	if X = 0 then  
       INSERT INTO medicamentobecerro VALUES(NULL, _becerro, _medicamento, _fecha);
-   ELSE if _id > 0 then
+   ELSEif X > 0 then
       UPDATE medicamentobecerro SET Fk_Becerro = _becerro, Fk_Medicamento = _medicamento, Fecha = _fecha WHERE id = _id;
-   END if;
    END if;
 END;;
 
@@ -259,68 +207,186 @@ in _id INT,
 in _nombre VARCHAR(50),
 in _cantidad INT)
 BEGIN
-if _id <0 then
+DECLARE X INT;
+   SELECT COUNT(*) FROM almacenforraje WHERE id=_id INTO X;
+if X=0 then
 INSERT INTO almacenForraje VALUES(NULL,_nombre,_cantidad);
-ELSE if _id >0 then
+ELSE if X >0 then
 UPDATE almacenforraje SET nombre = _nombre, cantidad = _cantidad WHERE id = _id;
 END if;
 END if;
-END;
- 
+END;;
 
 delimiter ;;
 DROP PROCEDURE if EXISTS InsertTareas;
 CREATE PROCEDURE InsertTareas(
-IN _id INT, IN _Tarea VARCHAR(500))
+IN _id INT, IN _Tarea VARCHAR(500), IN _Usuario INT)
 BEGIN
-if _id<0 then
-	INSERT INTO agregartareas VALUES (NULL, _Tarea);
-ELSE if _id >0 then
-	UPDATE agregartareas SET Tarea = _Tarea WHERE id = _id;
+DECLARE X INT;
+   SELECT COUNT(*) FROM agregartareas WHERE id=_id INTO X;
+if X=0 then
+	INSERT INTO agregartareas VALUES (NULL, _Tarea,_Usuario);
+ELSE if X >0 then
+	UPDATE agregartareas SET Tarea = _Tarea, Usuario=_Usuario WHERE id = _id;
 	END if;
 	END if;
 END;;
 
-CALL InsertTareas(-1,'Dar forraje');
-
-SELECT * FROM agregartareas;
 
 delimiter ;;
 DROP PROCEDURE if EXISTS InsertTareasR;
 CREATE PROCEDURE InsertTareasR(
 IN _id INT, IN _fkTarea INT, IN _cumplio VARCHAR(10))
 BEGIN
-if _id <0 then
+DECLARE X INT;
+   SELECT COUNT(*) FROM Tarear WHERE id=_id INTO X;
+if X =0 then
 	INSERT INTO tarear VALUES (NULL, _fkTarea, _cumplio);
-ELSE if _id >0 then
+ELSE if X>0 then
 	UPDATE tarear SET FK_Tarea = _fkTarea, Cumplio = _cumplio WHERE id = _id;
 	END if;
 	END if;
 END;;
 
 /*CALL InsertTareasR(-1,1,'En proceso');*/
-SELECT * FROM tarear;
+/*SELECT * FROM tarear;
 SELECT * FROM agregartareas;
 /*vistas Tareas*/
-DELETE FROM agregartareas WHERE id = 2;
+/*DELETE FROM agregartareas WHERE id = 2;
 DROP VIEW if EXISTS ver_ATareas;
 CREATE VIEW ver_ATareas AS
 SELECT af.id, af.Tarea AS 'Tarea'
 FROM agregartareas af;
 
-SELECT * FROM ver_ATareas;
 
 /*DROP VIEW if EXISTS ver_TareasR;
 CREATE VIEW ver_TareasR AS
 SELECT af.id, f.Tarea AS 'Tareas', af.cumplio
 FROM tarear af, agregartareas f;*/
 
-SELECT * FROM ver_tareasr;
 
-DROP view if EXISTS ver_tareasTra;
-CREATE VIEW ver_tareasTra AS
-SELECT u.id, a.Tarea AS'Tarea',u.cumplio FROM agregartareas a, tarear u;
 
-SELECT * FROM ver_tareasTra;
 
-DELETE  FROM becerro WHERE Arete = '123cvb';
+
+delimiter $$
+DROP TRIGGER if EXISTS generar_username;
+CREATE TRIGGER generar_username
+BEFORE INSERT ON usuarios
+FOR EACH ROW
+BEGIN
+    SET NEW.usuario = CONCAT(NEW.nombre, SUBSTR(NEW.apellido, 1, 2), LAST_INSERT_ID());
+END; $$
+
+
+delimiter ;;
+DROP PROCEDURE if EXISTS insertBecerro;
+CREATE PROCEDURE insertBecerro(
+IN _arete VARCHAR(100), IN _raza VARCHAR(100), IN _fdn VARCHAR(100), IN _peso VARCHAR(100), IN _sexo VARCHAR(1))
+   BEGIN  
+   DECLARE x INT;
+   SELECT COUNT(*) FROM becerro WHERE arete=_arete INTO x;
+   if X=0 then 
+      INSERT INTO Becerro VALUES(_arete, _raza, _fdn, _peso, _sexo);
+      ELSEIF X>0 then
+      UPDATE becerro SET raza=_raza, fdn=_fdn, peso=_peso, sexo=_sexo WHERE arete=_arete;
+   END if;
+END;;
+
+##SELECT * FROM vacas
+##CALL insertVacas('frm11111','Pitbull','1111','11',111)
+delimiter ;;
+DROP PROCEDURE if EXISTS insertVacas;
+CREATE PROCEDURE insertVacas(
+IN _arete VARCHAR(100),
+IN _raza VARCHAR(100),
+IN _fdn VARCHAR(100),
+IN _peso VARCHAR(100),
+IN _litro_leche DOUBLE
+)
+BEGIN
+DECLARE X INT;
+SELECT COUNT(*) FROM vacas WHERE Arete=_arete INTO X;
+if X=0 then
+        INSERT INTO vacas VALUES(_arete, _raza, _fdn, _peso, _litro_leche);
+ELSEIF X>0 then 
+UPDATE vacas SET raza=_raza,fdn= _fdn,  peso=_peso, Litros_Leche=_litro_leche WHERE Arete=_arete;
+END if;
+END;;
+
+delimiter ;;
+DROP PROCEDURE if EXISTS insertUsuario;
+CREATE PROCEDURE insertUsuario( in _Id INT,
+in _Nombre VARCHAR(100),IN  _Apellido VARCHAR(100), in _Usuario VARCHAR(100), in _contraseña VARCHAR(100), in _permisos VARCHAR(20))
+BEGIN 
+DECLARE X int;
+SELECT COUNT(*) FROM usuarios WHERE  Id = _Id INTO X;
+if X=0 then
+INSERT INTO usuarios VALUES(NULL,_Nombre,_Apellido,_Usuario,_contraseña,_permisos);
+ELSEIF X>0 then
+UPDATE usuarios SET Nombre= _Nombre, Apellido= _Apellido, Usuario= _Usuario, permisos=_permisos WHERE Id=_Id;
+END if;
+END;;
+
+
+
+
+
+
+/* procedures para mostrar */
+delimiter ;; ##Medicamento vacas
+DROP PROCEDURE if EXISTS Show_MedicamentoVaca; 
+CREATE PROCEDURE Show_MedicamentoVaca(IN filtro VARCHAR(100))
+BEGIN
+    SELECT MedicamentoVacas.id, Vacas.Arete, AlmacenMedicamento.Nombre, MedicamentoVacas.Fecha
+    FROM MedicamentoVacas
+    INNER JOIN AlmacenMedicamento ON MedicamentoVacas.FK_Medicamentos = AlmacenMedicamento.id
+    INNER JOIN Vacas ON MedicamentoVacas.Fk_Vacas = Vacas.Arete
+    WHERE AlmacenMedicamento.Nombre LIKE CONCAT('%', filtro, '%')
+    OR Vacas.Arete LIKE CONCAT('%', filtro, '%')
+    OR MedicamentoVacas.Fecha LIKE CONCAT('%', filtro, '%');
+END ;;  
+
+DELIMITER ;; ## Medicamento Becerros
+DROP PROCEDURE IF EXISTS Show_MedicamentoBecerro; 
+CREATE PROCEDURE Show_MedicamentoBecerro(IN filtro VARCHAR(100))
+BEGIN
+    SELECT mb.id, b.Arete, m.Nombre, mb.Fecha
+    FROM medicamentobecerro mb
+    JOIN AlmacenMedicamento m ON mb.FK_Medicamento = m.id
+    JOIN becerro b ON mb.Fk_Becerro = b.Arete
+    WHERE b.Arete LIKE CONCAT('%', filtro, '%') OR m.Nombre LIKE CONCAT('%', filtro, '%');
+END ;;
+
+DELIMITER ;; ##Realizar Tareas
+DROP PROCEDURE if EXISTS MostrarTareasR;
+CREATE PROCEDURE MostrarTareasR(IN filtro VARCHAR(500))
+BEGIN
+    SELECT TareaR.id, AgregarTareas.Tarea, TareaR.Cumplio
+    FROM TareaR
+    INNER JOIN AgregarTareas
+    ON TareaR.FK_Tarea = AgregarTareas.id
+    WHERE AgregarTareas.Tarea LIKE CONCAT('%', filtro, '%');
+END ;;
+
+
+DELIMITER ;; ## Registro Forraje
+DROP PROCEDURE if EXISTS MostrarRegistroForraje;
+CREATE PROCEDURE MostrarRegistroForraje(IN filtro VARCHAR(100))
+BEGIN
+    SELECT rf.id, af.Nombre AS 'Forraje', rf.cantidad
+    FROM RegistroForraje rf
+    JOIN AlmacenForraje af ON rf.Fk_Forraje = af.id
+    WHERE af.Nombre LIKE CONCAT('%', filtro, '%');
+END ;;
+
+DELIMITER ;;
+DROP PROCEDURE if EXISTS MostrarTareasUsuarios;
+CREATE PROCEDURE MostrarTareasUsuarios(IN filtro VARCHAR(100))
+BEGIN
+    SELECT t.id, t.Tarea, u.Nombre AS 'Usuario'
+    FROM AgregarTareas t
+    JOIN Usuarios u ON t.fk_Usuarios = u.Id
+    WHERE t.Tarea LIKE CONCAT('%', filtro, '%') OR u.Nombre LIKE CONCAT('%', filtro, '%');
+END ;;
+
+

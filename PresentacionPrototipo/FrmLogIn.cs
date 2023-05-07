@@ -51,7 +51,7 @@ namespace PresentacionPrototipo
                                 FrmMenuPro Admin = new FrmMenuPro();
                                 Admin.ShowDialog();
                             }
-                            else if (dt.Rows[0]["permisos"].ToString().Equals("Empleado"))
+                            else if (dt.Rows[0]["permisos"].ToString().Equals("Empleados"))
                             {
                                 FrmMenuTrabajador Trabajador = new FrmMenuTrabajador();
                                 Trabajador.ShowDialog();

@@ -38,13 +38,15 @@ namespace PresentacionPrototipo
 
         private void dgtForraje_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            entidad.Id = int.Parse(dgtForraje.Rows[fila].Cells[0].Value.ToString());
-            entidad.Nombre = dgtForraje.Rows[fila].Cells[1].Value.ToString();
-            entidad.Cantidad = int.Parse(dgtForraje.Rows[fila].Cells[2].Value.ToString());
+            
             switch (columna)
             {
                 case 3:
                     {
+                        entidad.Id = int.Parse(dgtForraje.Rows[fila].Cells[0].Value.ToString());
+                        entidad.Nombre = dgtForraje.Rows[fila].Cells[1].Value.ToString();
+                        entidad.Cantidad = int.Parse(dgtForraje.Rows[fila].Cells[2].Value.ToString());
+
                         FrmAddForraje adf = new FrmAddForraje();
                         adf.ShowDialog();
                         txtBuscar.Text = "";
@@ -58,6 +60,7 @@ namespace PresentacionPrototipo
                         Actualizar();
                     }
                     break;
+                default: break;
             }
         }
 

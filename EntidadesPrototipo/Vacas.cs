@@ -8,7 +8,7 @@ namespace EntidadesPrototipo
 {
     public class Vacas
     {
-        public Vacas(string arete, string raza, string fdn ,string peso, string litrosLeche)
+        public Vacas(string arete, string raza, string fdn ,string peso, double litrosLeche)
         {
             Arete = arete;
             Raza = raza;
@@ -21,6 +21,6 @@ namespace EntidadesPrototipo
         public string Raza { get; set; }
         public string Fdn { get; set; }
         public string Peso { get; set; }
-        public string LitrosLeche { get; set; }
+        public double LitrosLeche { get; set; }
     }
 }

@@ -49,15 +49,17 @@ namespace PresentacionPrototipo
 
         private void dgtVBecerro_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            entidad.Id = int.Parse(dgtVBecerro.Rows[fila].Cells[0].Value.ToString());
-            Becerro = dgtVBecerro.Rows[fila].Cells[1].Value.ToString();
-            Medicamento = dgtVBecerro.Rows[fila].Cells[2].Value.ToString();
-            entidad.Fecha = dgtVBecerro.Rows[fila].Cells[3].Value.ToString();
+            
             switch (columna)
             {
                 case 4:
                     {
-                        FrmMedicacionVaca vacam = new FrmMedicacionVaca();
+                        entidad.Id = int.Parse(dgtVBecerro.Rows[fila].Cells[0].Value.ToString());
+                        Becerro = dgtVBecerro.Rows[fila].Cells[1].Value.ToString();
+                        Medicamento = dgtVBecerro.Rows[fila].Cells[2].Value.ToString();
+                        entidad.Fecha = dgtVBecerro.Rows[fila].Cells[3].Value.ToString();
+
+                        FrmAddMedicacionBe vacam = new FrmAddMedicacionBe();
                         vacam.ShowDialog();
                         txtBuscar.Text = "";
                         Actualizar();
@@ -70,6 +72,7 @@ namespace PresentacionPrototipo
                         Actualizar();
                     }
                     break;
+                default: break;
             }
         }
         private void dgtVBecerro_CellEnter(object sender, DataGridViewCellEventArgs e)

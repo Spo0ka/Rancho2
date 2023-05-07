@@ -42,14 +42,16 @@ namespace PresentacionPrototipo
 
         private void dgtVvacas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            entidad.Id = int.Parse(dgtVvacas.Rows[Fila].Cells[0].Value.ToString());
-            Vaca = dgtVvacas.Rows[Fila].Cells[1].Value.ToString();
-            Medicamento = dgtVvacas.Rows[Fila].Cells[2].Value.ToString();
-            entidad.Fecha = dgtVvacas.Rows[Fila].Cells[3].Value.ToString();
+            
             switch (Columna)
             {
                 case 4:
                     {
+                        entidad.Id = int.Parse(dgtVvacas.Rows[Fila].Cells[0].Value.ToString());
+                        Vaca = dgtVvacas.Rows[Fila].Cells[1].Value.ToString();
+                        Medicamento = dgtVvacas.Rows[Fila].Cells[2].Value.ToString();
+                        entidad.Fecha = dgtVvacas.Rows[Fila].Cells[3].Value.ToString();
+
                         FrmMedicacionVaca vacam = new FrmMedicacionVaca();
                         vacam.ShowDialog();
                         txtBuscar.Text = "";
@@ -63,7 +65,8 @@ namespace PresentacionPrototipo
                         Actualizar();
                     }
                     break;
-           
+                default: break;
+
             }
 
         }

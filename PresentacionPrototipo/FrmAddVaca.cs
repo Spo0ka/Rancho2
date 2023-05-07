@@ -19,6 +19,14 @@ namespace PresentacionPrototipo
         public FrmAddVaca()
         {
             InitializeComponent();
+            if (FrmVacas.entidad.Arete != "") 
+            {
+                txtArete.Text = FrmVacas.entidad.Arete.ToString();
+                txtLecheL.Text = FrmVacas.entidad.LitrosLeche.ToString();
+                txtPeso.Text = FrmVacas.entidad.Peso.ToString();
+                txtRaza.Text = FrmVacas.entidad.Raza.ToString();
+                mtxtFdn.Text = FrmVacas.entidad.Fdn.ToString();
+            }
             Mv = new ManejadorVaca();
         }
 
@@ -77,7 +85,7 @@ namespace PresentacionPrototipo
                 else
                 {
                     Mv.guardar(new Vacas(txtArete.Text, txtRaza.Text,
-                        mtxtFdn.Text, txtPeso.Text, txtLecheL.Text));
+                        mtxtFdn.Text, txtPeso.Text,double.Parse(txtLecheL.Text)));
                     Close();
                 }
             }

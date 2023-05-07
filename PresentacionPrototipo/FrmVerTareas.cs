@@ -50,13 +50,15 @@ namespace PresentacionPrototipo
 
         private void dgtTareasR_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            entidad.Id = int.Parse(dgtTareasR.Rows[fila].Cells[0].Value.ToString());
-            Tarea = dgtTareasR.Rows[fila].Cells[1].Value.ToString();
-            entidad.Cumplio = dgtTareasR.Rows[fila].Cells[2].Value.ToString();
+            
             switch (col)
             {
                 case 3:
                     {
+                        entidad.Id = int.Parse(dgtTareasR.Rows[fila].Cells[0].Value.ToString());
+                        Tarea = dgtTareasR.Rows[fila].Cells[1].Value.ToString();
+                        entidad.Cumplio = dgtTareasR.Rows[fila].Cells[2].Value.ToString();
+
                         FrmTareas ft = new FrmTareas();
                         ft.ShowDialog();
                         txtBuscar.Text = "";
@@ -70,6 +72,7 @@ namespace PresentacionPrototipo
                         Actualizar();
                     }
                     break;
+                default: break;
             }
         }
 
