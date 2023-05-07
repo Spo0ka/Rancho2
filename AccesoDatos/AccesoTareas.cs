@@ -24,7 +24,7 @@ namespace AccesoDatos
 
         public DataSet Mostrar(string Filtro)
         {
-            return b.Obtener(string.Format("SELECT * FROM AgregarTareas WHERE Tarea LIKE ('%{0}%')", Filtro), "agregartareas");
+            return b.Obtener(string.Format("Call MostrarTareasUsuarios('%{0}%')", Filtro), "agregartareas");
 
         }
     }

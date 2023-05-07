@@ -14,7 +14,7 @@ namespace PresentacionPrototipo
 {
     public partial class FrmVacas : Form
     {
-       public static Vacas entidad = new Vacas("","","","","");
+       public static Vacas entidad = new Vacas("","","","",0);
         ManejadorVaca Mv;
         int fila, columna;
         public FrmVacas()
@@ -30,6 +30,7 @@ namespace PresentacionPrototipo
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            entidad.Arete = "";
             FrmAddVaca nuevav = new FrmAddVaca();
             nuevav.ShowDialog();
             Actualizar();
@@ -37,16 +38,18 @@ namespace PresentacionPrototipo
 
         private void dgtVacas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            entidad.Arete = dgtVacas.Rows[fila].Cells[0].Value.ToString();
-            entidad.Raza = dgtVacas.Rows[fila].Cells[1].Value.ToString();
-            entidad.Fdn = dgtVacas.Rows[fila].Cells[2].Value.ToString();
-            entidad.Peso = dgtVacas.Rows[fila].Cells[3].Value.ToString();
-            entidad.LitrosLeche = dgtVacas.Rows[fila].Cells[4].Value.ToString();
+            
             switch (columna)
             {
                 case 5:
                     {
-                        FrmAddBecerro nuevobe = new FrmAddBecerro();
+                        entidad.Arete = dgtVacas.Rows[fila].Cells[0].Value.ToString();
+                        entidad.Raza = dgtVacas.Rows[fila].Cells[1].Value.ToString();
+                        entidad.Fdn = dgtVacas.Rows[fila].Cells[2].Value.ToString();
+                        entidad.Peso = dgtVacas.Rows[fila].Cells[3].Value.ToString();
+                        entidad.LitrosLeche = double.Parse(dgtVacas.Rows[fila].Cells[4].Value.ToString());
+
+                        FrmAddVaca nuevobe = new FrmAddVaca();
                         nuevobe.ShowDialog();
                         txtBuscar.Text = "";
                         Actualizar();
@@ -59,6 +62,7 @@ namespace PresentacionPrototipo
                         Actualizar();
                     }
                     break;
+                default: break;
             }
         }
 

@@ -19,12 +19,12 @@ namespace AccesoDatos
 
         public void Guardar(dynamic Entidad)
         {
-            b.comando(string.Format("Call agregarForraje({0},'{1}','{2}')", Entidad.Id ,Entidad.Nombre, Entidad.Cantidad));
+            b.comando(string.Format("Call agregarForraje({0},'{1}',{2})", Entidad.Id ,Entidad.Nombre, Entidad.Cantidad));
         }
 
         public DataSet Mostrar(string Filtro)
         {
-            return b.Obtener(string.Format("SELECT * FROM ver_forraje WHERE nombre LIKE '%{0}%'", Filtro), "almacenForraje");
+            return b.Obtener(string.Format("SELECT * FROM almacenForraje WHERE nombre LIKE '%{0}%'", Filtro), "almacenForraje");
 
         }
     }

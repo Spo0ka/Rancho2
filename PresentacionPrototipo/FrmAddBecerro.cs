@@ -19,6 +19,13 @@ namespace PresentacionPrototipo
         public FrmAddBecerro()
         {
             InitializeComponent();
+            if (FrmBecerros.entidad.Arete != "") {
+            txtArete.Text = FrmBecerros.entidad.Arete.ToString();
+                txtpeso.Text= FrmBecerros.entidad.Peso.ToString();
+                txtRaza.Text = FrmBecerros.entidad.Raza.ToString();
+                txtSexo.Text = FrmBecerros.entidad.Sexo.ToString();
+                mtxtfdN.Text = FrmBecerros.entidad.Fdn.ToString();
+            }
             mb = new ManejadorBecerros();
         }
 
@@ -44,7 +51,7 @@ namespace PresentacionPrototipo
                 {
                     MessageBox.Show("No puedes dejar en blanco las casillas","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 }
-                else if (txtSexo.TextLength >= 1)
+                else if (txtSexo.TextLength > 1)
                 {
                     MessageBox.Show("Favor de solo ingresar un caracter", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
