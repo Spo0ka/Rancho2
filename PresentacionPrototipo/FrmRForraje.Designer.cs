@@ -84,9 +84,9 @@ namespace PresentacionPrototipo
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(340, 8);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 20);
+            this.label2.Size = new System.Drawing.Size(59, 20);
             this.label2.TabIndex = 39;
-            this.label2.Text = "Tareas";
+            this.label2.Text = "Forraje";
             // 
             // btnSalir
             // 

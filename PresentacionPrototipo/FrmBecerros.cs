@@ -41,6 +41,7 @@ namespace PresentacionPrototipo
         private void FrmBecerros_Load(object sender, EventArgs e)
         {
 
+            panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
             btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
             Actualizar();
         }

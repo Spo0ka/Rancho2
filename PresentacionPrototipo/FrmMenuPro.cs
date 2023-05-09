@@ -28,6 +28,7 @@ namespace PresentacionPrototipo
             btnVacBecerros.BackColor = ColorTranslator.FromHtml("#FFF689");
             btnVacVacas.BackColor = ColorTranslator.FromHtml("#FFF689");
             btnAgregarTarea.BackColor = ColorTranslator.FromHtml("#FFF689");
+            BtnUsuarios.BackColor = ColorTranslator.FromHtml("#FFF689");
             btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
             panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
         }

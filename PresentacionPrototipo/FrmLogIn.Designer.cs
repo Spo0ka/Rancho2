@@ -33,11 +33,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.txtPW = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnLogIn = new System.Windows.Forms.Button();
+            this.txtPW = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -87,14 +87,6 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(272, 26);
             this.txtUsuario.TabIndex = 3;
-            // 
-            // txtPW
-            // 
-            this.txtPW.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPW.Location = new System.Drawing.Point(36, 174);
-            this.txtPW.Name = "txtPW";
-            this.txtPW.Size = new System.Drawing.Size(272, 26);
-            this.txtPW.TabIndex = 4;
             // 
             // pictureBox2
             // 
@@ -150,17 +142,26 @@
             this.btnLogIn.UseVisualStyleBackColor = false;
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
+            // txtPW
+            // 
+            this.txtPW.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPW.Location = new System.Drawing.Point(36, 175);
+            this.txtPW.Name = "txtPW";
+            this.txtPW.PasswordChar = '*';
+            this.txtPW.Size = new System.Drawing.Size(272, 26);
+            this.txtPW.TabIndex = 9;
+            // 
             // FrmLogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(653, 238);
+            this.Controls.Add(this.txtPW);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnLogIn);
-            this.Controls.Add(this.txtPW);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -187,11 +188,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.TextBox txtPW;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnLogIn;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.MaskedTextBox txtPW;
     }
 }

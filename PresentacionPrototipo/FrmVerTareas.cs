@@ -26,6 +26,7 @@ namespace PresentacionPrototipo
 
         private void FrmVerTareas_Load(object sender, EventArgs e)
         {
+            panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
             btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
             Actualizar();
         }
@@ -50,10 +51,10 @@ namespace PresentacionPrototipo
 
         private void dgtTareasR_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
             switch (col)
             {
-                case 3:
+                case 4:
                     {
                         entidad.Id = int.Parse(dgtTareasR.Rows[fila].Cells[0].Value.ToString());
                         Tarea = dgtTareasR.Rows[fila].Cells[1].Value.ToString();
@@ -65,7 +66,7 @@ namespace PresentacionPrototipo
                         Actualizar();
                     }
                     break;
-                case 4:
+                case 5:
                     {
                         mtt.Borrar(entidad);
                         txtBuscar.Text = "";

@@ -263,3 +263,36 @@ C:\Users\ADMIN\Desktop\Proyecto Pedro\Rancho2\Manejador\obj\Debug\Manejador.cspr
 C:\Users\ADMIN\Desktop\Proyecto Pedro\Rancho2\Manejador\obj\Debug\Manejador.csproj.CopyComplete
 C:\Users\ADMIN\Desktop\Proyecto Pedro\Rancho2\Manejador\obj\Debug\Manejador.dll
 C:\Users\ADMIN\Desktop\Proyecto Pedro\Rancho2\Manejador\obj\Debug\Manejador.pdb
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\Manejador.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\Manejador.pdb
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\AccesoDatos.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\ConectarBd.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\MySql.Data.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\Google.Protobuf.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\ZstdNet.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\BouncyCastle.Crypto.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\Ubiety.Dns.Core.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\System.Memory.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\System.Buffers.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\K4os.Compression.LZ4.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\K4os.Hash.xxHash.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\System.Numerics.Vectors.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\AccesoDatos.pdb
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\crud.pdb
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\ConectarBd.pdb
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\ConectarBd.dll.config
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\MySql.Data.xml
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\Google.Protobuf.pdb
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\Google.Protobuf.xml
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\System.Memory.xml
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\System.Buffers.xml
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\K4os.Compression.LZ4.xml
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\K4os.Hash.xxHash.xml
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\bin\Debug\System.Numerics.Vectors.xml
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\obj\Debug\Manejador.csproj.AssemblyReference.cache
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\obj\Debug\Manejador.csproj.CoreCompileInputs.cache
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\obj\Debug\Manejador.csproj.CopyComplete
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\obj\Debug\Manejador.dll
+C:\OneDrive\Documentos\Escuela\Ing. de Software\Ing. de software\Archivos\Otra copia\Rancho2\Manejador\obj\Debug\Manejador.pdb
