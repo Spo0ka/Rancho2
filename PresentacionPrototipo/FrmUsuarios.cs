@@ -36,22 +36,23 @@ namespace PresentacionPrototipo
 
         private void dgtMedicamento_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+            Usuarios.Id = int.Parse(dtgMostrar.Rows[fila].Cells[0].Value.ToString());
+            Usuarios.Nombre = dtgMostrar.Rows[fila].Cells[1].Value.ToString();
+            Usuarios.Apellido = dtgMostrar.Rows[fila].Cells[2].Value.ToString();
+            Usuarios.PSWD = dtgMostrar.Rows[fila].Cells[4].Value.ToString();
+            Usuarios.Permisos = dtgMostrar.Rows[fila].Cells[5].Value.ToString();
+
             switch (col)
             {
                 case 6: {
-                        Usuarios.Id = int.Parse(dtgMostrar.Rows[fila].Cells[0].Value.ToString());
-                        Usuarios.Nombre = dtgMostrar.Rows[fila].Cells[1].Value.ToString();
-                        Usuarios.Apellido = dtgMostrar.Rows[fila].Cells[2].Value.ToString();
-                        Usuarios.PSWD = dtgMostrar.Rows[fila].Cells[4].Value.ToString();
-                        Usuarios.Permisos = dtgMostrar.Rows[fila].Cells[5].Value.ToString();
-
                         FrmAddUsuario frmAddUsuario = new FrmAddUsuario();
                         frmAddUsuario.ShowDialog();
                         txtBuscar.Text = "";
                         Actualizar();
                     } break;
-                    case 7: { Mu.Borrar(Usuarios);
+                    case 7: {
+                        MessageBox.Show(Usuarios.Id.ToString());
+                        Mu.Borrar(Usuarios);
                               txtBuscar.Text = "";
                                Actualizar();
                     } break;
@@ -73,6 +74,7 @@ namespace PresentacionPrototipo
         {
             btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
             panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
+            btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
         }
 
         private void button1_Click(object sender, EventArgs e)

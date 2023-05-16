@@ -60,6 +60,7 @@ namespace PresentacionPrototipo
         private void FrmAddRForraje_Load(object sender, EventArgs e)
         {
             btnGuardar.BackColor = ColorTranslator.FromHtml("#FFF689");
+            panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
         }
 
         private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)

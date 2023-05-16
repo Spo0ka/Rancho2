@@ -14,6 +14,7 @@ namespace PresentacionPrototipo
     {
         public FrmMenuPro()
         {
+            FrmMenuTrabajador.verifyWorker = false;
             InitializeComponent();
         }
 
@@ -30,6 +31,7 @@ namespace PresentacionPrototipo
             btnAgregarTarea.BackColor = ColorTranslator.FromHtml("#FFF689");
             btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
             panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
+            BtnUsuarios.BackColor = ColorTranslator.FromHtml("#FFF689");
         }
 
         private void btnAlmForraje_Click(object sender, EventArgs e)

@@ -23,7 +23,7 @@ namespace PresentacionPrototipo
             if (FrmATarea.entidad.Id > 0)
             {
                 txtTarea.Text = FrmATarea.entidad.Nombre;
-                CmbUsuario.SelectedValue = FrmATarea.Usuario;
+                CmbUsuario.Text = FrmATarea.Usuario;
             }
         }
 

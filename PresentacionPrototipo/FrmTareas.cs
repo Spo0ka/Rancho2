@@ -57,7 +57,7 @@ namespace PresentacionPrototipo
             }
             mtt.guardar(new TareaR(FrmVerTareas.entidad.Id,
                 int.Parse(cmbtarea.SelectedValue.ToString()),
-                txtcumplio.Text));
+                txtcumplio.Text,FrmVerTareas.usuario));
             Close();
         }
 

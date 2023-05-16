@@ -49,16 +49,15 @@ namespace PresentacionPrototipo
 
         private void dgtVBecerro_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            entidad.Id = int.Parse(dgtVBecerro.Rows[fila].Cells[0].Value.ToString());
+            Becerro = dgtVBecerro.Rows[fila].Cells[1].Value.ToString();
+            Medicamento = dgtVBecerro.Rows[fila].Cells[2].Value.ToString();
+            entidad.Fecha = dgtVBecerro.Rows[fila].Cells[3].Value.ToString();
+
             switch (columna)
             {
                 case 4:
                     {
-                        entidad.Id = int.Parse(dgtVBecerro.Rows[fila].Cells[0].Value.ToString());
-                        Becerro = dgtVBecerro.Rows[fila].Cells[1].Value.ToString();
-                        Medicamento = dgtVBecerro.Rows[fila].Cells[2].Value.ToString();
-                        entidad.Fecha = dgtVBecerro.Rows[fila].Cells[3].Value.ToString();
-
                         FrmAddMedicacionBe vacam = new FrmAddMedicacionBe();
                         vacam.ShowDialog();
                         txtBuscar.Text = "";
@@ -84,6 +83,7 @@ namespace PresentacionPrototipo
         private void FrmVacunacionBe_Load(object sender, EventArgs e)
         {
             btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
+            panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
             Actualizar();
         }
         void Actualizar()

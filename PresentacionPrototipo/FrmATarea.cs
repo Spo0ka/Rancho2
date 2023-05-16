@@ -16,7 +16,7 @@ namespace PresentacionPrototipo
     {
         ManejadorTareasAdd mt;
         public static AgregarTareas entidad = new AgregarTareas(0,"",0);
-        public static int Usuario;
+        public static string Usuario = "";
         int fila, col;
         public FrmATarea()
         {
@@ -44,15 +44,16 @@ namespace PresentacionPrototipo
 
         private void dgtTareasA_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+            entidad.Id = int.Parse(dgtTareasA.Rows[fila].Cells[0].Value.ToString());
+            entidad.Nombre = dgtTareasA.Rows[fila].Cells[1].Value.ToString();
+            Usuario = dgtTareasA.Rows[fila].Cells[2].Value.ToString();
+
+
             switch (col)
             {
                 case 3:
                     {
-                        entidad.Id = int.Parse(dgtTareasA.Rows[fila].Cells[0].Value.ToString());
-                        entidad.Nombre = dgtTareasA.Rows[fila].Cells[1].Value.ToString();
-                        Usuario = int.Parse(dgtTareasA.Rows[fila].Cells[2].Value.ToString());
-
+                        
                         FrnAddTareas adt = new FrnAddTareas();
                         adt.ShowDialog();
                         txtBuscar.Text = "";
@@ -79,6 +80,7 @@ namespace PresentacionPrototipo
         private void FrmATarea_Load(object sender, EventArgs e)
         {
             btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
+            panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
             Actualizar();
         }
 

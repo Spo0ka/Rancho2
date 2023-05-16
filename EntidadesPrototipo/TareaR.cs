@@ -8,15 +8,17 @@ namespace EntidadesPrototipo
 {
     public class TareaR
     {
-        public TareaR(int id, int idTarea, string cumplio)
+        public TareaR(int id, int idTarea, string cumplio, string usuario)
         {
             Id = id;
             IdTarea = idTarea;
             Cumplio = cumplio;
+            Usuario = usuario;
         }
 
         public int Id { get; set; }
         public int IdTarea { get; set; }
         public string Cumplio { get; set; }
+        public string Usuario { get; set; }
     }
 }

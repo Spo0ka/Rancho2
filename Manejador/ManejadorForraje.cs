@@ -17,7 +17,7 @@ namespace Manejador
         Grafico g = new Grafico();
         public void Borrar(dynamic Entidad)
         {
-            DialogResult rs = MessageBox.Show("Atención!", "¿Desea eliminar este registro?", MessageBoxButtons.YesNo);
+            DialogResult rs = MessageBox.Show("¿Desea eliminar este registro?", "Atención!", MessageBoxButtons.YesNo);
             if (rs == DialogResult.Yes)
             {
                 Ab.Borrar(Entidad);
@@ -38,5 +38,14 @@ namespace Manejador
             tabla.Columns.Insert(4, g.Boton("Borrar", Color.FromArgb(251, 42, 9)));
             tabla.Columns[0].Visible = false;
         }
+        public void MostrarEmpleados(DataGridView tabla, string filtro)
+        {
+            tabla.Columns.Clear();
+            tabla.RowTemplate.Height = 30;
+            tabla.ColumnHeadersHeight = 40;
+            tabla.DataSource = Ab.Mostrar(filtro).Tables["almacenforraje"];
+            tabla.Columns[0].Visible = false;
+        }
+
     }
 }

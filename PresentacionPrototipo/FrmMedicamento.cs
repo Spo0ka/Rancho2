@@ -49,14 +49,15 @@ namespace PresentacionPrototipo
 
         private void dgtMedicamento_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+            entidad.Id = int.Parse(dgtMedicamento.Rows[fila].Cells[0].Value.ToString());
+            entidad.Nombre = dgtMedicamento.Rows[fila].Cells[1].Value.ToString();
+            entidad.Cantidad = int.Parse(dgtMedicamento.Rows[fila].Cells[2].Value.ToString());
+
             switch (columna)
             {
+
                 case 3:
                     {
-                        entidad.Id = int.Parse(dgtMedicamento.Rows[fila].Cells[0].Value.ToString());
-                        entidad.Nombre = dgtMedicamento.Rows[fila].Cells[1].Value.ToString();
-                        entidad.Cantidad = int.Parse(dgtMedicamento.Rows[fila].Cells[2].Value.ToString());
 
                         FrmAddMedicamento medicamentoa = new FrmAddMedicamento();
                         medicamentoa.ShowDialog();
@@ -76,7 +77,10 @@ namespace PresentacionPrototipo
 
         private void FrmMedicamento_Load(object sender, EventArgs e)
         {
+            if (FrmMenuTrabajador.verifyWorker==true)
+                btnAdd.Visible=false;
             btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
+            panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
             Actualizar();
         }
 
@@ -87,6 +91,9 @@ namespace PresentacionPrototipo
 
         void Actualizar()
         {
+            if (FrmMenuTrabajador.verifyWorker == true)
+                Mm.MostrarEmpleados(dgtMedicamento,txtBuscar.Text);
+            else
             Mm.Mostrar(dgtMedicamento, txtBuscar.Text);
         }
     }

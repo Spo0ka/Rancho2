@@ -16,7 +16,7 @@ namespace Manejador
         Grafico g = new Grafico();
         public void Borrar(dynamic Entidad)
         {
-            DialogResult rs = MessageBox.Show("Atención!", "¿Desea eliminar este registro?", MessageBoxButtons.YesNo);
+            DialogResult rs = MessageBox.Show("¿Desea eliminar este registro?", "Atención!", MessageBoxButtons.YesNo);
             if (rs == DialogResult.Yes)
             {
                 usuarios.Borrar(Entidad);

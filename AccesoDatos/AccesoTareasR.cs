@@ -19,7 +19,7 @@ namespace AccesoDatos
 
         public void Guardar(dynamic Entidad)
         {
-            b.comando(string.Format("Call InsertTareasR({0},{1},'{2}')", Entidad.Id, Entidad.IdTarea,Entidad.Cumplio));
+            b.comando(string.Format("Call InsertTareasR({0},{1},'{2}','{3}')", Entidad.Id, Entidad.IdTarea,Entidad.Cumplio, Entidad.Usuario));
         }
 
         public DataSet Mostrar(string Filtro)

@@ -15,8 +15,9 @@ namespace PresentacionPrototipo
     public partial class FrmVerTareas : Form
     {
         ManejadorTareasTrabajador mtt;
-        public static TareaR entidad = new TareaR(0, 0, "");
+        public static TareaR entidad = new TareaR(0, 0, "","");
         public static string Tarea = "";
+        public static string usuario = "";
         int fila, col;
         public FrmVerTareas()
         {
@@ -27,6 +28,7 @@ namespace PresentacionPrototipo
         private void FrmVerTareas_Load(object sender, EventArgs e)
         {
             btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
+            panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
             Actualizar();
         }
 
@@ -50,22 +52,21 @@ namespace PresentacionPrototipo
 
         private void dgtTareasR_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            entidad.Id = int.Parse(dgtTareasR.Rows[fila].Cells[0].Value.ToString());
+            Tarea = dgtTareasR.Rows[fila].Cells[1].Value.ToString();
+            entidad.Cumplio = dgtTareasR.Rows[fila].Cells[2].Value.ToString();
+            usuario = dgtTareasR.Rows[fila].Cells[3].Value.ToString();
             switch (col)
             {
-                case 3:
+                case 4:
                     {
-                        entidad.Id = int.Parse(dgtTareasR.Rows[fila].Cells[0].Value.ToString());
-                        Tarea = dgtTareasR.Rows[fila].Cells[1].Value.ToString();
-                        entidad.Cumplio = dgtTareasR.Rows[fila].Cells[2].Value.ToString();
-
                         FrmTareas ft = new FrmTareas();
                         ft.ShowDialog();
                         txtBuscar.Text = "";
                         Actualizar();
                     }
                     break;
-                case 4:
+                case 5:
                     {
                         mtt.Borrar(entidad);
                         txtBuscar.Text = "";

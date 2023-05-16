@@ -12,8 +12,10 @@ namespace PresentacionPrototipo
 {
     public partial class FrmMenuTrabajador : Form
     {
+        public static bool verifyWorker = true;
         public FrmMenuTrabajador()
         {
+            verifyWorker = true;
             InitializeComponent();
         }
 

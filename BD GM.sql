@@ -2,11 +2,13 @@ DROP DATABASE if EXISTS GM;
 CREATE DATABASE GM;
 USE GM;
 
+-- TABLES -----------------------------------------------------------------------------------------------------------------
+
 CREATE TABLE Usuarios( Id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 Nombre VARCHAR(100), Apellido VARCHAR(100), Usuario VARCHAR(100), pass VARCHAR(100), permisos VARCHAR(20));
 
-INSERT INTO usuarios VALUES(1, 'Juan Carlos','Muñoz','Admin','1234','Administrador');
-
+INSERT INTO usuarios VALUES(NULL, 'Juan Carlos','Muñoz','Admin','1234','Administrador');
+INSERT INTO usuarios VALUES(NULL, 'Leo','Wawis','Admin','1234','Administrador');
 
 CREATE TABLE Vacas( Arete VARCHAR(100) NOT NULL PRIMARY KEY,
 Raza VARCHAR(100), Fdn VARCHAR(100), Peso VARCHAR(100), Litros_Leche DOUBLE);
@@ -51,12 +53,16 @@ id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 Tarea VARCHAR(500), fk_Usuarios INT,
 FOREIGN KEY (fk_Usuarios) REFERENCES usuarios(Id));
  
-CREATE TABLE TareaR(
+ DROP TABLE if EXISTS tarear;
+CREATE TABLE tarear(
 id INT PRIMARY KEY AUTO_INCREMENT,
-FK_Tarea INT,
+Tarea VARCHAR(100),
 Cumplio VARCHAR(10),
-FOREIGN KEY(FK_Tarea) REFERENCES AgregarTareas(id));
+usuario VARCHAR (100));
 
+
+-- PROCEDURES -------------------------------------------------------------------------------------------------------------
+-- ------------------------------------------------------------------------------------------------------------------------
 
 
 DELIMITER ;;
@@ -78,69 +84,6 @@ BEGIN
         UPDATE usuarios SET Nombre = _Nombre, Apellido = _Apellido, Usuario = _Usuario,pass=_pass, permisos = _permisos WHERE Id = _Id;
     END IF;
 END;;
-
-
-
-delimiter $$
-DROP TRIGGER if EXISTS vacunasV;
-CREATE TRIGGER vacunasV
-BEFORE INSERT ON MedicamentoVacas
-FOR EACH ROW
-BEGIN
-        UPDATE AlmacenMedicamento SET Cantidad = Cantidad - 1;
-END; $$
- 
-delimiter $$
-DROP TRIGGER if EXISTS vacunasB;
-CREATE TRIGGER vacunasB
-BEFORE INSERT ON MedicamentoBecerro
-FOR EACH ROW
-BEGIN
-        UPDATE AlmacenMedicamento SET Cantidad = Cantidad - 1;
-END; $$
-/*------------------------------------------------------------------------------------------------------------*/
-/*
-Vistas
-DROP VIEW if EXISTS ver_forraje;
-CREATE VIEW ver_forraje AS
-SELECT af.id, af.nombre AS 'Nombre', af.cantidad AS 'Cantidad'
-FROM almacenForraje af;
- 
-SELECT * FROM ver_forraje;
- 
-DROP VIEW if EXISTS ver_vacas;
-CREATE VIEW ver_vacas AS
-SELECT vacas.Arete, vacas.Raza, vacas.Fdn AS 'Fecha de nacimiento', vacas.Peso, vacas.Litros_Leche AS 'Litros de leche'
-FROM vacas;
- 
-SELECT * FROM ver_vacas;
- 
-DROP VIEW if EXISTS ver_becerros;
-CREATE VIEW ver_becerros AS
-SELECT b.Arete, b.Raza, b.Fdn AS 'Fecha de nacimiento', b.Peso, b.sexo AS 'Sexo'
- FROM becerro b;
- 
- SELECT * FROM ver_becerros;
- 
-DROP VIEW if EXISTS ver_medicamento;
-CREATE VIEW ver_medicamento AS
-SELECT * FROM almacenmedicamento;
- 
-SELECT * FROM ver_medicamento;
- 
-DROP VIEW if EXISTS ver_medicamentoVacas;
-CREATE VIEW ver_medicamentoVacas AS
-SELECT mv.id, mv.Fk_Vacas,am.Nombre AS 'Medicamento', mv.Fecha
-FROM medicamentovacas mv, almacenmedicamento am;
- 
-SELECT * FROM ver_medicamentoVacas;
-
-
-/*
-DROP VIEW if EXISTS ver_registroForraje;
-CREATE VIEW ver_registroForraje AS
-SELECT rf.id, af.Nombre, rf.cantidad FROM registroforraje rf, almacenforraje af;
-*/
 
 delimiter ;;
 DROP PROCEDURE if EXISTS insertAlmacenMedicamento;
@@ -184,7 +127,6 @@ IN _id INT, IN _forraje INT,IN _cantidad INT)
       UPDATE RegistroForraje SET Fk_Forraje = _forraje, cantidad = _cantidad WHERE id = _id;
    END if;
 END;;
- 
       
 delimiter ;;
 DROP PROCEDURE if EXISTS insertMedBecerro;
@@ -232,51 +174,22 @@ ELSE if X >0 then
 	END if;
 END;;
 
-
 delimiter ;;
 DROP PROCEDURE if EXISTS InsertTareasR;
 CREATE PROCEDURE InsertTareasR(
-IN _id INT, IN _fkTarea INT, IN _cumplio VARCHAR(10))
+in _id INT,
+in _Tarea VARCHAR(100),
+in _Cumplio VARCHAR(10),
+in _usuario VARCHAR (100))
 BEGIN
 DECLARE X INT;
    SELECT COUNT(*) FROM Tarear WHERE id=_id INTO X;
-if X =0 then
-	INSERT INTO tarear VALUES (NULL, _fkTarea, _cumplio);
-ELSE if X>0 then
-	UPDATE tarear SET FK_Tarea = _fkTarea, Cumplio = _cumplio WHERE id = _id;
-	END if;
+if X=0 then
+	INSERT INTO tarear VALUES (NULL, _Tarea, _Cumplio,_usuario);
+ELSEif X>0 then
+	UPDATE tarear SET Tarea = _Tarea, Cumplio = _Cumplio, usuario=_usuario WHERE id = _id;
 	END if;
 END;;
-
-/*CALL InsertTareasR(-1,1,'En proceso');*/
-/*SELECT * FROM tarear;
-SELECT * FROM agregartareas;
-/*vistas Tareas*/
-/*DELETE FROM agregartareas WHERE id = 2;
-DROP VIEW if EXISTS ver_ATareas;
-CREATE VIEW ver_ATareas AS
-SELECT af.id, af.Tarea AS 'Tarea'
-FROM agregartareas af;
-
-
-/*DROP VIEW if EXISTS ver_TareasR;
-CREATE VIEW ver_TareasR AS
-SELECT af.id, f.Tarea AS 'Tareas', af.cumplio
-FROM tarear af, agregartareas f;*/
-
-
-
-
-
-delimiter $$
-DROP TRIGGER if EXISTS generar_username;
-CREATE TRIGGER generar_username
-BEFORE INSERT ON usuarios
-FOR EACH ROW
-BEGIN
-    SET NEW.usuario = CONCAT(NEW.nombre, SUBSTR(NEW.apellido, 1, 2), LAST_INSERT_ID());
-END; $$
-
 
 delimiter ;;
 DROP PROCEDURE if EXISTS insertBecerro;
@@ -327,12 +240,8 @@ UPDATE usuarios SET Nombre= _Nombre, Apellido= _Apellido, Usuario= _Usuario, per
 END if;
 END;;
 
+/* Procedures para mostrar -----------------------------------------------------------------------------------------------*/
 
-
-
-
-
-/* procedures para mostrar */
 delimiter ;; ##Medicamento vacas
 DROP PROCEDURE if EXISTS Show_MedicamentoVaca; 
 CREATE PROCEDURE Show_MedicamentoVaca(IN filtro VARCHAR(100))
@@ -361,13 +270,8 @@ DELIMITER ;; ##Realizar Tareas
 DROP PROCEDURE if EXISTS MostrarTareasR;
 CREATE PROCEDURE MostrarTareasR(IN filtro VARCHAR(500))
 BEGIN
-    SELECT TareaR.id, AgregarTareas.Tarea, TareaR.Cumplio
-    FROM TareaR
-    INNER JOIN AgregarTareas
-    ON TareaR.FK_Tarea = AgregarTareas.id
-    WHERE AgregarTareas.Tarea LIKE CONCAT('%', filtro, '%');
+SELECT * FROM tarear WHERE tarear.Tarea LIKE CONCAT('%',filtro,'%');
 END ;;
-
 
 DELIMITER ;; ## Registro Forraje
 DROP PROCEDURE if EXISTS MostrarRegistroForraje;
@@ -388,5 +292,134 @@ BEGIN
     JOIN Usuarios u ON t.fk_Usuarios = u.Id
     WHERE t.Tarea LIKE CONCAT('%', filtro, '%') OR u.Nombre LIKE CONCAT('%', filtro, '%');
 END ;;
+
+
+/*-- VISTAS----------------------------------------------------------------------------------------------------------------
+-- ------------------------------------------------------------------------------------------------------------------------
+
+
+DROP VIEW if EXISTS ver_forraje;
+CREATE VIEW ver_forraje AS
+SELECT af.id, af.nombre AS 'Nombre', af.cantidad AS 'Cantidad'
+FROM almacenForraje af;
+ 
+SELECT * FROM ver_forraje;
+ 
+DROP VIEW if EXISTS ver_vacas;
+CREATE VIEW ver_vacas AS
+SELECT vacas.Arete, vacas.Raza, vacas.Fdn AS 'Fecha de nacimiento', vacas.Peso, vacas.Litros_Leche AS 'Litros de leche'
+FROM vacas;
+ 
+SELECT * FROM ver_vacas;
+ 
+DROP VIEW if EXISTS ver_becerros;
+CREATE VIEW ver_becerros AS
+SELECT b.Arete, b.Raza, b.Fdn AS 'Fecha de nacimiento', b.Peso, b.sexo AS 'Sexo'
+ FROM becerro b;
+ 
+ SELECT * FROM ver_becerros;
+ 
+DROP VIEW if EXISTS ver_medicamento;
+CREATE VIEW ver_medicamento AS
+SELECT * FROM almacenmedicamento;
+ 
+SELECT * FROM ver_medicamento;
+ 
+DROP VIEW if EXISTS ver_medicamentoVacas;
+CREATE VIEW ver_medicamentoVacas AS
+SELECT mv.id, mv.Fk_Vacas,am.Nombre AS 'Medicamento', mv.Fecha
+FROM medicamentovacas mv, almacenmedicamento am;
+ 
+SELECT * FROM ver_medicamentoVacas;
+
+
+/*
+DROP VIEW if EXISTS ver_registroForraje;
+CREATE VIEW ver_registroForraje AS
+SELECT rf.id, af.Nombre, rf.cantidad FROM registroforraje rf, almacenforraje af;
+*/
+
+
+-- TRIGGERS ---------------------------------------------------------------------------------------------------------------
+-- ------------------------------------------------------------------------------------------------------------------------
+
+
+delimiter $$
+DROP TRIGGER if EXISTS generar_username;
+CREATE TRIGGER generar_username
+BEFORE INSERT ON usuarios
+FOR EACH ROW
+BEGIN
+    SET NEW.usuario = CONCAT(NEW.nombre, SUBSTR(NEW.apellido, 1, 2), LAST_INSERT_ID());
+END; $$
+
+delimiter $$
+DROP TRIGGER if EXISTS vacunasV;
+CREATE TRIGGER vacunasV
+BEFORE INSERT ON MedicamentoVacas
+FOR EACH ROW
+BEGIN
+    DECLARE cantidad_actual INT;
+    SELECT Cantidad INTO cantidad_actual FROM AlmacenMedicamento WHERE id = NEW.FK_Medicamentos;
+    IF cantidad_actual < 1 THEN
+        SIGNAL SQLSTATE '45000' 
+            SET MESSAGE_TEXT = 'No hay suficiente cantidad de medicamentos en el almacen.';
+    ELSE
+        UPDATE AlmacenMedicamento SET Cantidad = Cantidad - 1 WHERE id = NEW.FK_Medicamentos;
+    END IF;
+END; $$
+
+delimiter $$
+DROP TRIGGER if EXISTS vacunasB;
+CREATE TRIGGER vacunasB
+BEFORE INSERT ON medicamentobecerro
+FOR EACH ROW
+BEGIN
+    DECLARE cantidad_actual INT;
+    SELECT Cantidad INTO cantidad_actual FROM AlmacenMedicamento WHERE id = NEW.Fk_Medicamento;
+    IF cantidad_actual < 1 THEN
+        SIGNAL SQLSTATE '45000' 
+            SET MESSAGE_TEXT = 'No hay suficiente cantidad de medicamentos en el almacen.';
+    ELSE
+        UPDATE AlmacenMedicamento SET Cantidad = Cantidad - 1 WHERE id = NEW.Fk_Medicamento;
+    END IF;
+END; $$
+
+delimiter $$
+DROP TRIGGER if EXISTS El_trigger_chido_para_las_tareas_Jared_no_le_sabe_al_2048;
+CREATE TRIGGER El_trigger_chido_para_las_tareas_Jared_no_le_sabe_al_2048
+AFTER INSERT ON agregartareas
+FOR EACH ROW
+BEGIN
+	DECLARE usuario VARCHAR(100);
+	SELECT u.Nombre AS 'Usuario' FROM agregartareas t 
+		JOIN Usuarios u ON t.fk_Usuarios = u.Id WHERE t.id = NEW.id INTO usuario;
+	INSERT INTO tarear VALUES(NULL, NEW.Tarea, 'no', usuario);
+END; $$
+
+
+-- PRUEBAS ----------------------------------------------------------------------------------------------------------------
+
+
+SHOW TABLES;
+DESCRIBE medicamentovacas;
+DESCRIBE medicamentobecerro;
+DESCRIBE almacenmedicamento;
+DESCRIBE vacas;
+DESCRIBE tarear;
+DESCRIBE agregartareas;
+
+INSERT INTO vacas VALUES('1a', 'cambalachera', 'qw', '1 kilo', 12); 
+INSERT INTO almacenmedicamento VALUES(NULL, 'cocaina', 1);
+INSERT INTO medicamentovacas VALUES(NULL, '1a', 1, 'hoy');
+INSERT INTO agregartareas VALUES(NULL, 'wawis2', 1);
+INSERT INTO agregartareas VALUES(NULL, 'Noonoo2', 2);
+
+SELECT * FROM vacas;
+SELECT * FROM almacenmedicamento;
+SELECT * FROM medicamentovacas;
+SELECT * FROM usuarios;
+SELECT * FROM agregartareas;
+SELECT * FROM tarear;
 
 

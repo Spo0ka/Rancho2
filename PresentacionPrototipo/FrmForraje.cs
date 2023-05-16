@@ -38,15 +38,14 @@ namespace PresentacionPrototipo
 
         private void dgtForraje_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            entidad.Id = int.Parse(dgtForraje.Rows[fila].Cells[0].Value.ToString());
+            entidad.Nombre = dgtForraje.Rows[fila].Cells[1].Value.ToString();
+            entidad.Cantidad = int.Parse(dgtForraje.Rows[fila].Cells[2].Value.ToString());
             switch (columna)
             {
+
                 case 3:
                     {
-                        entidad.Id = int.Parse(dgtForraje.Rows[fila].Cells[0].Value.ToString());
-                        entidad.Nombre = dgtForraje.Rows[fila].Cells[1].Value.ToString();
-                        entidad.Cantidad = int.Parse(dgtForraje.Rows[fila].Cells[2].Value.ToString());
-
                         FrmAddForraje adf = new FrmAddForraje();
                         adf.ShowDialog();
                         txtBuscar.Text = "";
@@ -55,6 +54,7 @@ namespace PresentacionPrototipo
                     break;
                 case 4:
                     {
+                       
                         Mf.Borrar(entidad);
                         txtBuscar.Text = "";
                         Actualizar();
@@ -72,7 +72,10 @@ namespace PresentacionPrototipo
 
         private void FrmForraje_Load(object sender, EventArgs e)
         {
+            if (FrmMenuTrabajador.verifyWorker==true)
+                btnAdd.Visible =false;
             btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
+            panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
             Actualizar();
         }
 
@@ -88,6 +91,9 @@ namespace PresentacionPrototipo
 
         void Actualizar()
         {
+            if (FrmMenuTrabajador.verifyWorker==true)
+                Mf.MostrarEmpleados(dgtForraje, txtBuscar.Text);
+            else
             Mf.Mostrar(dgtForraje, txtBuscar.Text);
         }
     }

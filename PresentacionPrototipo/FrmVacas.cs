@@ -38,17 +38,16 @@ namespace PresentacionPrototipo
 
         private void dgtVacas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            entidad.Arete = dgtVacas.Rows[fila].Cells[0].Value.ToString();
+            entidad.Raza = dgtVacas.Rows[fila].Cells[1].Value.ToString();
+            entidad.Fdn = dgtVacas.Rows[fila].Cells[2].Value.ToString();
+            entidad.Peso = dgtVacas.Rows[fila].Cells[3].Value.ToString();
+            entidad.LitrosLeche = double.Parse(dgtVacas.Rows[fila].Cells[4].Value.ToString());
+
             switch (columna)
             {
                 case 5:
                     {
-                        entidad.Arete = dgtVacas.Rows[fila].Cells[0].Value.ToString();
-                        entidad.Raza = dgtVacas.Rows[fila].Cells[1].Value.ToString();
-                        entidad.Fdn = dgtVacas.Rows[fila].Cells[2].Value.ToString();
-                        entidad.Peso = dgtVacas.Rows[fila].Cells[3].Value.ToString();
-                        entidad.LitrosLeche = double.Parse(dgtVacas.Rows[fila].Cells[4].Value.ToString());
-
                         FrmAddVaca nuevobe = new FrmAddVaca();
                         nuevobe.ShowDialog();
                         txtBuscar.Text = "";
@@ -76,6 +75,7 @@ namespace PresentacionPrototipo
         {
 
             btnSalir.BackColor = ColorTranslator.FromHtml("#FF8C67");
+            panel1.BackColor = ColorTranslator.FromHtml("#E08E36");
             Actualizar();
         }
 

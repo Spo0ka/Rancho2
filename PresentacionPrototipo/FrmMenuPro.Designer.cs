@@ -125,11 +125,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(311, 13);
+            this.label8.Location = new System.Drawing.Point(428, 8);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(169, 20);
+            this.label8.Size = new System.Drawing.Size(56, 20);
             this.label8.TabIndex = 22;
-            this.label8.Text = "MENÚ TRABAJADOR";
+            this.label8.Text = "MENÚ";
             // 
             // label9
             // 
