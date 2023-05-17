@@ -122,7 +122,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(399, 43);
+            this.panel1.Size = new System.Drawing.Size(399, 40);
             this.panel1.TabIndex = 92;
             // 
             // label5
@@ -144,7 +144,7 @@
             this.btnSalir.ForeColor = System.Drawing.Color.Black;
             this.btnSalir.Image = global::PresentacionPrototipo.Properties.Resources.salida__1_;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSalir.Location = new System.Drawing.Point(220, 10);
+            this.btnSalir.Location = new System.Drawing.Point(168, 224);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(100, 34);
             this.btnSalir.TabIndex = 91;
